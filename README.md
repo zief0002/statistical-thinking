@@ -41,8 +41,37 @@ Unit 02
     Definition of P-Value* http://news.sciencemag.org/sciencenow/2009/10/30-01.html__
 * p. 177, the research question now reads: Does the effect of sleep deprivation last, or can a person "make up" 
     for sleep deprivation by getting a full night's sleep in ~~'~~subsequent nights?
+* p. 193, Question 8 now reads: __Based on your analysis of these data, is there strong evidence that the effects of cloud seeding increases the amount of rainfall? Write a brief memo in which you report the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide). As a reminder, pertinent information includes:__
+    * __The type of test used in the analysis (including the number of trials);__
+    * __The null model assumed in the test;__
+    * __The observed result based on the data;__
+    * __The *p*-value for the test; and__ 
+    * __All appropriate inferences based on the *p*-value and study design.__
 
+* p. 217, Question 17 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
+* p. 220, Question 1 now reads: For this study, specify the treatment variable and each of the 
+    possible treatment levels.
+* p. 220, Question 2 now reads:  For this study, specify the Response variable and each of the 
+    possible response categories.
+* p. 220, Question 3 now reads:  Organize these data (i.e., frequencies) into a 2x2 table. 
+    __Include this table in your word-processing document.__
+* p. 221, Question 9 now reads: Quantify the strength of evidence/*p*-value for the observed result 
+    (i.e., How far in the tail of the distribution is the observed result? The furthest 5%? 1%?). 
+    __Explain how you obtained your *p*-value.__
+* p. 221, Question 10 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
 
+* p. 224, Question 1 now reads: ~~What is~~ __For this study, specify__ the treatment variable ~~for this study~~ __and each of the  possible treatment levels.__
+* p. 224, Question 2 now reads:  ~~What is~~ __For this study, specify__ the Response variable ~~for this study~~ __and each of the possible response categories.__
+* p. 230, last sentence in the 1st paragraph now reads: The use of __random assignment or__ random sampling __(or both!)__ ~~versus the use of random assignment will change~~ __directly impacts__ the inferences and conclusions that can be drawn.
+* p. 230, The 3rd sentence of the 3rd paragraph now reads: Statistically, we wanted to determine ~~how likely~~ __the likelihood of__ the observed result (i.e., the difference in depression levels between the two conditions) ~~was~~ given all the potential ways that the subjects could have been assigned to the two conditions. 
+
+* p. 231, section heading now reads: ~~Simple~~ Random Sampling
+
+* p. 231, 3rd sentence in the first paragraph now reads: A ~~simple~~ random sample ~~(or SRS)~~ is a sample in which ~~at every selection from the population, all remaining subjects, or experimental results, in the population have the same probability of being included in the sample as the previous subjects or experimental results. Another way of saying this is that~~ each subject~~s~~ has the same probability of being sampled as every other subject
+* p. 231, the 2nd sentence in the last paragraph now reads: In ~~thoery~~ __theory__ this is required, but in practice, once a subject has been selected for a sample, she is usually no longer an ~~eleigible~~ __eligible__ candidate to be re-sampled.
+
+* p. 235, Question 5 now reads: ~~What is~~ __For this study, specify__ the treatment variable ~~for this study~~ __and each of the  possible treatment levels.__
+* p. 235, Question 6 now reads:  ~~What is~~ __For this study, specify__ the Response variable ~~for this study~~ __and each of the possible response categories.__
 
 <!--
 
@@ -52,16 +81,12 @@ Unit 02
 * p. 193	Question 8: tell the students to do a write up like was first shown in class for the sleep deprivation study instead of seeming to ask them to answer the research question based upon just their p-value. The way we have the question worded now, it is not clear that we are asking them to write up a report (which we may not be, let me know if we're not), but the suggested answer is certainly saying that this is what we expect.
 * p. 200: On #7 it says “Ordinary shoe group average heightn:” Delete the extra n at the end.
 * p. 214	Third and fourth bullets in the box on the margin: Right now, it's not clear that they are right-clicking on the "Dolphin Therapy - YES" percent and "Control -YES" percent.  It should be clear that they're clicking on the % in each group who improved, because this is the way we were having them calculate the observed results in pages 210-211.
-* p. 220	Question 1 should be re-worded to say: “What is the treatment variable in this study? (Note: when you report what a variable is, you should always provide detail on what all of the possible outcomes for this variable are.)”
-* p. 220	Question 3 should be re-worded to say: “Organize these data/results (i.e., frequencies) into a 2×2 table. Include a copy of this table in your assignment.”
-* p. 221	Line 6, change the word proportion to boldface type: “each time collecting the difference between the proportion of…”
-* p. 221	Question 9 should have the following statement added to the end (because we’re allocating more points to it in the rubric): “Explain how you obtained your p-value.”
+
 * p. 221  Question 10 should be re-worded to say: “Answer the research question. Explain your reasoning based on your simulation results. Your answer should include the p-value and should be stated in the context of whether or not yawning is contagious.”
-* p. 231: Bottom paragraph, second sentence, two typos: “In thoery [theory] this is required, but in practice, once a subject has been selected for a sample, she is usually no longer an eleigible [eligible] candidate to be re-sampled.”
-* p. 230 	The third sentence has improved readability if replaced as:
-Statistically, we wanted to determine the likelihood of the observed result (..stuff in parentheses…) given all the potential ways…
-* p. 230, (end of 1st paragraph and start of second):	This text implies that random sampling and random assignment are  mutually exclusive: "the goal of studies that employ random sampling is also very different than the goal of studies that employ random assignment."  If a study employs both, then presumably it has the same goals as itself!
-* p. 231, third sentence 	"A simple random sample (or SRS) is a sample in which at every selection from the population, all remaining subjects, or experimental results, in the population have the same probability of being included in the sample as the previous subjects or experimental results." I propose we cut this and just go with the definition in the next sentence, which is far easier to parse and I think sufficient.
+
+
+
+
 * p. 242, first full pararagraph: "In 1988, results released to the public from the National Household Survey on Drug Abuse created the false perception that crack cocaine smoking was more common among blacks and Hispanics than among white Americans." Isn't this statement technically true, and thus not a "false perception"?  The false perception is that there is a link between ethnicity and crack cocaine smoking, which is different than the correct statement that it is more common among blacks and Hispanics.
 * p. 244	Rephrase the research question so that it does not apply cause-and-effect:  "In the 1991 downsizing of the Westvaco corporation, were older employees significantly more likely to get laid off than younger employees?"
 * p. 249, equation before #3:	 Equation has extra “* 100” in it, which should be removed to make the equation accurate.  ((58/137) * 100 = 42.3, not 0.423)
