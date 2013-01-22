@@ -79,21 +79,26 @@ Unit 02
 
 * p. 200, Question 7 (italics) now reads: Ordinary shoe group average height~~n~~:
 
+* p. 214, third bullet, box on the right now reads: In the plot window, right-click __on__ the percentage value for the improved patients in the *Dolphin Therapy* group and select `Collect Statistic`
+
+* p. 214, fourth bullet, box on the right now reads: Repeat for the *Control* group, again ~~selecting~~ __right-clicking on__ the percentage value for the i~~n~~__m__proved patients.
+
+* p. 221, Question 10 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
+
+* p. 242, first full pararagraph now reads: In 1988, results released to the public from the *National Household Survey on Drug Abuse* created the false perception that crack cocaine smoking ~~was more common among blacks and Hispanics than among white Americans~~ __was related to ethnicity__. 
+
+
+
+
+
+
 
 
 <!--
 
 * p. 178	Make students enter data in-class. Make students graph the observed data in-class
 
-
-* p. 214	Third and fourth bullets in the box on the margin: Right now, it's not clear that they are right-clicking on the "Dolphin Therapy - YES" percent and "Control -YES" percent.  It should be clear that they're clicking on the % in each group who improved, because this is the way we were having them calculate the observed results in pages 210-211.
-
-* p. 221  Question 10 should be re-worded to say: “Answer the research question. Explain your reasoning based on your simulation results. Your answer should include the p-value and should be stated in the context of whether or not yawning is contagious.”
-
-
-
-
-* p. 242, first full pararagraph: "In 1988, results released to the public from the National Household Survey on Drug Abuse created the false perception that crack cocaine smoking was more common among blacks and Hispanics than among white Americans." Isn't this statement technically true, and thus not a "false perception"?  The false perception is that there is a link between ethnicity and crack cocaine smoking, which is different than the correct statement that it is more common among blacks and Hispanics.
+ "In 1988, results released to the public from the National Household Survey on Drug Abuse created the false perception that crack cocaine smoking was more common among blacks and Hispanics than among white Americans." Isn't this statement technically true, and thus not a "false perception"?  The false perception is that there is a link between ethnicity and crack cocaine smoking, which is different than the correct statement that it is more common among blacks and Hispanics.
 * p. 244	Rephrase the research question so that it does not apply cause-and-effect:  "In the 1991 downsizing of the Westvaco corporation, were older employees significantly more likely to get laid off than younger employees?"
 * p. 249, equation before #3:	 Equation has extra “* 100” in it, which should be removed to make the equation accurate.  ((58/137) * 100 = 42.3, not 0.423)
 * p. 263 part (c) and p. 265 table:  Change “attribute to “variable”
