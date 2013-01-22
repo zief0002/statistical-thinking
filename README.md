@@ -41,6 +41,12 @@ Unit 02
     Definition of P-Value* http://news.sciencemag.org/sciencenow/2009/10/30-01.html__
 * p. 177, the research question now reads: Does the effect of sleep deprivation last, or can a person "make up" 
     for sleep deprivation by getting a full night's sleep in ~~'~~subsequent nights?
+
+* p. 187, Third bullet point: Unrestricted sleep ( _M_ = 19.82 milliseconds), __sleep deprived__ ( _M_ = 3.9 milliseconds), and the difference in means (15.92)
+* p. 192, Question 2: Using the plot, comment on the similarities and differences ~~in the characteristics of~~ between the two ~~rainfall amount~~ distributions ~~between these two groups~~ (the 22 clouds that were seeded and the 22 clouds that were not seeded). __Be sure to address differences in shape, center, and variation.__
+
+* p. 193, Question 8 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
+
 * p. 193, Question 8 now reads: __Based on your analysis of these data, is there strong evidence that the effects of cloud seeding increases the amount of rainfall? Write a brief memo in which you report the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide). As a reminder, pertinent information includes:__
     * __The type of test used in the analysis (including the number of trials);__
     * __The null model assumed in the test;__
@@ -48,46 +54,57 @@ Unit 02
     * __The *p*-value for the test; and__ 
     * __All appropriate inferences based on the *p*-value and study design.__
 
+* p. 200, Question 7 (italics) now reads: Ordinary shoe group average height ~~n~~:
+
+* p. 214, third bullet, box on the right now reads: In the plot window, right-click __on__ the percentage value for the improved patients in the *Dolphin Therapy* group and select `Collect Statistic`
+
+* p. 214, fourth bullet, box on the right now reads: Repeat for the *Control* group, again ~~selecting~~ __right-clicking on__ the percentage value for the i ~~n~~ __m__proved patients.
+
 * p. 217, Question 17 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
-* p. 220, Question 1 now reads: For this study, specify the treatment variable and each of the 
-    possible treatment levels.
-* p. 220, Question 2 now reads:  For this study, specify the Response variable and each of the 
-    possible response categories.
-* p. 220, Question 3 now reads:  Organize these data (i.e., frequencies) into a 2x2 table. 
-    __Include this table in your word-processing document.__
-* p. 221, Question 9 now reads: Quantify the strength of evidence/*p*-value for the observed result 
-    (i.e., How far in the tail of the distribution is the observed result? The furthest 5%? 1%?). 
-    __Explain how you obtained your *p*-value.__
+* p. 220, Question 1 now reads: For this study, specify the treatment variable and each of the possible treatment levels.
+* p. 220, Question 2 now reads:  For this study, specify the Response variable and each of the possible response categories.
+* p. 220, Question 3 now reads:  Organize these data (i.e., frequencies) into a 2x2 table. __Include this table in your word-processing document.__
+
+* p. 221, Question 10 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
+
+* p. 221, Question 9 now reads: Quantify the strength of evidence/ _p_-value for the observed result (i.e., How far in the tail of the distribution is the observed result? The furthest 5%? 1%?). __Explain how you obtained your *p*-value.__
+
 * p. 221, Question 10 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
 
 * p. 224, Question 1 now reads: ~~What is~~ __For this study, specify__ the treatment variable ~~for this study~~ __and each of the  possible treatment levels.__
+
 * p. 224, Question 2 now reads:  ~~What is~~ __For this study, specify__ the Response variable ~~for this study~~ __and each of the possible response categories.__
+
 * p. 230, last sentence in the 1st paragraph now reads: The use of __random assignment or__ random sampling __(or both!)__ ~~versus the use of random assignment will change~~ __directly impacts__ the inferences and conclusions that can be drawn.
+
 * p. 230, The 3rd sentence of the 3rd paragraph now reads: Statistically, we wanted to determine ~~how likely~~ __the likelihood of__ the observed result (i.e., the difference in depression levels between the two conditions) ~~was~~ given all the potential ways that the subjects could have been assigned to the two conditions. 
 
 * p. 231, section heading now reads: ~~Simple~~ Random Sampling
 
 * p. 231, 3rd sentence in the first paragraph now reads: A ~~simple~~ random sample ~~(or SRS)~~ is a sample in which ~~at every selection from the population, all remaining subjects, or experimental results, in the population have the same probability of being included in the sample as the previous subjects or experimental results. Another way of saying this is that~~ each subject~~s~~ has the same probability of being sampled as every other subject
+
 * p. 231, the 2nd sentence in the last paragraph now reads: In ~~thoery~~ __theory__ this is required, but in practice, once a subject has been selected for a sample, she is usually no longer an ~~eleigible~~ __eligible__ candidate to be re-sampled.
 
 * p. 235, Question 5 now reads: ~~What is~~ __For this study, specify__ the treatment variable ~~for this study~~ __and each of the  possible treatment levels.__
+
 * p. 235, Question 6 now reads:  ~~What is~~ __For this study, specify__ the Response variable ~~for this study~~ __and each of the possible response categories.__
-* p. 187, Third bullet point: Unrestricted sleep (*M* = 19.82 milliseconds), __sleep deprived__ (*M* = 3.9 milliseconds), and the difference in means (15.92)
-* p. 192, Question 2: Using the plot, comment on the similarities and differences ~~in the characteristics of~~ between the two ~~rainfall amount~~ distributions ~~between these two groups~~ (the 22 clouds that were seeded and the 22 clouds that were not seeded). __Be sure to address differences in shape, center, and variation.__
-
-* p. 193, Question 8 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
-
-* p. 200, Question 7 (italics) now reads: Ordinary shoe group average height~~n~~:
-
-* p. 214, third bullet, box on the right now reads: In the plot window, right-click __on__ the percentage value for the improved patients in the *Dolphin Therapy* group and select `Collect Statistic`
-
-* p. 214, fourth bullet, box on the right now reads: Repeat for the *Control* group, again ~~selecting~~ __right-clicking on__ the percentage value for the i~~n~~__m__proved patients.
-
-* p. 221, Question 10 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
 
 * p. 242, first full pararagraph now reads: In 1988, results released to the public from the *National Household Survey on Drug Abuse* created the false perception that crack cocaine smoking ~~was more common among blacks and Hispanics than among white Americans~~ __was related to ethnicity__. 
 
 
+* p. 244, research question now reads: __During the 1991 downsizing of the Westvaco company, were older employees significantly more likely to be laid off than younger employees?__
+
+* p. 249, equation now reads: (58/137) ~~x 100~~ = 0.423 or 42.3%
+
+* p. 263 part (c): Factor/Treatment ~~Attribute~~ __Variable__
+
+* p. 263 part (d): Response ~~Attribute~~ __Variable__
+
+* p. 265, 2nd column header now reads: Factor/Treatment ~~Attribute~~ __Variable__
+
+* p. 270, Question 10: Just as with the *Dolphin Therapy* and *Sleep Deprivation* studies, this study made use of randomness in ~~collecting the data~~ __its design__.
+
+* p. 271, 3rd sentence now reads: Routine screening is recommended for women between the ages of 50 and 74, but there are ~~contreversial~~ __controversial__ findings about beginning the screening at earlier ages.
 
 
 
@@ -98,12 +115,10 @@ Unit 02
 
 * p. 178	Make students enter data in-class. Make students graph the observed data in-class
 
- "In 1988, results released to the public from the National Household Survey on Drug Abuse created the false perception that crack cocaine smoking was more common among blacks and Hispanics than among white Americans." Isn't this statement technically true, and thus not a "false perception"?  The false perception is that there is a link between ethnicity and crack cocaine smoking, which is different than the correct statement that it is more common among blacks and Hispanics.
-* p. 244	Rephrase the research question so that it does not apply cause-and-effect:  "In the 1991 downsizing of the Westvaco corporation, were older employees significantly more likely to get laid off than younger employees?"
-* p. 249, equation before #3:	 Equation has extra “* 100” in it, which should be removed to make the equation accurate.  ((58/137) * 100 = 42.3, not 0.423)
-* p. 263 part (c) and p. 265 table:  Change “attribute to “variable”
-* p. 270, Question 10:  change fist sentence to: “Just as with…this study made use of randomness in the design of the study.
-* p. 271, 5th line: Change “contreversial” to “controversial”
+ 
+
+  change fist sentence to: “Just as with…this study made use of randomness in the design of the study.
+
 
 Unit 03
 -------
