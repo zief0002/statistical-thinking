@@ -72,14 +72,20 @@ Unit 02
 
 * p. 235, Question 5 now reads: ~~What is~~ __For this study, specify__ the treatment variable ~~for this study~~ __and each of the  possible treatment levels.__
 * p. 235, Question 6 now reads:  ~~What is~~ __For this study, specify__ the Response variable ~~for this study~~ __and each of the possible response categories.__
+* p. 187, Third bullet point: Unrestricted sleep (*M* = 19.82 milliseconds), __sleep deprived__ (*M* = 3.9 milliseconds), and the difference in means (15.92)
+* p. 192, Question 2: Using the plot, comment on the similarities and differences ~~in the characteristics of~~ between the two ~~rainfall amount~~ distributions ~~between these two groups~~ (the 22 clouds that were seeded and the 22 clouds that were not seeded). __Be sure to address differences in shape, center, and variation.__
+
+* p. 193, Question 8 now reads: __Write a brief memo in which you report *all* of the pertinent results from the analysis (use the example write-up provided in the *Sleep Deprivation* activity as a guide).__
+
+* p. 200, Question 7 (italics) now reads: Ordinary shoe group average height~~n~~:
+
+
 
 <!--
 
 * p. 178	Make students enter data in-class. Make students graph the observed data in-class
-* p. 187	Third bullet point is missing the group name “Sleep Deprived” before the mean is reported: “(M = 3.9 milliseconds),”
-* p. 192	Airline HW – Question 2: Need to specify the three things they should talk about (shape, center, variation)
-* p. 193	Question 8: tell the students to do a write up like was first shown in class for the sleep deprivation study instead of seeming to ask them to answer the research question based upon just their p-value. The way we have the question worded now, it is not clear that we are asking them to write up a report (which we may not be, let me know if we're not), but the suggested answer is certainly saying that this is what we expect.
-* p. 200: On #7 it says “Ordinary shoe group average heightn:” Delete the extra n at the end.
+
+
 * p. 214	Third and fourth bullets in the box on the margin: Right now, it's not clear that they are right-clicking on the "Dolphin Therapy - YES" percent and "Control -YES" percent.  It should be clear that they're clicking on the % in each group who improved, because this is the way we were having them calculate the observed results in pages 210-211.
 
 * p. 221  Question 10 should be re-worded to say: “Answer the research question. Explain your reasoning based on your simulation results. Your answer should include the p-value and should be stated in the context of whether or not yawning is contagious.”
