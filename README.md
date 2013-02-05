@@ -111,24 +111,17 @@ Unit 02
 
 
 
-<!--
 
-* p. 178	Make students enter data in-class. Make students graph the observed data in-class
-
- 
-
-  change fist sentence to: “Just as with…this study made use of randomness in the design of the study.
 
 
 Unit 03
 -------
 
-* p. 288, #7: Replace “passage below” with “Gettysburg address” because the address appears on the previous page
-* p. 296	delete bullet: “Change the sample size from 10 to 25”. They already did this on p. 294.
-* p. 308, Question 17	“Describe the population of students to which these sample
-estimates (mean and standard deviation) apply?” should end with a period, not question mark.
-* p. 315 question 6	Change “hand span lengths” to “percentages” and “Question 2” to “Question 3” (or just skip 6 entirely)
-* p. 315, last paragraph, last sentence: 	“In another study the researchers might have found that 77 of the 124 couples, or 62%, of the couples leaned to the right when kissing.” Comma after 62% should be after “of the couples”, i.e. “...  124 couples, or 62% of the couples, leaned to the right …”
+* p. 288, Question 7: Replaced "passage below" with "Gettysburg address" because the address appears on the previous page
+* p. 296, deleted bullet that read "Change the sample size from 10 to 25" since students already did this on p. 294.
+* p. 308, Question 17: "Describe the population of students to which these sample estimates (mean and standard deviation) apply?" ends with a period, not question mark.
+* p. 315 Question 6	Change “hand span lengths” to “percentages” and “Question 2” to “Question 3” (or just skip 6 entirely)
+* p. 315, last paragraph, last sentence: "In another study the researchers might have found that 77 of the 124 couples, or 62%, of the couples leaned to the right when kissing.” Comma after 62% should be after “of the couples”, i.e. “...  124 couples, or 62% of the couples, leaned to the right …”
 * p. 316, 3rd paragraph, first sentence	Comma should be removed; the sentence should be: “What you have is the observed data.”
 * p. 319, 2nd-to-last paragraph, second sentence	Remove comma in phrase “sample statistic, and a margin of error”
 * p. 327, 2nd sentence	Add comma after “on average”: “... tutoring program have, on average raised their school performance ...” should be “... tutoring program have, on average, raised their school performance ...”
@@ -140,5 +133,12 @@ last bullet: “the” is misplaced near end of sentence: “compute the differe
 * p.344	Question at the end of same paragraph as above should end with a question mark, not a period.
 * p. 338	Question 2 should end with a question mark, not a period.
 
--->
+<!--
+
+* p. 178    Make students enter data in-class. Make students graph the observed data in-class
+
+ 
+
+  change fist sentence to: “Just as with…this study made use of randomness in the design of the study.
+  -->
 
