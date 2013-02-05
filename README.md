@@ -117,23 +117,32 @@ Unit 02
 Unit 03
 -------
 
-* p. 288, Question 7: Replaced "passage below" with "Gettysburg address" because the address appears on the previous page
-* p. 296, deleted bullet that read "Change the sample size from 10 to 25" since students already did this on p. 294.
-* p. 308, Question 17: "Describe the population of students to which these sample estimates (mean and standard deviation) apply?" ends with a period, not question mark.
-* p. 315 Question 6	Change “hand span lengths” to “percentages” and “Question 2” to “Question 3” (or just skip 6 entirely)
+* p. 288, #7 now reads: Circle ten words in the ~~passage below~~ __text of the Gettysburg Address__ such that the ten words you select constitute a representative sample (i.e., have the same characteristics) of the entire passage. 
+
+* p. 290 now reads: A *simple* random sample (SRS) __is a specific type of random sample. It__ gives every observational unit in the population the same chance of being selected.
+
+* p. 296, first bullet now reads: Change the ~~sample~~ __population__ size from 268 to 1072.
+
+* p. 308, Question 17 now reads: Describe the population of students to which these sample estimates (mean and standard deviation) apply ~~?~~ __.__
+
+* p. 315, Question 6 now reads: ~~How does the distribution of deviations compare with the distribution of hand span lengths you created in Question 2?~~   
+
+* p. 330, 5th bullet in marginnow reads: Open the `History of Results` for the second sampler. Highlight the `mean\_JFK _C_ \_score` attribute and select `Copy Attribute` from the `Edit` menu.
+
+* p. 343, #17 now reads: Examine the estimates for the standard error (SE) in the table. Are they all the same? How close are they to each other? How similar are they to the estimate of the standard error you computed based on drawing 1000 random samples from the ``unknown'' population (see Question ~~5~~ __6__)? 
+
+
+<!--
+
 * p. 315, last paragraph, last sentence: "In another study the researchers might have found that 77 of the 124 couples, or 62%, of the couples leaned to the right when kissing.” Comma after 62% should be after “of the couples”, i.e. “...  124 couples, or 62% of the couples, leaned to the right …”
 * p. 316, 3rd paragraph, first sentence	Comma should be removed; the sentence should be: “What you have is the observed data.”
 * p. 319, 2nd-to-last paragraph, second sentence	Remove comma in phrase “sample statistic, and a margin of error”
 * p. 327, 2nd sentence	Add comma after “on average”: “... tutoring program have, on average raised their school performance ...” should be “... tutoring program have, on average, raised their school performance ...”
-* p. 330 instructions in margin	4th bullet: Delete extraneous ‘in’: “Copy and paste in the 19 memory scores for the JFKC group into the other mixer” should be “Copy and paste the 19 memory scores for the JFKC group into the other mixer”
-5th bullet should say mean_JFKC_score instead of mean_JFK_score
-last bullet: “the” is misplaced near end of sentence: “compute the difference between mean_JFK_score and the mean_JFKC_score attributes” should be “compute the difference between the mean_JFK_score and mean_JFKC_score attributes”
-* p. 343 #17	Last line should say “See Question 6” instead of “See Question 5”
 * p. 344	About half way down:  population is misspelled. 
 * p.344	Question at the end of same paragraph as above should end with a question mark, not a period.
 * p. 338	Question 2 should end with a question mark, not a period.
 
-<!--
+
 
 * p. 178    Make students enter data in-class. Make students graph the observed data in-class
 
