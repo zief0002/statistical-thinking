@@ -3,7 +3,7 @@ Statistical Thinking: A Simulation Approach to Modeling Uncertainty
 ================
 
 
-<img src="images/cover2.png" alt="Cover for Second Edition" width="15%" align="left" style="margin-right: 10px;" />This GitHub repository is the home for the book _Statistical Thinking: A Simulation Approach to Modeling Uncertainty_. It includes the TinkerPlots&#8482; data used in the book, as well as the errata for all editions. 
+<img src="images/cover2.png" alt="Cover for Second Edition" width="15%" align="left" style="margin-right: 20px;" />This GitHub repository is the home for the book _Statistical Thinking: A Simulation Approach to Modeling Uncertainty_. It includes the TinkerPlots&#8482; data used in the book, as well as the errata for all editions. 
 
 To download all of the materials at this site, click on the `Clone` button. This will make a copy of the entire site on your local computer. 
 
