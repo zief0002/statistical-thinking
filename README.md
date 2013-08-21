@@ -1,18 +1,17 @@
-
 Statistical Thinking: A Simulation Approach to Modeling Uncertainty
 ================
 
 
 <img src="images/covers.png" alt="Cover for Second Edition" width="60%" style="display: block; margin-left: auto; margin-right: auto" />
 
-This GitHub repository is the home for the book _Statistical Thinking: A Simulation Approach to Modeling Uncertainty_. It includes the TinkerPlots&#8482; data used in the book, as well as the errata for all editions. 
+This GitHub repository is the home for the book _Statistical Thinking: A Simulation Approach to Modeling Uncertainty_. It includes the TinkerPlots&#8482; data used in the book, as well as the errata for all editions. The materials in the book are based on the NSF-funded [CATALST Project](http://www.tc.umn.edu/~catalst/) (DUE-0814433).
 
 To download all of the materials at this site, click on the `Download ZIP` button. This will download a ZIP file of the entire site on your local computer. 
 
 Obtaining a Paperback Copy
 -------
 
-To obtain a paperback copy of the entire book please visit [CreateSpace](https://www.createspace.com/3970536). The book costs $48 and is in full color. All royalties from the book are donated to the [Educational Psychology](http://www.cehd.umn.edu/edpsych/) department at the University of Minnesota.
+To obtain a paperback copy of the entire book please visit [CreateSpace](https://www.createspace.com/3970536). The book costs $45 and is in full color. All royalties from the book are donated to the [Educational Psychology](http://www.cehd.umn.edu/edpsych/) department at the University of Minnesota.
 
 TinkerPlots&#8482;
 -------
