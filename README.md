@@ -16,15 +16,8 @@ To obtain a paperback copy of the entire book please visit [CreateSpace](https:/
 TinkerPlots&#8482;
 -------
 
-The book makes use of the TinkerPlots&#8482; (version 2) software. This software can be downloaded (for Mac or PC) from [McGraw Hill](https://www.mheonline.com/program/view/1/16/2648/0000TPLOTS). A single-student home-use 1-year license may also be purchased for $7.95 at the McGraw Hill website. 
+The book makes use of the TinkerPlots&#8482; (version 2) software. This software can be downloaded (for Mac or PC) from [Key Curriculum](http://www.keycurriculum.com/tp/download). 
 
-When you get to the TinkerPlots website, scroll to the bottom, 
-
- - Click the `Student 1-Year Licenses` tab.
- - Enter the number of 1-year licenses you would like to purchase. 
- - Go to your cart and complete the checkout process. 
-
-After you make a purchase, be sure to check your email for important information about how to access TinkerPlots&#8482; for the first time.
 
 Reporting Typos, Issues, etc.
 -----
