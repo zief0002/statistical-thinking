@@ -3,7 +3,7 @@ Montana State University contributions to CATALST
 
 First we'd like to thank the authors of the CATALST curriculum for sharing their work so freely.  Their project is innovative and creative, and a great improvement on the typical stat intro which we have taught in the past.  
 
-We  used the regular CATALST curriculum in Fall 2012, Spring and Summer 2013, adn found that it did not exactly meet our needs.  The materials in this folder are  resources we have developed to provide a different version of the CATALST curriculum.  
+We  used the regular CATALST curriculum in Fall 2012, Spring and Summer 2013, and found that it did not exactly meet our needs.  The materials in this folder are  resources we have developed to provide a different version of the CATALST curriculum.  
 
 In Fall 2013 we tested most of the materials in this folder, and are currently reusing them in 8 sections of size 35 students.  
 
@@ -33,5 +33,7 @@ Physical Space
 In the first semester, we ran CATALST sections in a regular classroom.  MSU has since remodeled two classrooms, changing the furniture to 7' diameter round tables seating nine students (3 groups of 3).  One computer at each table can project to a flat screen monitor on the wall.  This group activity approach works much better in the rooms with the tables.  Also, we are running these sections only in 75 minute class periods meeting twice per week instead of using three 50 minute periods, as we do with the majority of our section.  The group activities really need the longer times, and we still have trouble getting in a "wrapup" (necessary and important).  As recommended by [staff at U Minn](http://www.classroom.umn.edu/projects/ALCOverview.html), we have two teachers in the room to wander around checking that groups are getting the important concepts right.  It's too easy for all 3 members of a group to reinforce a wrong answer.   
 
 
- 
+We're happy to discuss these changes and other ways to improve intorductory statsitcs.  Contact: [Jim Robison-Cox](http://www.math.montana.edu/~jimrc/)  
+
+
 
