@@ -31,4 +31,7 @@ To report typos, dead links, or other problems you encounter in the book, please
  - Click the `Submit new issue` button
 
  
+Contributions from Montana State University
+-----
 
+Montanta State University used and adapted the CATALST materials in their introductory statistics courses, and have graciously made these adapted materials available to others here on GitHub. Click the [MSU-materials](https://github.com/zief0002/Statistical-Thinking/tree/master/MSU-materials) folder to read more.
