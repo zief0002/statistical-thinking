@@ -8,15 +8,11 @@ This GitHub repository is the home for the book _Statistical Thinking: A Simulat
 
 To download all of the materials at this site, click on the `Download ZIP` button. This will download a ZIP file of the entire site on your local computer. 
 
-Obtaining a Paperback Copy
--------
-
-To obtain a paperback copy of the entire book please visit [CreateSpace](https://www.createspace.com/3970536). The book costs $45 and is in full color. All royalties from the book are donated to the [Educational Psychology](http://www.cehd.umn.edu/edpsych/) department at the University of Minnesota.
 
 TinkerPlots&#8482;
 -------
 
-The book makes use of the TinkerPlots&#8482; (version 2) software. This software can be downloaded (for Mac or PC) from [Key Curriculum](http://www.keycurriculum.com/tp/download). 
+The book makes use of the TinkerPlots&#8482; (version 2.2) software. A free version of this software can be downloaded (for Mac or PC) from [http://www.tinkerplots.com/download](http://www.tinkerplots.com/download). The software will expire on August 31, 2015.
 
 
 Reporting Typos, Issues, etc.
