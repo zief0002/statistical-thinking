@@ -6,7 +6,7 @@ Statistical Thinking: A Simulation Approach to Modeling Uncertainty
 
 This GitHub repository is the home for the book _Statistical Thinking: A Simulation Approach to Modeling Uncertainty_. It includes the TinkerPlots&#8482; data used in the book, as well as the errata for all editions. The materials in the book are based on the NSF-funded [CATALST Project](http://www.tc.umn.edu/~catalst/) (DUE-0814433).
 
-To download all of the materials at this site, click on the `Download ZIP` button. This will download a ZIP file of the entire site on your local computer. Alternatively, direct your browser to [http://z.umn.edu/statisticalthinking](http://z.umn.edu/statisticalthinking).
+To download all of the materials at this site, click on the `Clone or Download` button and select `Download ZIP`. This will download a ZIP file of the entire site on your local computer. Alternatively, direct your browser to [http://z.umn.edu/statisticalthinking](http://z.umn.edu/statisticalthinking).
 
 Revisions to the Third Edition
 ------
