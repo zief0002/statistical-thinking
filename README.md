@@ -2,22 +2,12 @@ Statistical Thinking: A Simulation Approach to Modeling Uncertainty
 ================
 
 
-<img src="images/all_covers.png" alt="Covers for all editions." width="60%" style="display: block; margin-left: auto; margin-right: auto" />
+<img src="images/all-covers.png" alt="Covers for all editions." width="60%" style="display: block; margin-left: auto; margin-right: auto" />
 
-This GitHub repository is the home for the book _Statistical Thinking: A Simulation Approach to Modeling Uncertainty_. It includes the TinkerPlots&#8482; data used in the book, as well as the errata for all editions. The materials in the book are based on the NSF-funded [CATALST Project](http://www.tc.umn.edu/~catalst/) (DUE-0814433).
+This is the GitHub repository for the supplementary materials for the book [_Statistical Thinking: A Simulation Approach to Modeling Uncertainty_](http://zief0002.github.io/statistical-thinking/). Here you can find a PDF file of the lab manual, as well as the TinkerPlots&#8482; datasets used in the book. The materials in the book are based on the NSF-funded [CATALST Project](http://www.tc.umn.edu/~catalst/) (DUE-0814433). The book itself can be accessed at [http://zief0002.github.io/statistical-thinking/](http://zief0002.github.io/statistical-thinking/).
+
 
 To download all of the materials at this site, click on the `Clone or Download` button and select `Download ZIP`. This will download a ZIP file of the entire site on your local computer. Alternatively, direct your browser to [http://z.umn.edu/statisticalthinking](http://z.umn.edu/statisticalthinking).
-
-Revisions to the Third Edition
-------
-
-The third edition (the red book) has several changes. Below are some of the major changes:
-
-- The end of Unit 1 has been restructured to include more practice carrying out one-sample hypothesis tests. The _Matching Dogs_ course activity was removed and statistical testing is introduced via the _Helper and Hinderer_ course activity. Additional practice is provided in a new course activity, _Monday Breakups_. Finally, another new course activity, _Racial Bias_, extends testing to models that are not uniform.
-- Unit 2 has been re-sequenced. The course activity _Sampling_ was moved into this unit to focus the end of this unit on the scope of inferences that can be made from the study design. 
-- The _Features of Distributions_ course activity was moved into Unit 3. This makes a natural transition to the _Standard Deviation_ course activity. This is where precision and uncertainty are introduced via the standard error as well.
-- All homework assignments have been removed from the book. 
-
 
 
 TinkerPlots&#8482;
