@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "/* ================================\n== Body and navigation\n==================================*/\n\na { color: #ff2d21; }\n\nbody, p { font-family: 'Alegreya', serif; font-size: 1.2em; }\nbody, ul, li { font-family: 'Alegreya', serif; font-size: 1.2em; }\nbody, table { font-family: 'Alegreya', serif; font-size: 1.2em; }\n\nbody, nav, ul, li { font-family: 'Alegreya', serif; font-size: 1em; }\nbody, nav { font-family: 'Alegreya', serif; font-size: 1em; }\n\nh1 { font-family: 'Playfair Display', serif; }\nh2 { font-family: 'Playfair Display', serif; }\nh3 { font-family: 'Playfair Display', serif; }\nh4 { font-family: 'Playfair Display', serif; }\nh5 { font-family: 'Playfair Display', serif; }\nh6 { font-family: 'Playfair Display', serif; }\n\n.book-summary{\n  font-family: 'Alegreya', serif; font-size: 1.4em;\n}\n\n\n\n/* ================================\n== OVAL THOUGHT BUBBLE (more CSS3)\n==================================*/\n\n.image {\n   position: relative;\n   width: 80%; /* for IE 6 */\n   margin: auto;\n}\n\n.oval-thought {\n   position: absolute;\n   top: 0;\n   margin-top: 10px;\n   margin-bottom:10px;\n   width: 100%;\n   padding: 10px;\n}\n\n\n/* ================================\n== Study excerpts\n==================================*/\n\n.excerpt{\n  font-family: 'News Cycle', sans-serif;\n  border: 1px;\n  border-style: solid;\n  width: 70%;\n  padding: 5px;\n  margin: 25px auto;\n}\n\n\n/* ================================\n== Show/hide button\n==================================*/\n\n.msg_list {\n  margin: 0;\n  padding: 0;\n}\n\n.msg_head {\n  padding: 5px 10px;\n  cursor: pointer;\n  position: relative;\n  background-color:#FFCCCC;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n.msg_body {\n  padding: 5px 10px 15px;\n  background-color: #F4F4F8;\n}\n",
+    "created" : 1498569382017.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4097817275",
+    "id" : "4C28ABD3",
+    "lastKnownWriteTime" : 1498572374,
+    "last_content_update" : 1498572374,
+    "path" : "~/Documents/github/statistical-thinking/statistical-thinking.css",
+    "project_path" : "statistical-thinking.css",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}
