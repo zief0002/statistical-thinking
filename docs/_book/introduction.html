@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -160,7 +161,7 @@ $(document).ready(function()
             <section class="normal" id="section-">
 <div id="introduction" class="section level1 unnumbered">
 <h1>Introduction</h1>
-<p>Learning statistics is sexy. Hal Varian, Google’s chief economist, believes this. During an <a href="http://www.mckinsey.com/industries/high-tech/our-insights/hal-varian-on-how-the-web-challenges-managers">interview in McKinsey Quarterly</a>, Varian stated, “I keep saying the sexy job in the next ten years will be statisticians. People think I’m joking, but who would’ve guessed that computer engineers would’ve been the sexy job of the 1990s?” Varian is not the only person to express this sentiment either. Hans Rosling in the 2010 BBC documentary Joy of Stats<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> referred to statistics as the “sexiest subject around”.</p>
+<p>Learning statistics is sexy. Hal Varian, Google’s chief economist, believes this. During an <a href="http://www.mckinsey.com/industries/high-tech/our-insights/hal-varian-on-how-the-web-challenges-managers">interview in McKinsey Quarterly</a>, Varian stated, “I keep saying the sexy job in the next ten years will be statisticians. People think I’m joking, but who would’ve guessed that computer engineers would’ve been the sexy job of the 1990s?” Varian is not the only person to express this sentiment either. Hans Rosling in the 2010 BBC documentary Joy of Stats<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> referred to statistics as the “sexiest subject around”.</p>
 <p>Whether you believe it is the sexiest subject or not, it is incontrovertible that the use of statistics and data are prevalent in today’s information age. Almost every person on earth will benefit from learning some foundational ideas of statistics. This is true because statistics forms the basis of our everyday world just as much as do science, technology, and politics. Google, Netflix, Twitter, Facebook, OKCupid, Match.com, Amazon, iTunes, and the Federal Government are just a handful of the companies and organizations that use statistics on a daily basis. Journalism, political science, biology, sociology, psychology, graphic design, economics, sports science, and dance are all disciplines that have made use of statistical methodology.</p>
 <div id="course-material" class="section level3 unnumbered">
 <h3>Course Material</h3>
@@ -187,7 +188,7 @@ $(document).ready(function()
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>Watch <em>Joy of Stats</em> online at <a href="http://www.gapminder.org/videos/the-joy-of-stats/" class="uri">http://www.gapminder.org/videos/the-joy-of-stats/</a><a href="introduction.html#fnref1">↩</a></p></li>
+<li id="fn1"><p>Watch <em>Joy of Stats</em> online at <a href="http://www.gapminder.org/videos/the-joy-of-stats/" class="uri">http://www.gapminder.org/videos/the-joy-of-stats/</a><a href="introduction.html#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -207,17 +208,18 @@ $(document).ready(function()
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -241,9 +243,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

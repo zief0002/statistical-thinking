@@ -32,7 +32,7 @@ This website is intended to serve as an organizational hub for the most current 
 
 The resources that accompany this website include:
 
-- A lab manual [PDF copy available here](https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4.pdf?raw=true)
+- A lab manual [PDF copy available here](https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_1.pdf?raw=true)
 - Data sets used in the lab manual [available here](https://github.com/zief0002/statistical-thinking/blob/master/data.zip?raw=true).
 
 You can read more about these resources in the introduction.
@@ -41,7 +41,7 @@ You can read more about these resources in the introduction.
 
 ### Licensing and Attribution {-}
 
-Copyright &copy; 2017 Catalysts for Change
+Copyright &copy; 2018 Catalysts for Change
 
 PUBLISHED BY CATALYST PRESS
 
@@ -49,11 +49,11 @@ PUBLISHED BY CATALYST PRESS
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to share, remix, and make commercial use of the work under the condition that you provide proper attribution. To reference this work, use:
 
-- Zieffler, A., & Catalysts for Change. (2017). *Statistical Thinking: A simulation approach to uncertainty* (4th ed.). Minneapolis, MN: Catalyst Press. [http://zief0002.github.io/statistical-thinking/](http://zief0002.github.io/statistical-thinking/)
+- Zieffler, A., & Catalysts for Change. (2018). *Statistical Thinking: A simulation approach to uncertainty* (4.1th ed.). Minneapolis, MN: Catalyst Press. [http://zief0002.github.io/statistical-thinking/](http://zief0002.github.io/statistical-thinking/)
 
 The work to create the material appearing in the book was made possible by the National Science Foundation (DUE–0814433). 
 
-The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Elizabeth Fry, Joan Garfield, Meg Goerdt, Robert Gould, John Holcomb, Michael Huberty, Rebekah R. Isaak, Nicola Justice, Laura Le, Suzanne Loch, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler
+The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Dan Butler, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Jeffrey Finholm, Chris Fiscus, Elizabeth Fry, Joan Garfield, Theresa Gieschen, Meg Goerdt, Robert Gould, Adam Gust, Melissa Hanson, John Holcomb, Michael Huberty, Rebekah R. Isaak, Kari Johnson, Nicola Justice, Laura Le, Suzanne Loch, Matthew Mullenbach, Michael Nguyen, Amy Okan, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler
 
 
 Additionally, some of the activities presented in the lab manual were originally developed by Beth Chance, George Cobb, John Holcomb, and Allan Rossman as part of their NSF-funded project [Concepts of Statistical Inference: A Randomization-Based Curriculum](http://statweb.calpoly.edu/csi/) (NSF CCLI- DUE-0633349). 

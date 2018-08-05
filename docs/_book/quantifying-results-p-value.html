@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -200,7 +201,7 @@ p = \frac{2 + 1}{100 + 1} = 0.0297
 </div>
 <div id="six-principles-about-p-values" class="section level3 unnumbered">
 <h3>Six Principles about p-Values</h3>
-<p>Because they are so ubiquitous in the research literature for any field, and because they are often mis-interpreted (even by PhDs, researchers, and math teachers) it is important to be aware of what a <span class="math inline">\(p\)</span>-value tells you, and more importantly, what it doesn’t tell you. To this end, the American Statistical Association released a <a href="http://amstat.tandfonline.com/doi/abs/10.1080/00031305.2016.1154108#.Vt2XIOaE2MN">statement on <span class="math inline">\(p\)</span>-values</a> in which it listed six principles:<a href="#fn12" class="footnoteRef" id="fnref12"><sup>12</sup></a></p>
+<p>Because they are so ubiquitous in the research literature for any field, and because they are often mis-interpreted (even by PhDs, researchers, and math teachers) it is important to be aware of what a <span class="math inline">\(p\)</span>-value tells you, and more importantly, what it doesn’t tell you. To this end, the American Statistical Association released a <a href="http://amstat.tandfonline.com/doi/abs/10.1080/00031305.2016.1154108#.Vt2XIOaE2MN">statement on <span class="math inline">\(p\)</span>-values</a> in which it listed six principles:<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></p>
 <ul>
 <li><strong>Principle 1:</strong> <span class="math inline">\(P\)</span>-values can indicate how incompatible the data are with a specified statistical model.</li>
 <li><strong>Principle 2:</strong> <span class="math inline">\(P\)</span>-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</li>
@@ -219,7 +220,7 @@ p = \frac{2 + 1}{100 + 1} = 0.0297
 <div class="footnotes">
 <hr />
 <ol start="12">
-<li id="fn12"><p>Yaddanapudi (2016) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5187603/">published a paper</a> in the <em>Journal of Anaesthesiology, Clinical Pharmacology</em> in which she explains each of these six principles for practicing physician-scientists using an example of treatment efficacy for a drug.<a href="quantifying-results-p-value.html#fnref12">↩</a></p></li>
+<li id="fn12"><p>Yaddanapudi (2016) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5187603/">published a paper</a> in the <em>Journal of Anaesthesiology, Clinical Pharmacology</em> in which she explains each of these six principles for practicing physician-scientists using an example of treatment efficacy for a drug.<a href="quantifying-results-p-value.html#fnref12" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -239,17 +240,18 @@ p = \frac{2 + 1}{100 + 1} = 0.0297
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -273,9 +275,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

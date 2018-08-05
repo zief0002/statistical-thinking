@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -160,7 +161,8 @@ $(document).ready(function()
             <section class="normal" id="section-">
 <div id="internal-validity-evidence-and-random-assignment" class="section level1 unnumbered">
 <h1>Internal Validity Evidence and Random Assignment</h1>
-<p>Medical researchers may be interested in showing that a drug helps improve people’s health (the cause of improvement is the drug), while educational reserachers may be interested in showing a curricular innovation improves students’ learning (the curricular innovation causes improved learning). To attribute a causal relationship, there are three criteria a researcher needs to establish:</p>
+<p>Medical researchers may be interested in showing that a drug helps improve people’s health (the cause of improvement is the drug), while educational reserachers may be interested in showing a curricular innovation improves students’ learning (the curricular innovation causes improved learning).
+To attribute a causal relationship, there are three criteria a researcher needs to establish:</p>
 <ul>
 <li><strong>Temporal Precedence:</strong> The cause needs to happen BEFORE the effect.</li>
 <li><strong>Covariation of the Cause and Effect:</strong> There needs to be a correlational relationship between the cause and effect.</li>
@@ -169,7 +171,7 @@ $(document).ready(function()
 <p>You can read more about each of these criteria at the <a href="https://www.socialresearchmethods.net/kb/causeeff.php">Web Center for Social Research Methods</a>. Especially because of this third criteria, attributing a cause-and-effect relationship is very difficult.</p>
 <p>In an experimental study, this means that when you create them, the control group and the treatment group need to be “identical” with respect to every possible characteristic that could explain differences in the effect. This way the only characteristic that wil be different is that the treatment group gets the treatment and the control group doesn’t. If there are differences in the outcome, then it must be attributable to the treatment, because the other possible explanations are ruled out.</p>
 <p>So, the key is to make the control and treatment groups “identical” when you are forming them. One thing that makes this task (slightly) easier is that they don’t have to be exactly identical, only <a href="https://www.socialresearchmethods.net/kb/expequi.php">probabilistically equivalent</a>. This means, for example, that if you were matching groups on age that you don’t need the two groups to have identical age distributions; they would only need to have roughly the same AVERAGE age. Here roughly means “the average ages should be the same within what we expect because of sampling error.”</p>
-<p>Now we just need to create the groups so that they have, on average, the same characteristics … for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!<a href="#fn13" class="footnoteRef" id="fnref13"><sup>13</sup></a></p>
+<p>Now we just need to create the groups so that they have, on average, the same characteristics … for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a></p>
 <p>It turns out that creating probabilistically equivalent groups is a really difficult problem. One method that works pretty well for doing this is to randomly assign participants to the groups. This works best when you have large sample sizes, but even with small sample sizes random assignment has the advantage of at least <em>removing the systematic bias</em> between the two groups (any differences are due to chance and will probably even out between the groups). As <a href="https://en.wikipedia.org/wiki/Random_assignment">Wikipedia’s page on random assignment</a> points out,</p>
 <blockquote>
 <p>Random assignment of participants helps to ensure that any differences between and within the groups are not systematic at the outset of the experiment. Thus, any differences between groups recorded at the end of the experiment can be more confidently attributed to the experimental procedures or treatment. … Random assignment does not guarantee that the groups are matched or equivalent. The groups may still differ on some preexisting attribute due to chance. The use of random assignment cannot eliminate this possibility, but it greatly reduces it.</p>
@@ -188,7 +190,7 @@ $(document).ready(function()
 <div class="footnotes">
 <hr />
 <ol start="13">
-<li id="fn13"><p>According to <a href="https://en.wiktionary.org/wiki/zoinks">Wiktionary</a> the earliest usage of the work “zoinks” was by Norville “Shaggy” Rogers on the show Scooby-Doo.<a href="internal-validity-evidence-and-random-assignment.html#fnref13">↩</a></p></li>
+<li id="fn13"><p>According to <a href="https://en.wiktionary.org/wiki/zoinks">Wiktionary</a> the earliest usage of the work “zoinks” was by Norville “Shaggy” Rogers on the show Scooby-Doo.<a href="internal-validity-evidence-and-random-assignment.html#fnref13" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -208,17 +210,18 @@ $(document).ready(function()
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -242,9 +245,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

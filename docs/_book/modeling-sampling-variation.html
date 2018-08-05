@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -193,7 +194,7 @@ $(document).ready(function()
 <p><span class="math display">\[
 H_0: \pi_{\mathrm{Heads,~Tails}} = 0.5
 \]</span></p>
-<p>The symbol <span class="math inline">\(H_0\)</span> is common and indicates a hypothesis about a model. Here, <span class="math inline">\(\pi\)</span> is the greek letter pi and means “probability” or “proportion”. (Typically in symbolic notation for hypotheses, pi is not the mathematical constant of 3.14.) Statisticians typically use Greek letters to identify probabilities of the outcomes in a model.<a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a> In this hypothesis, we are establishing that the model we are evaluating generates heads (and tails) with a probability of 0.5. Notice how the model is completely defined using the mathematical notation. The hypothesis states that the model has two potential outcomes (heads and tails), and the probability of each is 0.5. Pretty cool, huh?</p>
+<p>The symbol <span class="math inline">\(H_0\)</span> is common and indicates a hypothesis about a model. Here, <span class="math inline">\(\pi\)</span> is the greek letter pi and means “probability” or “proportion”. (Typically in symbolic notation for hypotheses, pi is not the mathematical constant of 3.14.) Statisticians typically use Greek letters to identify probabilities of the outcomes in a model.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> In this hypothesis, we are establishing that the model we are evaluating generates heads (and tails) with a probability of 0.5. Notice how the model is completely defined using the mathematical notation. The hypothesis states that the model has two potential outcomes (heads and tails), and the probability of each is 0.5. Pretty cool, huh?</p>
 <p>If this all seems like gibberish to you right now, do not worry about it. You can always write hypotheses descriptively, without resorting to the symbolic notation. Remember, we wrote the EXACT SAME hypothesis three different ways. If you are comfortable with the mathematical symbols, use it; the mathematical notation acts as a shorthand to quickly state a hypothesis and define the model used. As you read research articles or take other courses, you will see statistical hypotheses stated in many ways, so it is good to understand that there are many ways to express the same thing.</p>
 </div>
 <div id="outline-and-goals-of-unit-2" class="section level3 unnumbered">
@@ -210,7 +211,7 @@ H_0: \pi_{\mathrm{Heads,~Tails}} = 0.5
 <div class="footnotes">
 <hr />
 <ol start="8">
-<li id="fn8"><p><strong>Greek vs. Roman Letters</strong> <br /> Greek letters are used when the parameters of a model are being described. In contrast, Roman letters are used to describe observed results. For example, go back to the situation in which the observed data consisted of 53 heads and 47 tails from 100 flips of a coin. <br /><br /> Here we would say <span class="math inline">\(p_{\mathrm{Heads}} = 0.53\)</span>. The hypothesis about the model we are evaluating produces heads with a probability of 0.5, so <span class="math inline">\(\pi_{\mathrm{Heads,~Tails}} = 0.5\)</span>. <br /><br /> Rather than use the Roman letters, some statisticians prefer to put a “hat” on the Greek letter to refer to the observed result. For example, <span class="math inline">\(\hat{\pi}_{\mathrm{Heads}}=0.53\)</span>. <br /><br /> In this course we are not as concerned about which notation you use to express the result observed in the actual data. In fact, it might be less confusing if you just write, <em>the observed result is 0.53</em>.<a href="modeling-sampling-variation.html#fnref8">↩</a></p></li>
+<li id="fn8"><p><strong>Greek vs. Roman Letters</strong> <br /> Greek letters are used when the parameters of a model are being described. In contrast, Roman letters are used to describe observed results. For example, go back to the situation in which the observed data consisted of 53 heads and 47 tails from 100 flips of a coin. <br /><br /> Here we would say <span class="math inline">\(p_{\mathrm{Heads}} = 0.53\)</span>. The hypothesis about the model we are evaluating produces heads with a probability of 0.5, so <span class="math inline">\(\pi_{\mathrm{Heads,~Tails}} = 0.5\)</span>. <br /><br /> Rather than use the Roman letters, some statisticians prefer to put a “hat” on the Greek letter to refer to the observed result. For example, <span class="math inline">\(\hat{\pi}_{\mathrm{Heads}}=0.53\)</span>. <br /><br /> In this course we are not as concerned about which notation you use to express the result observed in the actual data. In fact, it might be less confusing if you just write, <em>the observed result is 0.53</em>.<a href="modeling-sampling-variation.html#fnref8" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -230,17 +231,18 @@ H_0: \pi_{\mathrm{Heads,~Tails}} = 0.5
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -264,9 +266,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

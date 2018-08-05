@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -161,9 +162,9 @@ $(document).ready(function()
 <div id="experimental-variation-and-the-randomization-test" class="section level1 unnumbered">
 <h1>Experimental Variation and the Randomization Test</h1>
 <blockquote>
-<p>The nature of doing science, be it natural or social, inevitably calls for comparison. Statistical methods are at the heart of such comparison, for they not only help us gain understanding of the world around us but often define how our research is to be carried out.<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a></p>
+<p>The nature of doing science, be it natural or social, inevitably calls for comparison. Statistical methods are at the heart of such comparison, for they not only help us gain understanding of the world around us but often define how our research is to be carried out.<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
 </blockquote>
-<p>Drawing inferences about the differences between groups is an almost daily occurrence in the lives of most people. In any given hour of any given day, television, radio and social media abound with comparisons. For example, data scientists at <a href="https://www.okcupid.com/">OKCupid</a>, an online dating site, examined whether frequent tweeters (users of Twitter) have shorter real-life relationships than others.<a href="#fn11" class="footnoteRef" id="fnref11"><sup>11</sup></a></p>
+<p>Drawing inferences about the differences between groups is an almost daily occurrence in the lives of most people. In any given hour of any given day, television, radio and social media abound with comparisons. For example, data scientists at <a href="https://www.okcupid.com/">OKCupid</a>, an online dating site, examined whether frequent tweeters (users of Twitter) have shorter real-life relationships than others.<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
 <p>Group comparisons are at the heart of many interesting questions addressed by psychologists, physicians, scientists, teachers, and engineers. Questions about group differences are often studied through scientific experiements. When considering a scientific experiment to examine group differences, the design of the study plays a very important role. To help understand this, think about a researcher who is studying the efficacy of a new cold medication. Let’s say that the researcher has 100 people (each with a cold) who volunteer to be a part of her study. Let’s consider how she might design her study.</p>
 <ul>
 <li><strong>Design 1:</strong> She gives the cold medicine to all 100 volunteers.</li>
@@ -193,8 +194,8 @@ $(document).ready(function()
 <div class="footnotes">
 <hr />
 <ol start="10">
-<li id="fn10"><p>Liao, T. F. (2002). <em>Statistical group comparison.</em> New York: Wiley.<a href="experimental-variation-and-the-randomization-test.html#fnref10">↩</a></p></li>
-<li id="fn11"><p>The website <a href="http://blog.okcupid.com/">OKTrends</a> includes an answer to this question, as well as many others.<a href="experimental-variation-and-the-randomization-test.html#fnref11">↩</a></p></li>
+<li id="fn10"><p>Liao, T. F. (2002). <em>Statistical group comparison.</em> New York: Wiley.<a href="experimental-variation-and-the-randomization-test.html#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p>The website <a href="http://blog.okcupid.com/">OKTrends</a> includes an answer to this question, as well as many others.<a href="experimental-variation-and-the-randomization-test.html#fnref11" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -214,17 +215,18 @@ $(document).ready(function()
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -248,9 +250,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

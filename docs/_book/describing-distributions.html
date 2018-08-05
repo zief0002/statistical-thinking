@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -166,7 +167,7 @@ $(document).ready(function()
 <p>There are many, many different types of plots that have been created to graphically summarize data. Each can provide a slightly different representation of the data. Metaphorically, you can imagine each of these different plot types as a different photo taken of the exact same person. Some may be color, others black and white. Some may be taken from different perspectives, angles or distances. While all photographs “summarize” the same person, you may notice characteristics of that person in some photos that are not evident in others. Many of the photos, however, will show the same thing.</p>
 <div id="shape" class="section level3 unnumbered">
 <h3>Shape</h3>
-<p>The dot plot that TinkerPlots™ provides is a very useful plot.<a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a> It allows us to summarize the shape of the distribution very easily. Shape is used to describe a distribution’s symmetry. As you might expect, symmetric distributions are shaped the same on either side of the center. (Another way of thinking about this is that if you folded the distribution at the center, the folded half of the distribution would align pretty well on top of the other half.) For example, “bell-shaped” (“approximately normal”) distributions are symmetric.</p>
+<p>The dot plot that TinkerPlots™ provides is a very useful plot.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> It allows us to summarize the shape of the distribution very easily. Shape is used to describe a distribution’s symmetry. As you might expect, symmetric distributions are shaped the same on either side of the center. (Another way of thinking about this is that if you folded the distribution at the center, the folded half of the distribution would align pretty well on top of the other half.) For example, “bell-shaped” (“approximately normal”) distributions are symmetric.</p>
 <p>When a distribution is asymmetric, it is referred to as a <strong>skewed</strong> distribution. The distribution shown in Figure 1 is a skewed distribution. In this distribution, there appears to be a longer tail on the right side of the distribution. Because the tail is on the right side of the distribution, statisticians would say it is “skewed to the right” or “positively skewed”. In a similar way, a distribution that tails to the left is “skewed to the left” or “negatively skewed”.</p>
 <p><br /></p>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
@@ -227,7 +228,7 @@ Figure 4: The scores for 134 movies released in 2009 based on the general public
 <div class="footnotes">
 <hr />
 <ol start="9">
-<li id="fn9"><p>TinkerPlots™ also provides other types of plots, including the box plot (sometimes called the box-and-whiskers plot) and the hat plot (a variation of the box plot).<a href="describing-distributions.html#fnref9">↩</a></p></li>
+<li id="fn9"><p>TinkerPlots™ also provides other types of plots, including the box plot (sometimes called the box-and-whiskers plot) and the hat plot (a variation of the box plot).<a href="describing-distributions.html#fnref9" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -247,17 +248,18 @@ Figure 4: The scores for 134 movies released in 2009 based on the general public
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -281,9 +283,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

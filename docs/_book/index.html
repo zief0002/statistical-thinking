@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>_main.utf8</title>
   <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="_main.utf8" />
   <meta property="og:type" content="book" />
   
   
@@ -17,11 +17,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="_main.utf8" />
   
   
   
 
+<meta name="author" content="">
 
 
 
@@ -45,6 +46,23 @@
 
 
 
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
 
 
 
@@ -151,22 +169,22 @@
 <p><br /></p>
 <p>The resources that accompany this website include:</p>
 <ul>
-<li>A lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4.pdf?raw=true">PDF copy available here</a></li>
+<li>A lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_1.pdf?raw=true">PDF copy available here</a></li>
 <li>Data sets used in the lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/master/data.zip?raw=true">available here</a>.</li>
 </ul>
 <p>You can read more about these resources in the introduction.</p>
 <p><br /></p>
 <div id="licensing-and-attribution" class="section level3 unnumbered">
 <h3>Licensing and Attribution</h3>
-<p>Copyright © 2017 Catalysts for Change</p>
+<p>Copyright © 2018 Catalysts for Change</p>
 <p>PUBLISHED BY CATALYST PRESS</p>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
 <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to share, remix, and make commercial use of the work under the condition that you provide proper attribution. To reference this work, use:</p>
 <ul>
-<li>Zieffler, A., &amp; Catalysts for Change. (2017). <em>Statistical Thinking: A simulation approach to uncertainty</em> (4th ed.). Minneapolis, MN: Catalyst Press. <a href="http://zief0002.github.io/statistical-thinking/" class="uri">http://zief0002.github.io/statistical-thinking/</a></li>
+<li>Zieffler, A., &amp; Catalysts for Change. (2018). <em>Statistical Thinking: A simulation approach to uncertainty</em> (4.1th ed.). Minneapolis, MN: Catalyst Press. <a href="http://zief0002.github.io/statistical-thinking/" class="uri">http://zief0002.github.io/statistical-thinking/</a></li>
 </ul>
 <p>The work to create the material appearing in the book was made possible by the National Science Foundation (DUE–0814433).</p>
-<p>The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Elizabeth Fry, Joan Garfield, Meg Goerdt, Robert Gould, John Holcomb, Michael Huberty, Rebekah R. Isaak, Nicola Justice, Laura Le, Suzanne Loch, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler</p>
+<p>The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Dan Butler, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Jeffrey Finholm, Chris Fiscus, Elizabeth Fry, Joan Garfield, Theresa Gieschen, Meg Goerdt, Robert Gould, Adam Gust, Melissa Hanson, John Holcomb, Michael Huberty, Rebekah R. Isaak, Kari Johnson, Nicola Justice, Laura Le, Suzanne Loch, Matthew Mullenbach, Michael Nguyen, Amy Okan, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler</p>
 <p>Additionally, some of the activities presented in the lab manual were originally developed by Beth Chance, George Cobb, John Holcomb, and Allan Rossman as part of their NSF-funded project <a href="http://statweb.calpoly.edu/csi/">Concepts of Statistical Inference: A Randomization-Based Curriculum</a> (NSF CCLI- DUE-0633349).</p>
 <p><br /></p>
 </div>
@@ -204,10 +222,11 @@ gitbook.start({
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -226,6 +245,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
