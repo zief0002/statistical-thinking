@@ -13,6 +13,7 @@ output:
     config:
       toc:
         collapse: section
+output_dir: "./docs"
 ---
 
 
