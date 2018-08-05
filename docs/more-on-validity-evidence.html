@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.3.22 and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="statistical-estimation.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="statistical-thinking.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html"><i class="fa fa-check"></i>Modeling &amp; Simulation</a></li>
+<li class="chapter" data-level="" data-path="generating-data-from-models.html"><a href="generating-data-from-models.html"><i class="fa fa-check"></i>Generating Data from Models</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html"><i class="fa fa-check"></i>Monte Carlo Simulation</a></li>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html"><i class="fa fa-check"></i>Modeling Sampling Variation</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html"><i class="fa fa-check"></i>Describing Distributions</a></li>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html"><i class="fa fa-check"></i>Experimental Variation and the Randomization Test</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html"><i class="fa fa-check"></i>Quantifying Results: p-Value</a></li>
+<li class="chapter" data-level="" data-path="internal-validity-evidence-and-random-assignment.html"><a href="internal-validity-evidence-and-random-assignment.html"><i class="fa fa-check"></i>Internal Validity Evidence and Random Assignment</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Sampling Variation and the Bootstrap Test</a></li>
+<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html"><i class="fa fa-check"></i>External Validity Evidence and Random Sampling</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html"><i class="fa fa-check"></i>Validity Evidence and Inferences</a></li>
+<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Observational Studies and the Bootstrap Test</a></li>
+<li class="chapter" data-level="" data-path="statistical-estimation.html"><a href="statistical-estimation.html"><i class="fa fa-check"></i>Statistical Estimation</a></li>
+<li class="chapter" data-level="" data-path="more-on-validity-evidence.html"><a href="more-on-validity-evidence.html"><i class="fa fa-check"></i>More on Validity Evidence</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="more-on-validity-evidence" class="section level1 unnumbered">
+<h1>More on Validity Evidence</h1>
+<p>Since statistical estimation is a method of inference, we need to weigh validity evidence the same way we did for tests of hypotheses. Whether the estimate is a “good” estimate depends on how the sample was drawn. If a biased method of drawing the sample was used, the interval estimate will likely be biased. Let’s again illustrate using our key example.</p>
+<div style="float: left; margin-right: 5px;">
+<p><img src="img/uncertainty-and-bias-02.png" width="45%" /> <img src="img/uncertainty-and-bias-01.png" width="45%" /></p>
+</div>
+<div style="clear: both;">
+
+<p>The figure on the left is a metaphor for the results of an unbiased sampling method, such as random sampling. The figure on the right is a metaphor for the results of an unbiased sampling method, such as convenience sampling. Remember the goal of estimation is to give a range of likely values for the population aprameter (the keys). If a biased sampling method is used the resulting interval estimate will likely be wrong (biased).</p>
+<p>Don’t confuse uncertainty with bias. In our key example, remember the amount of uncertainty is shown by the size of the yellow circle. You can have very little uncertainty and still have a biased result. The following figures illustrate these ideas.</p>
+<div style="float: left; margin-right: 5px;">
+<p><img src="img/uncertainty-and-bias-03.png" width="45%" /> <img src="img/uncertainty-and-bias-04.png" width="45%" /></p>
+</div>
+<p>The figure on the left is a metaphor for an interval that has a small amount of uncertainty (large sample size) resulting from a biased sampling method. The figure on the right is a metaphor for an interval that has a large amount of uncertainty (small sample size) resulting from an unbiased sampling method. In terms of estimating where the actual keys are, the interval represented in the right-hand figure would be better. This is an important lesson: <strong>Sample size only matters if the sampling method is unbiased.</strong></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="statistical-estimation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.3.22 and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="internal-validity-evidence-and-random-assignment.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="statistical-thinking.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#licensing"><i class="fa fa-check"></i>Licensing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-material"><i class="fa fa-check"></i>Course Material</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#tinkerplots-software"><i class="fa fa-check"></i>TinkerPlots™ Software</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#data-sets"><i class="fa fa-check"></i>Data Sets</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#participation-in-the-learning-process"><i class="fa fa-check"></i>Participation in the Learning Process</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="unit-1-modeling-simulation.html"><a href="unit-1-modeling-simulation.html"><i class="fa fa-check"></i>Unit 1: Modeling &amp; Simulation</a><ul>
+<li class="chapter" data-level="" data-path="unit-1-modeling-simulation.html"><a href="unit-1-modeling-simulation.html#outline-and-goals-of-unit-1"><i class="fa fa-check"></i>Outline and Goals of Unit 1</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="randomness.html"><a href="randomness.html"><i class="fa fa-check"></i>Randomness</a></li>
+<li class="chapter" data-level="" data-path="generating-data-from-models.html"><a href="generating-data-from-models.html"><i class="fa fa-check"></i>Generating Data from Models</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html"><i class="fa fa-check"></i>Monte Carlo Simulation</a><ul>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#example-of-a-simulation-study"><i class="fa fa-check"></i>Example of a Simulation Study</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#simulation-assumptions"><i class="fa fa-check"></i>Simulation Assumptions</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#simulation-in-practice"><i class="fa fa-check"></i>Simulation in Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="unit-2-hypothesis-evaluation.html"><a href="unit-2-hypothesis-evaluation.html"><i class="fa fa-check"></i>Unit 2: Hypothesis Evaluation</a><ul>
+<li class="chapter" data-level="" data-path="unit-2-hypothesis-evaluation.html"><a href="unit-2-hypothesis-evaluation.html#simulation-process-for-evaluating-hypotheses"><i class="fa fa-check"></i>Simulation Process for Evaluating Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="unit-2-hypothesis-evaluation.html"><a href="unit-2-hypothesis-evaluation.html#outline-and-goals-of-unit-2"><i class="fa fa-check"></i>Outline and Goals of Unit 2</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html"><i class="fa fa-check"></i>Describing Distributions</a><ul>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#shape"><i class="fa fa-check"></i>Shape</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#location"><i class="fa fa-check"></i>Location</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#variation"><i class="fa fa-check"></i>Variation</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#putting-it-all-together"><i class="fa fa-check"></i>Putting It All Together</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="unit-3-randomization-tests.html"><a href="unit-3-randomization-tests.html"><i class="fa fa-check"></i>Unit 3: Randomization Tests</a><ul>
+<li class="chapter" data-level="" data-path="unit-3-randomization-tests.html"><a href="unit-3-randomization-tests.html#experimental-variation"><i class="fa fa-check"></i>Experimental Variation</a></li>
+<li class="chapter" data-level="" data-path="unit-3-randomization-tests.html"><a href="unit-3-randomization-tests.html#outline-and-goals-of-unit-3"><i class="fa fa-check"></i>Outline and Goals of Unit 3</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html"><i class="fa fa-check"></i>Quantifying Results: p-Value</a><ul>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#adjustment-for-simulation-results"><i class="fa fa-check"></i>Adjustment for Simulation Results</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#level-of-evidence"><i class="fa fa-check"></i>Level of Evidence</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#six-principles-about-p-values"><i class="fa fa-check"></i>Six Principles about p-Values</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="unit-4-design-sampling-and-validity-evidence.html"><a href="unit-4-design-sampling-and-validity-evidence.html"><i class="fa fa-check"></i>Unit 4: Design, Sampling, and Validity Evidence</a><ul>
+<li class="chapter" data-level="" data-path="unit-4-design-sampling-and-validity-evidence.html"><a href="unit-4-design-sampling-and-validity-evidence.html#inferences-and-validity-evidence"><i class="fa fa-check"></i>Inferences and Validity Evidence</a></li>
+<li class="chapter" data-level="" data-path="unit-4-design-sampling-and-validity-evidence.html"><a href="unit-4-design-sampling-and-validity-evidence.html#outline-and-goals-of-unit-4"><i class="fa fa-check"></i>Outline and Goals of Unit 4</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html"><i class="fa fa-check"></i>External Validity Evidence and Random Sampling</a></li>
+<li class="chapter" data-level="" data-path="internal-validity-evidence-and-random-assignment.html"><a href="internal-validity-evidence-and-random-assignment.html"><i class="fa fa-check"></i>Internal Validity Evidence and Random Assignment</a></li>
+<li class="chapter" data-level="" data-path="critiquing-study-design-peanut-allergies.html"><a href="critiquing-study-design-peanut-allergies.html"><i class="fa fa-check"></i>Critiquing Study Design: Peanut Allergies</a><ul>
+<li class="chapter" data-level="" data-path="critiquing-study-design-peanut-allergies.html"><a href="critiquing-study-design-peanut-allergies.html#study-design-1"><i class="fa fa-check"></i>Study Design #1</a></li>
+<li class="chapter" data-level="" data-path="critiquing-study-design-peanut-allergies.html"><a href="critiquing-study-design-peanut-allergies.html#study-design-2"><i class="fa fa-check"></i>Study Design #2</a></li>
+<li class="chapter" data-level="" data-path="critiquing-study-design-peanut-allergies.html"><a href="critiquing-study-design-peanut-allergies.html#study-design-3"><i class="fa fa-check"></i>Study Design #3</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="critiquing-study-design-peanut-allergies" class="section level1 unnumbered">
+<h1>Critiquing Study Design: Peanut Allergies</h1>
+<p>Below, you will be presented with excerpts of the research design from three different studies of peanut allergies. The researchers who conducted these studies all used different study designs. After reading the excerpts of each study, try to create the two barometers to situate the internal and external validity evidence. This will help us consider the inferences and conclusions that can be appropriately drawn.</p>
+<p>Remember there are two primary questions that you should ask when evaluating a study’s design: (1) How were the study participants selected from the population? This helps us think about the degree of external validity evidence, and (2) How were the selected study participants assigned to conditions? This helps us situate the internal validity evidence.</p>
+<div id="study-design-1" class="section level3 unnumbered">
+<h3>Study Design #1</h3>
+<p>Consider the research design of this study, published in the <em>Journal of the American Medical Association</em>.<a href="#fn14" class="footnoteRef" id="fnref14"><sup>14</sup></a></p>
+<hr />
+<p><strong>Consuming—Not Avoiding—Peanuts Leads to Fewer Peanut Allergies in Kids</strong></p>
+<p>High-risk children who consumed peanut products from infancy until they were 5 years old were significantly less likely to develop a peanut allergy than those who avoided peanuts, according to the LEAP randomized trial.</p>
+<p>The 640 infants in the trial were aged 4 to 11 months at enrollment, and all had severe eczema, egg allergy, or both. Participants in each cohort were randomly assigned to consume a peanut protein–containing bar or to avoid peanuts.</p>
+<p>Among the 530 infants in (one) cohort, the prevalence of peanut allergy at 60 months was 13.7% in the avoidance group and 1.9% in the consumption group. The absolute difference in risk of 11.8% represents an 86.1% relative reduction in the prevalence of peanut allergy.</p>
+<p>In the (other)…cohort (98 infants), the prevalence of peanut allergy was 35.3% in the avoidance group and 10.6% in the consumption group.</p>
+<p>The LEAP-ON study is currently investigating whether immune tolerance will persist after children stop eating peanuts.</p>
+<hr />
+<p>When you read about a study design, try to initially identify</p>
+<ul>
+<li>The population the researchers would like to generalize their results to?</li>
+<li>The sample used in the study AND how particpants were sampled.</li>
+<li>Any control/treatment groups AND how participants were assigned to these groups.</li>
+<li>Response/outcome variable AND how this variable was measured.</li>
+<li>Results and statistical evidence</li>
+</ul>
+<p>Based on the excerpt,</p>
+<ul>
+<li>The population the reseracher would like to generalize their results to encompasses high-risk children who consume peanut products from infancy until they were 5 years old.</li>
+<li>The sample included 640 infants (aged 4 to 11 months at enrollment). All 640 infants had severe eczema, egg allergy, or both. These infants were NOT randomly sampled. Although the excerpt doesn’t say, they were likely volunteered (by their parents) to be a part of the study.</li>
+<li>The study employed a cohort design (a replication study) in which infants in each cohort were randomly assigned to treatment (consume a peanut protein–containing bar) or control (avoid peanuts). The first cohort included 540 infants and the replication cohort included 98 infants.</li>
+<li>The response/outcome being measured is the prevalence of peanut allergy after 60 months of the treatment. In other words, it was the percentage of the treatment (or control) group that had a peanut allergy after 5 years.</li>
+<li>In the first cohort, the treatment group had a LOWER percentage of infants who developed a peanut allergy than the control group (1.9% vs. 13.7%). This finding was replicated in the replication cohort which foun that only 10.6% of the treatment group had a peanut allergy after 60 months versus 35.3% of the control group. No <span class="math inline">\(p\)</span>-values or other inferential evidence are provided.</li>
+</ul>
+<p>Given this information, what would your validity evidence barometers look like?</p>
+<p><br /></p>
+<p><img src="img/validity-evidence-peanut-01.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br /></p>
+<p>The level of internal validity evidence is pretty high. The study used random assingment to place the infants in to the control and treatment groups. Furthermore, it replicated this design using a cohort study. Lastly, the sample sizes were pretty large, so the random assigngment probably worked pretty well to make the groups statistically identical. Based on all of this, the researchers have a pretty good claim for cause-and-effect about the consumption of peanuts reducing the prevalence of peanut allergies.</p>
+<p>The degree of external validity evidence, however, is pretty low. Infants were not randomly sampled from the population of high-risk infants. They constitute a <a href="http://research-methodology.net/sampling-in-primary-data-collection/convenience-sampling/">convenience sample</a>. This makes it likely that the sample does not represent the population on all charcteristics. For example, to volunteer for the study, the infants might have been identified as high-risk at the same medical center. This might mean their parents are of a similar socio-economic status, or live in similar neighborhoods, etc. which may not represent the larger population. This severly limits the generalizability of these results to the larger population of high-risk infants.</p>
+</div>
+<div id="study-design-2" class="section level3 unnumbered">
+<h3>Study Design #2</h3>
+<p>Consider the research design of this study, published in the <em>Journal of Allergy and Clinical Immunology</em>.<a href="#fn15" class="footnoteRef" id="fnref15"><sup>15</sup></a></p>
+<hr />
+<p><strong>Maternal consumption of peanut during pregnancy is associated with peanut sensitization in atopic infants</strong></p>
+<p>To identify factors associated with peanut sensitization…. we evaluated 503 infants 3 to 15 months of age (mean, 9.4 months) with no previous diagnosis of peanut allergy.</p>
+<p>Multivariate analysis including clinical, laboratory, and demographic variables showed frequent peanut consumption during pregnancy (<span class="math inline">\(p &lt; .001\)</span>), … male sex (<span class="math inline">\(p = .02\)</span>), and nonwhite race (<span class="math inline">\(p = .02\)</span>) to be the primary factors associated with peanut (allergy).</p>
+<p>Among 71 infants never breast-fed, frequent consumption of peanut during pregnancy was strongly associated with peanut allergy (<span class="math inline">\(p &lt; .004\)</span>). In conclusion, maternal ingestion of peanut during pregnancy was strongly associated with a high level of peanut sensitization.</p>
+<hr />
+<p>Based on the excerpt about this study design, try to identify</p>
+<ul>
+<li>The population the researchers would like to generalize their results to?</li>
+<li>The sample used in the study AND how particpants were sampled.</li>
+<li>Any control/treatment groups AND how participants were assigned to these groups. (Hint: there are several)</li>
+<li>Response/outcome variable AND how this variable was measured.</li>
+<li>Results and statistical evidence (Hint: there are several comparisons reported)</li>
+</ul>
+<p>Also, sketch (or visualize) the two barometers of validity evidence and think about what that implies about cause-and-effect claims and generalizations.</p>
+</div>
+<div id="study-design-3" class="section level3 unnumbered">
+<h3>Study Design #3</h3>
+<p>Lastly, consider the research design of this study, published in the <em>Journal of Allergy and Clinical Immunology</em>.<a href="#fn16" class="footnoteRef" id="fnref16"><sup>16</sup></a></p>
+<hr />
+<p><strong>revalence of peanut and tree nut allergy in the United States determined by means of a random digit dial telephone survey: A 5-year follow-up study</strong></p>
+<p>We sought to determine the prevalence of self-reported peanut allergy among the general population of the United States in 2002, and to compare the results with prevalence estimates obtained 5 years earlier. We performed a nationwide, cross-sectional, random telephone survey by using a standardized questionnaire.</p>
+<p>A total of 4855 households participated (53% participation rate), representing a census of 13,493 individuals. Although the rate of peanut allergy was not significantly different from 1997 to 2002 among adults, the rate increased from 0.6% to 1.2% among children, primarily as a result of an increase in reported allergy to peanut (0.4% in 1997 to 0.8% in 2002, <span class="math inline">\(p = .05\)</span>).</p>
+<p>Self-reported peanut allergy has doubled among children from 1997 to 2002.</p>
+<hr />
+<p>Based on the excerpt about this study design, try to identify</p>
+<ul>
+<li>The population the researchers would like to generalize their results to?</li>
+<li>The sample used in the study AND how particpants were sampled.</li>
+<li>Any control/treatment groups AND how participants were assigned to these groups. (Hint: there are several)</li>
+<li>Response/outcome variable AND how this variable was measured.</li>
+<li>Results and statistical evidence (Hint: there are several comparisons reported)</li>
+</ul>
+<p>Also, sketch (or visualize) the two barometers of validity evidence and think about what that implies about cause-and-effect claims and generalizations.</p>
+<!--  These types of questions are used to address **treatment efficacy**. For example, "Is a particular curriculum effective in improving students' achievement?" or "Is having a Facebook page for a business effective in improving sales?"  -->
+<!-- Group comparisons are also used to address questions about **treatment magnitude**. For example, "How much lower are attendance rates for a particular population of students?" or "How much more likely is it that an iPhone user will live in the city (rather than the suburbs or the country) than an Android user?"^[This question was asked in a survey by *Hunch*, a personal recommendation service. They created an infographic that highlighted several comparisons of the average demographic characteristics between the two users.] -->
+<!-- ### Comparisons in the Media {-} -->
+<!-- The media often proffers group comparisons. Consider the infographic displayed in Figure \@ref(fig:hunch). It compares survey data from cat and dog people. The comparison between cat and dog people is primarily conveyed via text. The graphical parts of the infographic are mostly aesthetic. -->
+<!-- <br /> -->
+<!-- ```{r hunch, out.width="60%", echo=FALSE, fig.align='center', fig.cap='Hunch infographic comparing dog and cat people.'} -->
+<!-- knitr::include_graphics("img/cat-vs-dog-people.png") -->
+<!-- ``` -->
+<!-- <br /> -->
+<!-- Figure \@ref(fig:fb) shows a screenshot from a Facebook application called *Facebook Questions*. The application allows any Facebook user who has installed it to poll other Facebook users. It displays the poll results as a bar graph.^[Hovering over a particular bar on Facebook would display the frequency or count of users voting for a particular response.] -->
+<!-- <br /> -->
+<!-- ```{r fb, out.width="60%", echo=FALSE, fig.align='center', fig.cap='Poll questions and bar graphs displaying the voting results for two questions submitted using the Facebook Questions application.'} -->
+<!-- knitr::include_graphics("img/facebook-questions.png") -->
+<!-- ``` -->
+<!-- <br /> -->
+<!-- In contrast to the comparison in the *Hunch* infographic, the comparison here is conveyed through the graph rather than the text. The length of each bar provides an indication of the frequency of voters who responded to each of the poll options relative to the other options. For example, the bar labeled 'Eric' in the *True Blood* poll is roughly five times longer than the bar labeled 'Goderic'. This corresponds to the five-fold difference in the frequency of votes (3,571 votes for Goderic and 18,102 votes for Eric) between the two candidates. The bar labeled 'Bill' is roughly $^1/_2$ the length of the bar labeled 'Goderic' and about one-ninth as long as the bar labeled 'Eric', indicative of the 1,933 votes that had been cast for Bill. -->
+<!-- Examining the two graphical displays presented, reflect on the following questions. -->
+<!-- - Which of these two displays more clearly conveys the comparisons being made? Why? -->
+<!-- - How would you improve on each display? Explain. -->
+<!-- ### Complexity of Speech {-} -->
+<!-- Data scientists need to make several decisions during the course of an analysis. These decisions include questions about operationalization, summarization, and sampling, to name but a few. To illustrate some of these decisions, consider the following research question posed by the [Sunlight Foundation](https://sunlightfoundation.com/):  -->
+<!-- <div class="image"> -->
+<!--   <img src="img/speech-bubble.png" /> -->
+<!--   <span class="oval-thought"><center>Is the complexity of speeches given by Democrats <br /> different than that of speeches given by Republicans?</center></span> -->
+<!-- </div> -->
+<!-- ### Operationalization {-} -->
+<!-- In thinking about answering these questions, there are several decisions that need to be made by the researcher. One major decision that would have to be made is how "complexity" is to be measured. This operationalization involves defining and quantifying a fuzzy construct to help make it understandable (and study-able). In general, making a comparison between numeric properties such as three apples and five apples is much easier than making comparisons of an ill-defined characteristic such as “complexity”. In considering how to operationalize a construct, there are often many possibilities. For example, complexity of a written passage can be operationalized by using a readability index such as the Flesch&ndash;Kincaid score. Another way of operationalizing the passage is to count the number of words in the passage that appear in Kaplan's list of [The 100 Most Common SAT Words](http://www.washingtonpost.com/wp-adv/eduadv/kaplan/kart_ug_sat100.html). -->
+<!-- It is important to understand the advantages and limitations in the choice of an operationalization.  For example, by using the frequency of the 100 most common SAT words, it is easy to provide a quantification for each passage. It is also easy to understand what that quantification means&mdash;a passage with a score of four uses two fewer SAT words than a passage that has a score of six. This will ease interpretations during an analysis. On the other hand, this score is a rather rudimentary measure of complexity. -->
+<!-- In comparison to the frequency of SAT words, the Flesch&ndash;Kincaid score is a less rudimentary measure of sentence complexity defined as, -->
+<!-- $$ -->
+<!-- \mathrm{FK} = 0.39 \times (\mathrm{Average~words~per~sentence}) + 11.8 \times (\mathrm{Average~syllables~per~word}) - 15.59 -->
+<!-- $$ -->
+<!-- The Flesch&ndash;Kincaid score indicates that the text would be at the limit of comprehension for a person with the equivalent of that number of years of education.In laymen's terms, the score gives the reading grade level of the passage.^[Many famous passages have been scored using the Flesch&ndash;Kincaid measure such as the U.S. Constitution (17.8 grade level), the Declaration of Independence (15.1 grade level), the Gettysburg Address (11.2 grade level), Martin Luther King's "I Have a Dream" speech (9.4 grade level), and U2 frontman Bono's 2004 commencement speech at the University of Pennsylvania (5.9 grade level).] At its core, the Flesch&ndash;Kincaid score equates higher grade levels with longer words and longer sentences. It does not, however, indicate anything about the clarity or correctness of a passage of text. If these attributes are important in operationalizing passage complexity, other measures should be used in the quantification. Another strength of the Flesch&ndash;Kincaid score is that it has been adopted as the Department of Defense standard in determining the age-appropriateness of reading material. Because of this, the metric is one of the best known and frequently used metrics of readability. -->
+<!-- The choice of operationalization is subjective to the researcher and inevitably has a great deal of impact on the generalizations that the researcher can make. Does the operationalization accurately reflect the construct that the researcher wishes to say something about? Using our example question, say that after making comparisons of congressional speeches using the Flesch&ndash;Kincaid score you find that Republicanss have, in general, lower scores than Republicans. This might suggest that the complexity of Republican's congressional speeches is less than that of Democrats. Another researcher might choose a different method of operationalizing complexity and come to the opposite conclusion. What does the choice of operationalization reflect about the "truth" of the change (or non-change) of complexity in congressional speeches? In science, these types of questions are related to the [validity of the inferences](https://www.socialresearchmethods.net/kb/measval.php) that can be made. -->
+<!-- ### Summarization {-} -->
+<!-- After operationalization, it may seem that a researcher could just collect her data and answer her research questions. However, there are still a litany of choices that the researcher needs to make before she gets to this point. One of the initial questions is whether the researcher should use raw data or summary data. Raw data would be data that has not been processed or manipulated in any way (i.e., the original data). In this case, it would mean using the transcripts of the speeches given in Congress. Summary data, on the other hand, would refer to data that has been manipulated or summarized in some manner. For example, rather than obtaining a transcript of the actual speeches given, the researcher could instead use data that some other party or individual has already summarized and produced such as the average word per sentence or even the Flesch&ndash;Kincaid scores themselves. Most researchers would prefer to work from the raw data and compute these measures themselves, but in many cases the raw data is not available and only summary information is accessible.^[As an example, the Minnesota Department of Education is required to provide test results, revenue and expenditure data, and demographic information for each school and district in the state. Because of privacy laws, these data are released to the public at the school-level (e.g., summarized as school averages) rather than at the individual-level (i.e., the raw data used to compute these averages). See the [MDE website for reports and publicly available data](http://education.state.mn.us/MDE/Data/) for all Minnesota schools and districts.] -->
+<!-- In the research proposed, It is in fact possible for the researcher to obtain the raw data&mdash;transcripts for each of the Congressional speeches given in the last 10 years. [The Congressional Record](http://www.senate.gov/pagelayout/legislative/d_three_sections_with_teasers/congrecord.htm) is a verbatim account of the remarks made by senators and representatives while they are on the floor of the Senate and the House of Representatives. Transcripts for each speech could be collected from this, or another, website. Again, the collection of these transcripts may seem straight-forward (just download them from the website). However, just a minute or two of examining the website leads to many other questions. For example, after searching on "Amy Klobuchar", one of the Senators from Minnesota, it was revealed that the search results brought up any mention of Amy Klobuchar&mdash;not just the speeches she gave. Should we use all of these? Or just the speeches? Another decision. -->
+<!-- ### Sampling {-} -->
+<!-- It would also soon be apparent that collecting these data could be very time consuming. There were 219 search hits for "Amy Klobuchar" in the 112th Congress (2011&ndash;2012) alone. Given there are 541 members of Congress in any given year (435 voting Representatives, 6 non-voting Representatives, and 100 Senators), this is somewhere on the magnitude of 119,000 transcripts that we would need to download.^[Some of the downloading of documents and processing (e.g., counting syllables, words per sentence, etc.) can be automated using computer languages such as [Python](https://www.python.org/) or [Perl](https://www.perl.org/). This could still take several weeks to write the web scraping program to obtain the data and check the resulting output for errors.] (Not to mention that we would also have to compute the Flesch&ndash;Kincaid score for each one!). Because of this, many researchers collect only a subset of the data available. This is referred to as sampling and there are well-defined methods for choosing a sample of data to ensure that it adequately represents the entire population. -->
+<!-- After all of the decisions about operationalization, sampling, and data collection have been made, and the transcripts have been collected and quantified with a Flesch&ndash;Kincaid score we can start to think about analyzing the data to answer the research questions. This leads to more questions and decisions that need to be made. How will you compare the Flesch&ndash;Kincaid scores across years? Between Democrats and Republicans? Consider Figure \@ref(fig:fk) below. This figure shows the Flesch&ndash;Kincaid scores for ten speeches given by Democrats and ten speeches given by Republicans. -->
+<!-- <br /> -->
+<!-- ```{r fk, out.width="60%", echo=FALSE, fig.align='center', fig.cap='Flesch&ndash;Kincaid scores for ten speeches given by Democrats and ten speeches given by Republicans.'} -->
+<!-- knitr::include_graphics("img/fk-dem-rep.png") -->
+<!-- ``` -->
+<!-- <br /> -->
+<!-- Using the plot, reflect on how you might answer the following questions. -->
+<!-- - How would you compare the Flesch&ndash;Kincaid scores for the speeches given by Democrats and the speeches made by Republicans? -->
+<!-- - If you had to summarize the Flesch&ndash;Kincaid scores for the speeches given by Democrats by using a single number to quantify all ten speeches, what would this number be?  -->
+<!-- - Are you comfortable summarizing the ten scores into a single number? If not, are there other numbers you would use or add to your original quantification? -->
+<!-- - Using the same methodology, summarize the Flesch&ndash;Kincaid scores for the speeches given by Republicans. -->
+<!-- - Compare the two quantifications you have just made. Summarize the differences between the Democrats and Republicans based on the two quantifications into a single number (i.e., how much bigger/smaller is the Democrats score than the Republicans?) -->
+<!-- - What does this comparison suggest about the original research question as to whether the complexity of speeches given by Democrats are different than that of speeches given by Republicans? -->
+<!-- ### Statistical Inference {-} -->
+<!-- It may seem that after all of this work we finally have an answer to our research questions, but it turns out that we may not. This is because we have introduced some error through the process of sampling (the data constitutes only 10 speeches from each party). Let's say that we had sampled 200 speeches (100 speeches from each party). Further consider that we found the average grade-level for the 100 speeches given by Democrats was 11.5 and the average grade-level for speeches given by Republicans was 10.6. This suggests that Congressional speeches for Republicans are almost an entire grade-level lower than those for Democrats. -->
+<!-- But, what if we had gotten different speeches in our sample? There are many different samples of 100 speeches from the 541 members of Congess. Each of these different samples might give a slightly different value for the average grade-levels for Democrats and Republicans, which in turn affects our inferences about which party is giving more complex speeches!  -->
+<!-- It is well-known that different samples give different results. This was one of the big take-aways from Unit 1. It is the whole basis of statistical inference: **How different do we expect the results to be just because of sampling variation?** The ideas you learned in Unit 1 are also directly applicable when studying group differences. In this unit you will learn how to use Monte Carlo simulation to study and quantify the sampling variation (uncertainty) for group differences. -->
+<!-- Although quantifying uncertainty is a large part of statistical inference, it is not the only thing involved in drawing conclusions from sample data. Drawing conclusions from data also implies thinking broadly about the **scope of those inferences**. For example, does a difference in complexity only refer to a comparison of speeches given in the year you obtained data from? Or does it apply more broadly to the complexity of all Congressional speeches ever given? Or, can we use these data to suggest that the complexity of speeches by Democrats and Republicans outside of Congress differ? -->
+<!-- Another part of drawing conclusions is in considering the 'why'. Why is the complexity of Congressional speeches different for the two partys? Is this an indictment of Congress? the American public? or neither? Ascribing meaning to why differences occur is a part of the much broader reasons for carrying out research. Unfortunately, the attribution of the reasons or causes of a particular difference are very difficult under most circumstances.   -->
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="14">
+<li id="fn14"><p>Slomski, A. (2015). Consuming—not avoiding—peanuts leads to fewer peanut allergies in kids. <em>Journal of the American Medical Association, 313</em>(16), 1609–1609.<a href="critiquing-study-design-peanut-allergies.html#fnref14">↩</a></p></li>
+<li id="fn15"><p>Sicherer, S. H., Wood, R. A., Stablein, D., Lindblad, R., Burks, A. W., Liu, A. H., Jones, S. M., Fleischer, D. M., Leung, D. Y., &amp; Sampson, H. A. (2010). Maternal consumption of peanut during pregnancy is associated with peanut sensitization in atopic infants. <em>Journal of Allergy and Clinical Immunology, 126</em>(6), 1191–1197.<a href="critiquing-study-design-peanut-allergies.html#fnref15">↩</a></p></li>
+<li id="fn16"><p>Sicherer, S. H., Muñoz-Furlong, A., &amp; Sampson, H. A. (2003). Prevalence of peanut and tree nut allergy in the United States determined by means of a random digit dial telephone survey: A 5-year follow-up study. <em>Journal of Allergy and Clinical Immunology, 112</em>(6), 1203–1207.<a href="critiquing-study-design-peanut-allergies.html#fnref16">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="internal-validity-evidence-and-random-assignment.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
