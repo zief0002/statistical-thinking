@@ -4,7 +4,7 @@
 
 Drawing inferences about the differences between groups is an almost daily occurrence in the lives of most people. In any given hour of any given day, television, radio and social media abound with comparisons. For example, data scientists at [OKCupid](https://www.okcupid.com/), an online dating site, examined whether frequent tweeters (users of Twitter) have shorter real-life relationships than others.^[The website [OKTrends](http://blog.okcupid.com/) includes an answer to this question, as well as many others.]
 
-Group comparisons are at the heart of many interesting questions addressed by psychologists, physicians, scientists, teachers, and engineers. Questions about group differences are often studied through scientific experiements. When considering a scientific experiment to examine group differences, the design of the study plays a very important role. To help understand this, think about a researcher who is studying the efficacy of a new cold medication. Let's say that the researcher has 100 people (each with a cold) who volunteer to be a part of her study. Let's consider how she might design her study.
+Group comparisons are at the heart of many interesting questions addressed by psychologists, physicians, scientists, teachers, and engineers. Questions about group differences are often studied through scientific experiments. When considering a scientific experiment to examine group differences, the design of the study plays a very important role. To help understand this, think about a researcher who is studying the efficacy of a new cold medication. Let's say that the researcher has 100 people (each with a cold) who volunteer to be a part of her study. Let's consider how she might design her study.
 
 - **Design 1:** She gives the cold medicine to all 100 volunteers.
 - **Design 2:** She gives the cold medicine to the first 50 volunteers (treatment group) and nothing to the other 50 volunteers (control group).
@@ -38,4 +38,4 @@ knitr::include_graphics("img/unit-03-outline.png")
 
 <br />
 
-In the readings, course activities, and assignments in Unit 3, you will explore the process of modeling experimental variation to be able to evaluate observed differences between groups. You will learn about the randomization test, a Monte Carlo method for modeling experimental variation, and how to carry out this test using TinkerPlots&trade;. 
+In the readings, course activities, and assignments in Unit 3, you will explore the process of modeling experimental variation to be able to evaluate observed differences between groups. You will learn about the randomization test (a Monte Carlo method for evaluating whether an observed result in compatible with experimental variation from a hypothesized model) and how to carry out this test using TinkerPlots&trade;. 

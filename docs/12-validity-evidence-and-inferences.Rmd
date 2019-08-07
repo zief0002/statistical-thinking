@@ -4,9 +4,9 @@ How subjects are selected from the larger population (sampling) and how those se
 
 Validity is the degree to which inferences and conclusions are meaningful and accurate. It is important that you note that the validation is about the inferences, not the study. (You should never claim a study is valid.) Unfortunately, it is almost impossible to know whether the inferences we draw are valid or not. Therefore, the best we can do is to provide evidence that supports the claims of validity and present that evidence to people. In research studies there are two major types of validity evidence that should be considered:
 
-- **Internal Validity Evidence:** This is evidence that supports the drawing of cause-and-effect conclusions. Generally these types of conclusions are only apropriate when a study has employed random assignment. Read more at [https://www.socialresearchmethods.net/kb/intval.php](https://www.socialresearchmethods.net/kb/intval.php).
+- **Internal Validity Evidence:** This is evidence that supports the drawing of cause-and-effect conclusions. Generally these types of conclusions are only appropriate when a study has employed random assignment. Read more at [https://www.socialresearchmethods.net/kb/intval.php](https://www.socialresearchmethods.net/kb/intval.php).
 
-- **External Validity Evidence:** This is evidence that supports the drawing of generalizable conclusions. Generally these types of conclusions are only apropriate when a study has employed random sampling. Read more at [https://www.socialresearchmethods.net/kb/external.php](https://www.socialresearchmethods.net/kb/external.php).
+- **External Validity Evidence:** This is evidence that supports the drawing of generalizable conclusions. Generally these types of conclusions are only appropriate when a study has employed random sampling. Read more at [https://www.socialresearchmethods.net/kb/external.php](https://www.socialresearchmethods.net/kb/external.php).
 
 Much like evidence used in a court of law, it is useful to think about validity evidence on a continuum. For example, after reading about the sampling and design of a particular study you might envision the following two "barometers" of the internal and external validity evidence for a study's inferences:
 
@@ -39,7 +39,7 @@ Participants were stratified into two study cohorts (on the basis of the results
 
 Among the 530 infants in one cohort, the prevalence of peanut allergy at 60 months was 13.7% in the avoidance group and 1.9% in the consumption group. The absolute difference in risk of 11.8% represents an 86.1% relative reduction in the prevalence of peanut allergy. In the other cohort (98 infants), the prevalence of peanut allergy was 35.3% in the avoidance group and 10.6% in the consumption group.
 
-These findings suggest that high-risk children who consumed peanut products from infancy until they were 5 years old were significantly less likely to develop a peanut allergy than those who avoided peanuts, according to the LEAP randomized trial.
+These findings suggest that high-risk children who consumed peanut products from infancy until they were 5 years old are less likely to develop a peanut allergy than those who avoided peanuts, according to the LEAP randomized trial.
 </div>
  
 
@@ -47,7 +47,7 @@ When you read about a study design, try to initially identify
 
 
 - The population the researchers would like to generalize their results to. 
-- The sample used in the study AND how particpants were sampled.
+- The sample used in the study AND how participants were sampled.
 - Any control/treatment groups AND how participants were assigned to these groups.
 - Response/outcome variable AND how this variable was measured.
 - Results and statistical evidence
@@ -71,9 +71,9 @@ knitr::include_graphics("img/validity-evidence-peanut-01.png")
 
 <br />
 
-The level of internal validity evidence is pretty high. The study used random assingment to place the infants in to the control and treatment groups. Furthermore, it replicated this design using a cohort study. Lastly, the sample sizes were pretty large, so the random assigngment probably worked pretty well to make the groups statistically identical. Based on all of this, the researchers have a pretty good claim for cause-and-effect about the consumption of peanuts reducing the prevalence of peanut allergies.
+The level of internal validity evidence is pretty high. The study used random assignment to place the infants in to the control and treatment groups. Furthermore, it replicated this design using a cohort study. Lastly, the sample sizes were pretty large, so the random assignment probably worked pretty well to make the groups statistically identical. Based on all of this, the researchers have a pretty good claim for cause-and-effect about the consumption of peanuts reducing the prevalence of peanut allergies.
 
-The degree of external validity evidence, however, is pretty low. Infants were not randomly sampled from the population of high-risk infants. They constitute a [convenience sample](http://research-methodology.net/sampling-in-primary-data-collection/convenience-sampling/). This makes it likely that the sample does not represent the population on all charcteristics. For example, to volunteer for the study, the infants might have been identified as high-risk at the same medical center. This might mean their parents are of a similar socio-economic status, or live in similar neighborhoods, etc. which may not represent the larger population. This severly limits the generalizability of these results to the larger population of high-risk infants.
+The degree of external validity evidence, however, is pretty low. Infants were not randomly sampled from the population of high-risk infants. They constitute a [convenience sample](http://research-methodology.net/sampling-in-primary-data-collection/convenience-sampling/). This makes it likely that the sample does not represent the population on all characteristics. For example, to volunteer for the study, the infants might have been identified as high-risk at the same medical center. This might mean their parents are of a similar socio-economic status, or live in similar neighborhoods, etc. which may not represent the larger population. This severely limits the generalizability of these results to the larger population of high-risk infants.
 
 
 ### Study Design #2 {-}
@@ -94,7 +94,7 @@ Based on the excerpt about this study design, try to identify
 
 
 - The population the researchers would like to generalize their results to. 
-- The sample used in the study AND how particpants were sampled.
+- The sample used in the study AND how participants were sampled.
 - Any control/treatment groups AND how participants were assigned to these groups.
 - Response/outcome variable AND how this variable was measured.
 - Results and statistical evidence. (Hint: There are several comparisons reported.)
@@ -107,7 +107,7 @@ Based on the excerpt about this study design, try to identify
 - The sample included 503 atopic infants (aged 3 to 15 months) with no previous peanut allergies who were enrolled from one of the five sites. Although the excerpt doesn't say, they were likely volunteered (by their parents) to be a part of the study.
 - The study was observational in nature; the researchers did NOT assign the mothers to eat a certain amount of peanuts during their pregnancies. (You will read more about oservational studies in *Observational Studies and the Bootstrap Test*.)
 - The response/outcome being measured in each comparison is whether or not the infant had a peanut sensitization/allergy.
-- The researchers found statistical evidence of an association between maternal consumption of peanuts during pregnancy and peanut allergies in infants. This association was greater than would be expected because of chance if there was really no association between the frequency of peanut consumption and peanut allergies (*p < .001*; overwhelming evidence against the null hypothesis). This result was also seen after the accounted for gender and racial differences. 
+- The researchers found statistical evidence of an association between maternal consumption of peanuts during pregnancy and peanut allergies in infants. This association was not very compatible with the hypothesis of no association between the frequency of peanut consumption and peanut allergies (*p < .001*). This result was also seen after the accounted for gender and racial differences. 
 </div>
 
 </div>
@@ -125,9 +125,9 @@ knitr::include_graphics("img/validity-evidence-peanut-02.png")
 
 <br />
 
-The level of internal validity evidence is low. The study did not use random assingment to assign the frequency of peanuts that mothers would eat during their pregnancies. The researchers improved the level of their internal validity evidence by controlling for infant sex and race. Although this is stronger evidence for cause-and-effect than not controlling for anything, there are still many alternative factors (aside from frequency of maternal peanut ingestion) that might explain the differences in infants' peanut allergies.
+The level of internal validity evidence is low. The study did not use random assignment to assign the frequency of peanuts that mothers would eat during their pregnancies. The researchers improved the level of their internal validity evidence by controlling for infant sex and race. Although this is stronger evidence for cause-and-effect than not controlling for anything, there are still many alternative factors (aside from frequency of maternal peanut ingestion) that might explain the differences in infants' peanut allergies.
 
-The degree of external validity evidence is also pretty low. Infants were not randomly sampled from the population of atopic infants. They weren't even randomly sampled from the five sites. They constitute a [convenience sample](http://research-methodology.net/sampling-in-primary-data-collection/convenience-sampling/). This makes it likely that the sample does not represent the population. (It is likely systematically biased.) This severly limits the generalizability of these results to the larger population of atopic infants.
+The degree of external validity evidence is also pretty low. Infants were not randomly sampled from the population of atopic infants. They weren't even randomly sampled from the five sites. They constitute a [convenience sample](http://research-methodology.net/sampling-in-primary-data-collection/convenience-sampling/). This makes it likely that the sample does not represent the population. (It is likely systematically biased.) This severely limits the generalizability of these results to the larger population of atopic infants.
 </div>
 
 </div>
@@ -143,14 +143,14 @@ Lastly, consider the research design of this study, published in the *Journal of
 
 To study whether the prevalence of peanut allergy among the general population of the United States has changed over time, researchers contacted 9252 households by telephone in 2002 to conduct a survey about peanut allergies. (These telephone numbers constituted a random sample of phone numbers and excluded nonresidential numbers. Households were called at different times of the day and on different days to optimize contact with a resident. At least 10 attempts were made to contact a resident of each household.)
 
-Of the households contacted, 4855 agreed to participate. These households represented a census of 13,493 individuals. The results from this survey were compared to the results from a comparable survey carried out in 1997. These comparisons indicated that the rate of peanut allergy among adults reported in 1997 (0.4%) was not statistically different from the rate reported in 2002 (0.8%). In children the researchers found a statistically significant difference (*p = 0.05*) between the reported rates in 1997 (0.6%) and those in 2002 (1.2%). The researchers concluded that the rate of peanut allergy among children has doubled from 1997 to 2002.
+Of the households contacted, 4855 agreed to participate. These households represented a census of 13,493 individuals. The results from this survey were compared to the results from a comparable survey carried out in 1997. These comparisons indicated that the rate of peanut allergy among adults reported in 1997 (0.4%) was not statistically different from the rate reported in 2002 (0.8%). In children the researchers found a difference between the reported rates in 1997 (0.6%) and those in 2002 (1.2%; *p = 0.05*). The researchers concluded that the rate of peanut allergy among children has doubled from 1997 to 2002.
 </div>
  
 
 Based on the excerpt about this study design, try to identify
 
 - The population the researchers would like to generalize their results to. 
-- The sample used in the study AND how particpants were sampled.
+- The sample used in the study AND how participants were sampled.
 - Any control/treatment groups AND how participants were assigned to these groups.
 - Response/outcome variable AND how this variable was measured.
 - Results and statistical evidence. (Hint: There are several comparisons reported.)
@@ -164,7 +164,7 @@ Based on the excerpt about this study design, try to identify
 - The sample included 4855 households.
 - The study was observational in nature; the researchers did NOT assign households to have peanut allergies.
 - The response/outcome being measured in each comparison is the number of adults and children in the household with a peanut allergy.
-- The researchers found statistical evidence of a difference in rates of peanut allergies for children between 1997 and 2002. This difference was greater than would be expected because of chance if there was really no difference between rates in 1997 and 2002 (*p = .05*; borderline evidence against the null hypothesis).  
+- The researchers found statistical evidence of a difference in rates of peanut allergies for children between 1997 and 2002. This difference was not very compatible with the hypothesized model of no difference between rates in 1997 and 2002 (*p = .05*).  
 </div>
 
 </div>
@@ -184,7 +184,7 @@ knitr::include_graphics("img/validity-evidence-peanut-03.png")
 
 The level of internal validity evidence is low. Since the researchers are not trying to attribute a causal reason for any differences in peanut allergies, this is not much of a concern.
 
-The degree of external validity evidence is also pretty low. Although telephone numbers were initially randomly sampled, many households did not respond. This wrecks the randomness. Also, many people in the U.S. do not have telephones, or are on a no-call list. This severly limits the generalizations.
+The degree of external validity evidence is also pretty low. Although telephone numbers were initially randomly sampled, many households did not respond. This wrecks the randomness. Also, many people in the U.S. do not have telephones, or are on a no-call list. This severely limits the generalizations.
 </div>
 
 </div>

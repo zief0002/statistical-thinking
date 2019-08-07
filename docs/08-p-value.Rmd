@@ -42,17 +42,12 @@ $$
 
 We can interpret the $p$-value of 0.030 as indicating that the observed difference of 15.9 is in the outer 0.03 (3%) of results simulated from the hypothesized model. It is quite unlikely that we would see a result as extreme as 15.9, or more extreme, under the hypothesized model of "no effect". 
 
-### Level of Evidence {-}
+### p-Values as Evidence {-}
 
-Small $p$-values are used as evidence against the hypothesized model. While there are no hard-and-fast rules for gauging how strong the evidence is against the hypothesized model, the following guidelines can be used:
+Large $p$-values indicate that the observed data are more compatible with the results from the model, while small $p$-values indicate that the observed data are not very compatible with the results from the model. As researchers, our goal is often to then translate this quantitative evidence into support for the hypothesized model. For example, in the *Sleep Deprivation* study, we obtained a $p$-value of 0.03. This suggests a low degree of compatibility between the observed data (our empirical evidence) and the hypothesized model of "no effect". 
 
-- A $p$-value above 0.10 constitutes **little to no evidence** against the hypothesized model.
-- A $p$-value between 0.05 and 0.10 constitutes **borderline/weak evidence** against the hypothesized model.
-- A $p$-value between 0.025 and 0.05 constitutes **moderate evidence** against the hypothesized model.
-- A $p$-value between 0.001 and 0.025 constitutes **substantial/strong evidence** against the hypothesized model.
-- A $p$-value below 0.001 constitutes **overwhelming evidence** against the hypothesized model.
+The broader scientific question about whether sleep deprivation has a harmful effect on learning, however is difficult to ascertain from a $p$-value. There are no hard-and-fast rules for gauging how strong the evidence is against the hypothesized model because what counts as evidence in one scientific discipline or context may not count in another scientific discipline or context. And, even if there were rules about the degree of evidence needed, you would still need to evaluate other criteria such as internal and external validity evidence, and sample size. Even then, the results from a single study are not typically convincing enough for most scientists to draw definitive conclusions. It is only through consistent findings that emerge from multiple studies (which may take decades) that we may have convincing evidence about the answer to the broader scientific question.
 
-In the *Sleep Deprivation* study, the $p$-value of 0.03 would constitute moderate evidence against the hypothesized model of "no-effect". 
 
 ### Six Principles about p-Values {-}
 
@@ -62,14 +57,14 @@ Because they are so ubiquitous in the research literature for any field, and bec
 - **Principle 2:** $P$-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.
 - **Principle 3:** Scientific conclusions and business or policy decisions should not be based only on whether a $p$-value passes a specific threshold.
 - **Principle 4:** Proper inference requires full reporting and transparency.
-- **Principle 5:** A $p$-value, or statistical significance, does not measure the size of an effect or the importance of a result.
+- **Principle 5:** A $p$-value does not measure the size of an effect or the importance of a result.
 - **Principle 6:** By itself, a $p$-value does not provide a good measure of evidence regarding a model or hypothesis.
 
-Principle 3 is especially poignant, as many reserachers use the criterion of 0.05 when evaluating $p$-values to indicate whether a result is statistically significant ($p \leq 0.05$) or not. In fact, this use was so pervasive and problematic, that the journal *Basic and Applied Social Psychology* [banned the use of $p$-values](http://www.nature.com/news/psychology-journal-bans-p-values-1.17001) in its published articles. It also led to many jokes about $p$-values, including this [XKCD](https://xkcd.com) comic.
+<!-- Principle 3 is especially poignant, as many reserachers use the criterion of 0.05 when evaluating $p$-values to indicate whether a result is statistically significant ($p \leq 0.05$) or not. In fact, this use was so pervasive and problematic, that the journal *Basic and Applied Social Psychology* [banned the use of $p$-values](http://www.nature.com/news/psychology-journal-bans-p-values-1.17001) in its published articles. It also led to many jokes about $p$-values, including this [XKCD](https://xkcd.com) comic. -->
 
-<center>
-![](https://imgs.xkcd.com/comics/p_values.png)
-</center>
+<!-- <center> -->
+<!-- ![](https://imgs.xkcd.com/comics/p_values.png) -->
+<!-- </center> -->
 
 
 

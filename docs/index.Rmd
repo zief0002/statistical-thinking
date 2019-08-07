@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Statistical Thinking: A Simulation Approach to Modeling Uncertainty"
 author: ""
 site: bookdown::bookdown_site
 documentclass: book
@@ -18,7 +18,7 @@ output_dir: ""
 
 
 
-# Statistical Thinking: A Simulation Approach to Modeling Uncertainty {-}
+#  Front Matter {-}
 
 
 ```{r out.width="25%", echo=FALSE, fig.align='center'}
@@ -42,7 +42,7 @@ You can read more about these resources in the introduction.
 
 ### Licensing and Attribution {-}
 
-Copyright &copy; 2018 Catalysts for Change
+Copyright &copy; 2019 Catalysts for Change
 
 PUBLISHED BY CATALYST PRESS
 
@@ -50,7 +50,7 @@ PUBLISHED BY CATALYST PRESS
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to share, remix, and make commercial use of the work under the condition that you provide proper attribution. To reference this work, use:
 
-- Zieffler, A., & Catalysts for Change. (2018). *Statistical Thinking: A simulation approach to uncertainty* (4.1th ed.). Minneapolis, MN: Catalyst Press. [http://zief0002.github.io/statistical-thinking/](http://zief0002.github.io/statistical-thinking/)
+- Zieffler, A., & Catalysts for Change. (2019). *Statistical Thinking: A simulation approach to uncertainty* (4.2th ed.). Minneapolis, MN: Catalyst Press. [http://zief0002.github.io/statistical-thinking/](http://zief0002.github.io/statistical-thinking/)
 
 The work to create the material appearing in the book was made possible by the National Science Foundation (DUE–0814433). 
 

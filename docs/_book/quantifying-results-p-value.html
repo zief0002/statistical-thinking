@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="experimental-variation-and-the-randomization-test.html">
+<link rel="next" href="internal-validity-evidence-and-random-assignment.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="statistical-thinking.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Front Matter</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#licensing-and-attribution"><i class="fa fa-check"></i>Licensing and Attribution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#colophon"><i class="fa fa-check"></i>Colophon</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-material"><i class="fa fa-check"></i>Course Material</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#tinkerplots-software"><i class="fa fa-check"></i>TinkerPlots™ Software</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#lab-manual-and-data-sets"><i class="fa fa-check"></i>Lab Manual and Data Sets</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#participation-in-the-learning-process"><i class="fa fa-check"></i>Participation in the Learning Process</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html"><i class="fa fa-check"></i>Modeling &amp; Simulation</a><ul>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html#outline-and-goals-of-unit-1"><i class="fa fa-check"></i>Outline and Goals of Unit 1</a></li>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html#randomness"><i class="fa fa-check"></i>Randomness</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="generating-data-from-models.html"><a href="generating-data-from-models.html"><i class="fa fa-check"></i>Generating Data from Models</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html"><i class="fa fa-check"></i>Monte Carlo Simulation</a><ul>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#example-of-a-monte-carlo-simulation-study"><i class="fa fa-check"></i>Example of a Monte Carlo Simulation Study</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#monte-carlo-simulation-assumptions"><i class="fa fa-check"></i>Monte Carlo Simulation Assumptions</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#monte-carlo-simulation-in-practice"><i class="fa fa-check"></i>Monte Carlo Simulation in Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html"><i class="fa fa-check"></i>Modeling Sampling Variation</a><ul>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html#simulation-process-for-evaluating-hypotheses"><i class="fa fa-check"></i>Simulation Process for Evaluating Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html#outline-and-goals-of-unit-2"><i class="fa fa-check"></i>Outline and Goals of Unit 2</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html"><i class="fa fa-check"></i>Describing Distributions</a><ul>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#shape"><i class="fa fa-check"></i>Shape</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#location"><i class="fa fa-check"></i>Location</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#variation"><i class="fa fa-check"></i>Variation</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#putting-it-all-together"><i class="fa fa-check"></i>Putting It All Together</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html"><i class="fa fa-check"></i>Experimental Variation and the Randomization Test</a><ul>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html#experimental-variation"><i class="fa fa-check"></i>Experimental Variation</a></li>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html#outline-and-goals-of-unit-3"><i class="fa fa-check"></i>Outline and Goals of Unit 3</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html"><i class="fa fa-check"></i>Quantifying Results: p-Value</a><ul>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#adjustment-for-simulation-results"><i class="fa fa-check"></i>Adjustment for Simulation Results</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#p-values-as-evidence"><i class="fa fa-check"></i>p-Values as Evidence</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#six-principles-about-p-values"><i class="fa fa-check"></i>Six Principles about p-Values</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="internal-validity-evidence-and-random-assignment.html"><a href="internal-validity-evidence-and-random-assignment.html"><i class="fa fa-check"></i>Internal Validity Evidence and Random Assignment</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Sampling Variation and the Bootstrap Test</a><ul>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#sampling-variation"><i class="fa fa-check"></i>Sampling Variation</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#bootstrapping"><i class="fa fa-check"></i>Bootstrapping</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#outline-and-goals-of-unit-4"><i class="fa fa-check"></i>Outline and Goals of Unit 4</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html"><i class="fa fa-check"></i>External Validity Evidence and Random Sampling</a><ul>
+<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html#statistical-bias"><i class="fa fa-check"></i>Statistical Bias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html"><i class="fa fa-check"></i>Validity Evidence and Inferences</a><ul>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#studies-of-peanut-allergies"><i class="fa fa-check"></i>Studies of Peanut Allergies</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-1"><i class="fa fa-check"></i>Study Design #1</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-2"><i class="fa fa-check"></i>Study Design #2</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-3"><i class="fa fa-check"></i>Study Design #3</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Observational Studies and the Bootstrap Test</a><ul>
+<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html#analyzing-data-from-observational-studies"><i class="fa fa-check"></i>Analyzing Data from Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html"><i class="fa fa-check"></i>Estimating Uncertainty</a><ul>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#quantifying-uncertainty-compatibility-intervals"><i class="fa fa-check"></i>Quantifying Uncertainty: Compatibility Intervals</a></li>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#quantification-of-uncertainty-margin-of-error"><i class="fa fa-check"></i>Quantification of Uncertainty: Margin of Error</a></li>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#outline-and-goals-of-unit-5"><i class="fa fa-check"></i>Outline and Goals of Unit 5</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="uncertainty-and-bias.html"><a href="uncertainty-and-bias.html"><i class="fa fa-check"></i>Uncertainty and Bias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistical Thinking: A Simulation Approach to Modeling Uncertainty</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="quantifying-results-p-value" class="section level1 unnumbered">
+<h1>Quantifying Results: p-Value</h1>
+<p>In addition to computing the range of likely results from the model, statisticians also typically provide a quantification of the likelihood of the observed result given the hypothesized model. This quantification is referred to as a <span class="math inline">\(p\)</span>-value (the <span class="math inline">\(p\)</span> stands for probability).</p>
+<p>To compute a <span class="math inline">\(p\)</span>-value, you count the number of results that are at least as extreme as the observed result, and divide this by the total number of results.</p>
+<p><span class="math display">\[
+p = \frac{\mathrm{number~of~results~at~least~as~extreme~as~observed~result}}{\mathrm{total~number~of~simulated~results}}
+\]</span></p>
+<p>This value is then reported as a decimal value. It quantifies the probability of observing a result at least as extreme as the observed result under the hypothesized model.</p>
+<p>To illustrate this, we will re-examine simulation results from the <em>Sleep Deprivation</em> study. Recall in that activity, the observed data had a difference in means of 15.9. Below is a plot of 100 differences in means simulated under the “no-effect”" model. A vertical line is shown at the observed difference of 15.9.</p>
+<p><img src="img/sleep-deprivation-simulation.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Since 15.9 is to the right of 0 (i.e., it is on the right-hand side of the plot) results that are <em>more extreme than the observed result</em> are to the right of 15.9. (If the observed result was to the left of 0, more extreme results would be those more negative than the observed result.) Here there are two simulated results out of 100 that are at least as extreme as 15.9 (<span class="math inline">\(\geq 15.9\)</span>). We would report the <span class="math inline">\(p\)</span>-value as 0.02.</p>
+<div id="adjustment-for-simulation-results" class="section level3 unnumbered">
+<h3>Adjustment for Simulation Results</h3>
+<p>In simulation studies, we make one small adjustment to the <span class="math inline">\(p\)</span>-value computation; we add 1 to both the numerator and denominator:</p>
+<p><span class="math display">\[
+p = \frac{\mathrm{number~of~results~more~extreme~than~observed} + 1}{\mathrm{total~number~of~simulated~results} + 1}
+\]</span></p>
+<p>This adjustment assures that we never get a <span class="math inline">\(p\)</span>-value of 0. Consider the <span class="math inline">\(p\)</span>-value if our observed result would have been 18 (instead of 15.9). There are 0 results that are at least as extreme as 18 (<span class="math inline">\(\geq 18\)</span>). Without making the simulation adjustment, we would report a <span class="math inline">\(p\)</span>-value of 0. This implies that seeing a result at least as extreme as 18 under the “no-effect” model is impossible. The problem is that we only ran 100 trials of the simulation. If we had run this simulation for all possible randomizations of the data, we would have seen results <span class="math inline">\(\geq 18\)</span>. So, to report a <span class="math inline">\(p\)</span>-value of 0 is misleading. The <span class="math inline">\(p\)</span>-value we report should be,</p>
+<p><span class="math display">\[
+p = \frac{0 + 1}{100 + 1} = 0.0099
+\]</span></p>
+<p>After the adjustment, the <span class="math inline">\(p\)</span>-value is still quite small, indicating that had we seen an observed result of 18, we would say that it is inconsistent with the model of “no-effect”. In fact it is in the outer 0.01 (1%) of the results simulated from the hypothesized model.</p>
+<p>Going back to the <span class="math inline">\(p\)</span>-value computed from the observed value of 15.9,</p>
+<p><span class="math display">\[
+p = \frac{2 + 1}{100 + 1} = 0.0297
+\]</span></p>
+<p>We can interpret the <span class="math inline">\(p\)</span>-value of 0.030 as indicating that the observed difference of 15.9 is in the outer 0.03 (3%) of results simulated from the hypothesized model. It is quite unlikely that we would see a result as extreme as 15.9, or more extreme, under the hypothesized model of “no effect”.</p>
+</div>
+<div id="p-values-as-evidence" class="section level3 unnumbered">
+<h3>p-Values as Evidence</h3>
+<p>Large <span class="math inline">\(p\)</span>-values indicate that the observed data are more compatible with the results from the model, while small <span class="math inline">\(p\)</span>-values indicate that the observed data are not very compatible with the results from the model. As researchers, our goal is often to then translate this quantitative evidence into support for the hypothesized model. For example, in the <em>Sleep Deprivation</em> study, we obtained a <span class="math inline">\(p\)</span>-value of 0.03. This suggests a low degree of compatibility between the observed data (our empirical evidence) and the hypothesized model of “no effect”.</p>
+<p>The broader scientific question about whether sleep deprivation has a harmful effect on learning, however is difficult to ascertain from a <span class="math inline">\(p\)</span>-value. There are no hard-and-fast rules for gauging how strong the evidence is against the hypothesized model because what counts as evidence in one scientific discipline or context may not count in another scientific discipline or context. And, even if there were rules about the degree of evidence needed, you would still need to evaluate other criteria such as internal and external validity evidence, and sample size. Even then, the results from a single study are not typically convincing enough for most scientists to draw definitive conclusions. It is only through consistent findings that emerge from multiple studies (which may take decades) that we may have convincing evidence about the answer to the broader scientific question.</p>
+</div>
+<div id="six-principles-about-p-values" class="section level3 unnumbered">
+<h3>Six Principles about p-Values</h3>
+<p>Because they are so ubiquitous in the research literature for any field, and because they are often mis-interpreted (even by PhDs, researchers, and math teachers) it is important to be aware of what a <span class="math inline">\(p\)</span>-value tells you, and more importantly, what it doesn’t tell you. To this end, the American Statistical Association released a <a href="http://amstat.tandfonline.com/doi/abs/10.1080/00031305.2016.1154108#.Vt2XIOaE2MN">statement on <span class="math inline">\(p\)</span>-values</a> in which it listed six principles:<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></p>
+<ul>
+<li><strong>Principle 1:</strong> <span class="math inline">\(P\)</span>-values can indicate how incompatible the data are with a specified statistical model.</li>
+<li><strong>Principle 2:</strong> <span class="math inline">\(P\)</span>-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</li>
+<li><strong>Principle 3:</strong> Scientific conclusions and business or policy decisions should not be based only on whether a <span class="math inline">\(p\)</span>-value passes a specific threshold.</li>
+<li><strong>Principle 4:</strong> Proper inference requires full reporting and transparency.</li>
+<li><strong>Principle 5:</strong> A <span class="math inline">\(p\)</span>-value does not measure the size of an effect or the importance of a result.</li>
+<li><strong>Principle 6:</strong> By itself, a <span class="math inline">\(p\)</span>-value does not provide a good measure of evidence regarding a model or hypothesis.</li>
+</ul>
+<!-- Principle 3 is especially poignant, as many reserachers use the criterion of 0.05 when evaluating $p$-values to indicate whether a result is statistically significant ($p \leq 0.05$) or not. In fact, this use was so pervasive and problematic, that the journal *Basic and Applied Social Psychology* [banned the use of $p$-values](http://www.nature.com/news/psychology-journal-bans-p-values-1.17001) in its published articles. It also led to many jokes about $p$-values, including this [XKCD](https://xkcd.com) comic. -->
+<!-- <center> -->
+<!-- ![](https://imgs.xkcd.com/comics/p_values.png) -->
+<!-- </center> -->
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="12">
+<li id="fn12"><p>Yaddanapudi (2016) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5187603/">published a paper</a> in the <em>Journal of Anaesthesiology, Clinical Pharmacology</em> in which she explains each of these six principles for practicing physician-scientists using an example of treatment efficacy for a drug.<a href="quantifying-results-p-value.html#fnref12" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="experimental-variation-and-the-randomization-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="internal-validity-evidence-and-random-assignment.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

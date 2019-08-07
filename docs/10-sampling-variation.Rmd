@@ -1,6 +1,6 @@
 # Sampling Variation and the Bootstrap Test {-}
 
-In Unit 3, we discovered that, even under the null hypothesis of no group differences, group means from randomized studies vary because of experimental variation. That is, chance variation occurs because of random assignment. Recall in Unit 2, that the chance variation was a function of the sampling process; different samples drawn from the population (model) produced different results. When results vary because of the sampling process, the chance variation is referred to as **sampling variation**.
+In Unit 3, we discovered that, even under the null hypothesis of no group differences, group means from randomized studies vary because of experimental variation. That is, variation in the result occurs because of random assignment. Recall in Unit 2, that the chance variation was a function of the sampling process; different samples drawn from the population (model) produced different results. When results vary because of the sampling process, the chance variation is referred to as **sampling variation**.
 
 ### Sampling Variation {-}
 
@@ -33,7 +33,7 @@ In order to answer that question, we need to understand how much variation we ex
 
 ### Bootstrapping {-}
 
-If we had the larger population of all baby names from 1945 and 1995, we could combine them all and draw two random samples of size 25 from this mega-population; one sample we label "1945", and the other we label "1995". (We combine the two popualtions because the hypothesized model of "no differences" implies that there is really only one population; no difference between the two populations). We could do this many times, each time collecting the difference in mean name lengths between the two samples. By plotting the difference in means, and computing the standard deviation of these differences, we could quantify the amount of variation we expect just because of sampling variation.
+If we had the larger population of all baby names from 1945 and 1995, we could combine them all and draw two random samples of size 25 from this mega-population; one sample we label "1945", and the other we label "1995". (We combine the two populations because the hypothesized model of "no differences" implies that there is really only one population; no difference between the two populations). We could do this many times, each time collecting the difference in mean name lengths between the two samples. By plotting the difference in means, and computing the standard deviation of these differences, we could quantify the amount of variation we expect just because of sampling variation.
 
 Unfortunately, we do not have the population of baby names from 1945 and 1995. What we do have is a random sample of those names. So, we are going to combine the names from our two samples to form a "mega-population". Then, we are going to draw two random samples of size 25 from this "mega-population". 
 
@@ -53,4 +53,4 @@ knitr::include_graphics("img/unit-04-outline.png")
 
 <br />
 
-In the readings, course activities, and assignments in Unit 4, you will explore the process of modeling sampling variation to be able to evaluate observed differences between groups. You will learn about the bootstrap test, a Monte Carlo method for modeling sampling variation, and how to carry out this test using TinkerPlots&trade;. You will also learn why random sampling helps provide validity evidence for generalizing results to the population (external validity evidence). Lastly, you will learn how to evaluate group differences from observational studies.
+In the readings, course activities, and assignments in Unit 4, you will explore the process of modeling sampling variation to be able to evaluate observed differences between groups. You will learn about the bootstrap test (a Monte Carlo method for evaluating whether an observed result in compatible with sampling variation from a hypothesized model) and how to carry out this test using TinkerPlots&trade;. You will also learn why random sampling helps provide validity evidence for generalizing results to the population (external validity evidence). Lastly, you will learn how to evaluate group differences from observational studies.
