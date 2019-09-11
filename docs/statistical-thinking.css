@@ -80,3 +80,67 @@ h6 { font-family: 'Playfair Display', serif; }
   padding: 5px 10px 15px;
   background-color: #F4F4F8;
 }
+
+
+/* ============================================================================================================================
+== OVAL THOUGHT BUBBLE (more CSS3)
+** ============================================================================================================================ */
+
+.oval-thought {
+  position: relative;
+  width: 70%;
+  padding: 50px 40px;
+  margin: 1em auto 80px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#dedede), to(#fff));
+  background:-moz-linear-gradient(#dedede, #fff);
+  background:-o-linear-gradient(#dedede, #fff);
+  background:linear-gradient(#dedede, #fff);
+  /*
+  NOTES:
+  -webkit-border-radius:220px 120px; // produces oval in safari 4 and chrome 4
+  -webkit-border-radius:220px / 120px; // produces oval in chrome 4 (again!) but not supported in safari 4
+  Not correct application of the current spec, therefore, using longhand to avoid future problems with webkit corrects this
+  */
+  -webkit-border-top-left-radius: 220px 120px;
+  -webkit-border-top-right-radius: 220px 120px;
+  -webkit-border-bottom-right-radius: 220px 120px;
+  -webkit-border-bottom-left-radius: 220px 120px;
+  -moz-border-radius: 220px / 120px;
+  border-radius:220px / 120px;
+}
+
+.oval-thought p {font-size:1em;}
+
+/* creates the larger circle */
+.oval-thought:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 30px;
+  height: 30px;
+  background: #dedede;
+  /* css3 */
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
+  border-radius: 30px;
+}
+
+/* creates the smaller circle */
+.oval-thought:after {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  left:30px;
+  width:15px;
+  height:15px;
+  background:#dedede;
+  /* css3 */
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+}

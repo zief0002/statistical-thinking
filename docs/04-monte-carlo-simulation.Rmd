@@ -14,12 +14,18 @@ In 1978, China introduced the "one-child" policy in order to alleviate social, e
 Although the Chinese government has suggested that the policy has prevented more than 250 million births from its implementation to 2000, the policy is controversial both within and outside of China because of the manner in which the policy has been implemented. There have also been concerns raised about potential negative economic and social consequences, in part because many families were determined to have a son. Scholars have wondered how things would change if instead of a one-child policy, a country adopted a "one son" policy. A "one son" policy would allow families to keep having children until they had a son. If a family's first child is a boy, they would be restricted from having more children. If, however, the first child was a daughter, the family could continue having children until a son was born. For example, they might ask the question,
 
 
-<div class="image">
-  <img src="img/speech-bubble.png" />
-  <span class="oval-thought" style="margin-top:20px;"><center><span style="font-size: .9em;">If China adopted a "one son" policy, how would the policy <br /> affect the average number of children per family, which is currently 1.6^[[World Factbook](https://www.cia.gov/library/publications/the-world-factbook/fields/2127.html)]?</span></center></span>
-</div>
+<!-- <div class="image"> -->
+<!--   <img src="img/speech-bubble.png" /> -->
+<!--   <span class="oval-thought" style="margin-top:20px;"><center><span style="font-size: .9em;">If China adopted a "one son" policy, how would the policy <br /> affect the average number of children per family, which is currently 1.6^[[World Factbook](https://www.cia.gov/library/publications/the-world-factbook/fields/2127.html)]?</span></center></span> -->
+<!-- </div> -->
 
+<center>
+<blockquote class="oval-thought">
+  <p><br />If China adopted a "one son" policy, how would the policy affect the average number of children per family, which is currently 1.6?^[[World Factbook](https://www.cia.gov/library/publications/the-world-factbook/fields/2127.html)]<br /><br /></p>
+</blockquote>
+</center>
 
+<br />
 
 One way in which this question could be studied (without actually implementing the policy) would be to conduct a simulation study by modeling this situation and generating many data sets from the model. Consider for a minute how you might model the number of children a particular family would have. 
 
