@@ -29,11 +29,11 @@ As you progress through the unit, remember that the modeling process is a creati
 
 ### Randomness {-}
 
-One critical component of simulation is the random process used to generate data. To help you begin to understand randomness, watch the [Random Sequences: Human vs. Coin](https://www.youtube.com/v/H2lJLXS3AYM) YouTube video. 
+One critical component of simulation is the random process used to generate data. To help you begin to understand randomness, watch the [Random Sequences: Human vs. Coin](https://www.youtube.com/watch?v=H2lJLXS3AYM) YouTube video. 
 
 <br />
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=H2lJLXS3AYM" frameborder="0" allowfullscreen></iframe>
-</center>
 
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H2lJLXS3AYM" frameborder="q" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
