@@ -39,7 +39,7 @@ Unfortunately, we do not have the population of baby names from 1945 and 1995. W
 
 Wait a minute. When we combined our two samples together, our "mega-population" was only 50 names big. If we draw two samples, each of size 25, from this "mega-population", isn't that all of the "mega-population"? If we do that, isn't that the same thing as the randomization test? How does that allow us to model sampling error? After all, the randomization test helps model experimental error.
 
-All true. We can, however, model sampling error, with one twist. When we draw our 25 names for eah sample from our "mega-population", we sample WITH REPLACEMENT. In this way, we mimic drawing random samples from a larger population without actually needing the larger population. It is a really nifty method called **bootstrapping** developed by Brad Efron in the late 1970's. Efron's big discovery was that by bootstrapping (sampling with replacement) from a random sample, a person could come up with a good estimate of the sampling variation. 
+All true. We can, however, model sampling error, with one twist. When we draw our 25 names for each sample from our "mega-population", we sample WITH REPLACEMENT. In this way, we mimic drawing random samples from a larger population without actually needing the larger population. It is a really nifty method called **bootstrapping** developed by Brad Efron in the late 1970's. Efron's big discovery was that by bootstrapping (sampling with replacement) from a random sample, a person could come up with a good estimate of the sampling variation. 
 
 ### Outline and Goals of Unit 4 {-}
 

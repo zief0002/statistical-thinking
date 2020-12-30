@@ -18,7 +18,7 @@ Much of the material presented in the lab manual requires the use of TinkerPlots
 
 ### Lab Manual and Data Sets {-}
 
-You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: [https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4.pdf?raw=true](https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4.pdf?raw=true).
+You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: [https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_2.pdf?raw=true](https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_2.pdf?raw=true).
 
 There are several data sets used in the lab manual, as well as in EPsy 3264 assignments. To download a ZIP file to your computer that includes all the data sets, click this link: [https://github.com/zief0002/statistical-thinking/blob/master/data.zip?raw=true](https://github.com/zief0002/statistical-thinking/blob/master/data.zip?raw=true). Once the ZIP file has been downloaded to your computer, double-click the ZIP file to unzip it and access the materials.
 
