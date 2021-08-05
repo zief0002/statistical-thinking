@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Experimental Variation and the Randomization Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Experimental Variation and the Randomization Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="Experimental Variation and the Randomization Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="Experimental Variation and the Randomization Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction.html"/>
-<link rel="next" href="generating-data-from-models.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<link rel="prev" href="describing-distributions.html"/>
+<link rel="next" href="quantifying-results-p-value.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,41 +178,43 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="modeling-simulation" class="section level1 unnumbered">
-<h1>Modeling &amp; Simulation</h1>
+<div id="experimental-variation-and-the-randomization-test" class="section level1 unnumbered">
+<h1>Experimental Variation and the Randomization Test</h1>
 <blockquote>
-<p>There is mounting evidence that the “model-building era”" that dominated the theoretical activities of the sciences for a long time is about to be succeeded or at least lastingly supplemented by the “simulation era”.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>The nature of doing science, be it natural or social, inevitably calls for comparison. Statistical methods are at the heart of such comparison, for they not only help us gain understanding of the world around us but often define how our research is to be carried out.<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
 </blockquote>
-<p>Modeling is one of the most important topics you may ever learn. It is used in microbiology, macroeconomics, urban studies, sociology, psychology, public health, computer science, and of course, statistics. In fact, modeling is a method that is used in almost every discipline. Many think that it is an important skill to learn because it is so pervasive. While this is true, even more important is how closely the skills of modeling tie to the more general skills of problem solving. Starfield, Smith, and Bleloch (1994) summed this sentiment up nicely when they wrote, “learning to model is bound up with learning to solve problems and to think imaginatively and purposefully” (p. x).<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
-<p>A model is a simplified representation of a system that can be used to promote an understanding of a more complex system. For example, meteorologists use computers to build models of the climate to understand and predict the weather. The computer model includes behaviors or properties which correspond, in some way, to the particular real-world system of climate. The computer models, however, do not include every possible detail about climate. All models leave things out and get some things—many things—wrong. This is because all models are simplifications of reality. Since all models are simplifications of reality there is always a trade-off as to what level of detail is included in the model. If too little detail is included in the model one runs the risk of missing relevant interactions and the resultant model does not promote understanding. If too much detail is included in the model, the model may become overly complicated and actually preclude the development of understanding.</p>
-<p>Models have many purposes, but are primarily used to better understand phenomena in the real-world. Common uses of models are for description, exploration, prediction, and classification. For example, Google builds models to understand and predict peoples’ internet searching tendencies. These models are then used to help Google carry out more efficient and better searches of information. As another example, Netflix builds models to understand the characteristics of movies that their customers have rated highly so that they can then recommend other movies that the person may enjoy. Amazon and Apple iTunes both use models in similar manners.</p>
-<div id="outline-and-goals-of-unit-1" class="section level3 unnumbered">
-<h3>Outline and Goals of Unit 1</h3>
-<p>The following schematic outlines the course readings, in-class activities, and assignments for Unit 1.</p>
-<p><br /></p>
-<p><img src="img/unit-01-outline.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
-<p><br /></p>
-<p>In this unit, you will begin by exploring ideas of randomness. Randomness permeates, and is, in fact, fundamental to statistics. Then, you will learn how to use TinkerPlots™ to model several random processes and generate outcomes from those models. By generating data from different models, you will gain experience in considering the variation in outcomes that is produced by these random processes. This consideration will help you understand and overcome many misleading human intuitions about randomness.</p>
-<p>You will also be introduced to the Monte Carlo simulation process and learn how to carry out a Monte Carlo simulation using TinkerPlots™. This process allows you to quickly generate multiple data sets from a model in order to carry out hypothetical experiments. For example, we could ask the question: How likely is it to rain three out of the five days on my vacation given a particular forecast? By modeling the forecast and repeatedly generating data for the five days of vacation, we can then answer this question.</p>
-<p>As you progress through the unit, remember that the modeling process is a creative process that can often be very challenging. At times, this might lead to frustration as you are learning and practicing some of the material. But, as Mosteller et al. (1973) remind us, it is also a profitable experience since, “modeling is not only a technique of statistics…it is a method of study which can be applied in many other fields as well” (p. xii).<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p>Drawing inferences about the differences between groups is an almost daily occurrence in the lives of most people. In any given hour of any given day, television, radio and social media abound with comparisons. For example, data scientists at <a href="https://www.okcupid.com/">OKCupid</a>, an online dating site, examined whether frequent tweeters (users of Twitter) have shorter real-life relationships than others.<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
+<p>Group comparisons are at the heart of many interesting questions addressed by psychologists, physicians, scientists, teachers, and engineers. Questions about group differences are often studied through scientific experiments. When considering a scientific experiment to examine group differences, the design of the study plays a very important role. To help understand this, think about a researcher who is studying the efficacy of a new cold medication. Let’s say that the researcher has 100 people (each with a cold) who volunteer to be a part of her study. Let’s consider how she might design her study.</p>
+<ul>
+<li><strong>Design 1:</strong> She gives the cold medicine to all 100 volunteers.</li>
+<li><strong>Design 2:</strong> She gives the cold medicine to the first 50 volunteers (treatment group) and nothing to the other 50 volunteers (control group).</li>
+<li><strong>Design 3:</strong> She randomly picks 50 of the volunteers to whom she gives the cold medicine (treatment group), and she gives nothing to the other 50 volunteers (control group).</li>
+</ul>
+<p>All three designs have been used, and are still used, in research studies. There are pros and cons to each of the designs, and all are useful depending on what you want to know.</p>
+<p>In Design 1, it is hard to judge the efficacy of the medication. For example, what if 60 of the volunteers had no cold symptoms after four days? Did the medication work? You might be thinking, “what would have happened if they hadn’t received any medication?” That is a great question. In this design, we don’t know.</p>
+<p>Design 2 gives the researcher a comparison group. She can compare the number of volunteers in each group who have no cold symptoms after four days. This is a better design than Design 1 for examining efficacy. But, what if she found that after four days, 35 of the volunteers who got the medication had no symptoms, while only 25 of the volunteers who didn’t receive medication had no symptoms. Is this enough evidence for her to say the cold medication is effective? Probably not. Maybe most of the volunteers in the treatment group were already in later stages of their colds. Maybe they had more robust immune systems to begin with (e.g., due to differing exercise or nutrition habits) than the control group. You can imagine many such reasons that the treatment group would show quicker improvement than the control group.</p>
+<p>Design 3 has the same comparison group advantage as Design 2. The big difference, however, is that the volunteers were put into the groups at random. By assigning participants at random, the researcher “equalizes” the treatment and control groups. What this means is that the groups have, on average, the SAME nutritional habits, the SAME exercise habits, and the SAME everything-else. That means that the only thing that is different between the two groups is that the treatment group got the cold medication and the control group didn’t. If the researcher uses this type of design, she can draw much stronger inferences about WHY the treatment group improved: it was because of the cold medication!</p>
+<div id="experimental-variation" class="section level3 unnumbered">
+<h3>Experimental Variation</h3>
+<p>Let’s say our hypothetical researcher used a strong design in which she randomly assigned her volunteers to treatment and control groups. After four days she found that the treatment group had 35 of the 50 volunteers with no symptoms, and the control group had 27 of 50 volunteers with no symptoms. Could she conclude that the cold medication is effective since 8 more volunteers had no symptoms in the treatment group?</p>
+<p>Actually no. And, the reason is because of experimental variation. Consider the situation where the treatment has absolutely NO EFFECT. In other words, it does nothing. Under that assumption, the treatment and the control groups should improve at about the same rate. Under the assumption of no treatment effect, differences between the treatment and control group are not a function of the cold medication. They are solely a function of random chance. Similar to the studies we looked at in Unit 2, we have to figure out how much chance variation is expected before we can say whether the difference of 8 volunteers is actually an improvement.</p>
+<p>One key difference between this type of study and those in Unit 2 is that the chance variation arises from the assignment to groups in these studies, whereas in Unit 2, the chance variation arose because of sampling from a larger population. When the chance variation is due to the assignment of participants to groups, it is referred to as <em>experimental variation</em> rather than <em>sampling variation</em>.</p>
 </div>
-<div id="randomness" class="section level3 unnumbered">
-<h3>Randomness</h3>
-<p>One critical component of simulation is the random process used to generate data. To help you begin to understand randomness, watch the <a href="https://www.youtube.com/watch?v=H2lJLXS3AYM">Random Sequences: Human vs. Coin</a> YouTube video.</p>
+<div id="outline-and-goals-of-unit-3" class="section level3 unnumbered">
+<h3>Outline and Goals of Unit 3</h3>
+<p>The following schematic outlines the course readings, in-class activities, and assignments for Unit 3.</p>
 <p><br /></p>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H2lJLXS3AYM" frameborder="q" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</center>
+<p><img src="img/unit-03-outline.png" width="65%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><br /></p>
+<p>In the readings, course activities, and assignments in Unit 3, you will explore the process of modeling experimental variation to be able to evaluate observed differences between groups. You will learn about the randomization test (a Monte Carlo method for evaluating whether an observed result in compatible with experimental variation from a hypothesized model) and how to carry out this test using TinkerPlots™.</p>
 
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="2">
-<li id="fn2"><p>Hartmann, S. (2005). <em>The world as a process: Simulations in the natural and social sciences.</em> <a href="http://philsci-archive.pitt.edu/2412/">http://philsci-archive.pitt.edu/2412/</a><a href="modeling-simulation.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>Starfield, A. M., Smith, K. A., &amp; Bleloch, A. L. (1994). <em>How to model it: Problem solving for the computer age.</em> Edina, MN: Burgess International Group, Inc.<a href="modeling-simulation.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Mosteller, F., Kruskal, W. H., Link, R. F., Pieters, R. S., &amp; Rising, G. R. (1973). <em>Statistics by example: Finding models.</em> Reading, MA: Addison–Wesley.<a href="modeling-simulation.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<ol start="10">
+<li id="fn10"><p>Liao, T. F. (2002). <em>Statistical group comparison.</em> New York: Wiley.<a href="experimental-variation-and-the-randomization-test.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p>The website <a href="http://blog.okcupid.com/">OKTrends</a> includes an answer to this question, as well as many others.<a href="experimental-variation-and-the-randomization-test.html#fnref11" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -217,8 +222,8 @@ $(document).ready(function()
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="generating-data-from-models.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="describing-distributions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="quantifying-results-p-value.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -241,6 +246,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

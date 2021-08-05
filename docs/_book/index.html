@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Monte Carlo Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Monte Carlo Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Monte Carlo Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Monte Carlo Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="generating-data-from-models.html"/>
-<link rel="next" href="modeling-sampling-variation.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+
+<link rel="next" href="introduction.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,92 +178,57 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="monte-carlo-simulation" class="section level1 unnumbered">
-<h1>Monte Carlo Simulation</h1>
-<p>Monte Carlo simulation is one method that statisticians use to understand real-world phenomena. In Monte Carlo simulation, a model is used to generate multiple (sometimes millions) of data sets. By examining the data sets produced (or summaries of the data sets produced), researchers can draw insight about and predict what might happen in the real-world under a given set of circumstances. You can read about the fascinating origins of Monte Carlo simulation in the following article:</p>
+<div id="header">
+<h1 class="title">Statistical Thinking: A Simulation Approach to Modeling Uncertainty</h1>
+<p class="author"><em></em></p>
+</div>
+<div id="front-matter" class="section level1 unnumbered">
+<h1>Front Matter</h1>
+<p><img src="img/catalst-textbook-cover-v4_3.png" width="25%" style="display: block; margin: auto;" /></p>
+<p><br /></p>
+<p>This website is intended to serve as an organizational hub for the most current version of the CATALST Project’s <em>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</em>. Here you will be able to access materials such as readings, data sets, and the lab manual. The website also includes helpful links and resources for each of the course topics.</p>
+<p><br /></p>
+<p>The resources that accompany this website include:</p>
 <ul>
-<li><a href="http://www.webpages.uidaho.edu/~stevel/565/literature/The%20Beginning%20of%20Monte%20Carlo%20Method.pdf">The Beginning of the Monte Carlo Method</a></li>
+<li>A lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_3.pdf?raw=true">PDF copy available here</a></li>
+<li>Data sets used in the lab manual:
+<ul>
+<li><a href="https://github.com/zief0002/statistical-thinking/blob/master/tp3-data.zip?raw=true">TinkerPlots 3 Data Files</a></li>
+</ul></li>
 </ul>
-<div id="example-of-a-monte-carlo-simulation-study" class="section level3 unnumbered">
-<h3>Example of a Monte Carlo Simulation Study</h3>
-<p>In 1978, China introduced the “one-child” policy in order to alleviate social, economic, and environmental problems in China. According to Wikipedia,<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
-<blockquote>
-<p>The policy officially restricts the number of children married urban couples can have to one, although it allows exemptions for several cases, including rural couples, ethnic minorities, and parents without any siblings themselves. A spokesperson of the Committee on the One-Child Policy has said that approximately 35.9% of China’s population is currently subject to the one-child restriction.</p>
-</blockquote>
-<p>Although the Chinese government has suggested that the policy has prevented more than 250 million births from its implementation to 2000, the policy is controversial both within and outside of China because of the manner in which the policy has been implemented. There have also been concerns raised about potential negative economic and social consequences, in part because many families were determined to have a son. Scholars have wondered how things would change if instead of a one-child policy, a country adopted a “one son” policy. A “one son” policy would allow families to keep having children until they had a son. If a family’s first child is a boy, they would be restricted from having more children. If, however, the first child was a daughter, the family could continue having children until a son was born. For example, they might ask the question,</p>
-<!-- <div class="image"> -->
-<!--   <img src="img/speech-bubble.png" /> -->
-<!--   <span class="oval-thought" style="margin-top:20px;"><center><span style="font-size: .9em;">If China adopted a "one son" policy, how would the policy <br /> affect the average number of children per family, which is currently 1.6^[[World Factbook](https://www.cia.gov/library/publications/the-world-factbook/fields/2127.html)]?</span></center></span> -->
-<!-- </div> -->
-<center>
-<blockquote class="oval-thought">
-<p>
-<br />If China adopted a “one son” policy, how would the policy affect the average number of children per family, which is currently 1.6?<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a><br /><br />
-</p>
-</blockquote>
-</center>
+<p>You can read more about these resources in the introduction.</p>
 <p><br /></p>
-<p>One way in which this question could be studied (without actually implementing the policy) would be to conduct a simulation study by modeling this situation and generating many data sets from the model. Consider for a minute how you might model the number of children a particular family would have.</p>
-<p>One way to model this is to write the word <strong>boy</strong> on one index card and the word <strong>girl</strong> on another index card and to place those two index cards in a hat. After mixing up the index cards, you could draw a single card from the hat. If the card has the word <strong>boy</strong> written on it, the simulated “family” would be reported to have one child. If the card has the word <strong>girl</strong> written on it, a tally mark could be recorded and the index card would be replaced in the hat. The cards could then be remixed and another card would be drawn. If the second card drawn has the word <strong>boy</strong> written on it, the simulated “family” would be reported to have two children. If the second card has the word <strong>girl</strong> written on it, another tally mark could be recorded and the index card would again be replaced in the hat. This process would continue until the <strong>boy</strong> card was drawn. The table below shows the results after carrying out this process for three simulated families.</p>
+<div id="licensing-and-attribution" class="section level3 unnumbered">
+<h3>Licensing and Attribution</h3>
+<p>Copyright © 2021 Catalysts for Change</p>
+<p>PUBLISHED BY CATALYST PRESS</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to share, remix, and make commercial use of the work under the condition that you provide proper attribution. To reference this work, use:</p>
+<ul>
+<li>Zieffler, A., &amp; Catalysts for Change. (2019). <em>Statistical Thinking: A simulation approach to uncertainty</em> (4.3th ed.). Minneapolis, MN: Catalyst Press. <a href="http://zief0002.github.io/statistical-thinking/">http://zief0002.github.io/statistical-thinking/</a></li>
+</ul>
+<p>The work to create the material appearing in the book was made possible by the National Science Foundation (DUE–0814433).</p>
+<p>The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Dan Butler, Tony Casci, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Jeffrey Finholm, Chris Fiscus, Elizabeth Fry, Joan Garfield, Theresa Gieschen, Meg Goerdt, Robert Gould, Adam Gust, Melissa Hanson, John Holcomb, Michael Huberty, Rebekah Isaak, Kari Johnson, Nicola Justice, Laura Le, Chelsey Legacy, Suzanne Loch, Matthew Mullenbach, Michael Nguyen, Amy Okan, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler</p>
+<p>Additionally, some of the activities presented in the lab manual were originally developed by Beth Chance, George Cobb, John Holcomb, and Allan Rossman as part of their NSF-funded project <a href="http://statweb.calpoly.edu/csi/">Concepts of Statistical Inference: A Randomization-Based Curriculum</a> (NSF CCLI- DUE-0633349).</p>
 <p><br /></p>
-<table>
-<caption><span id="tab:unnamed-chunk-3">Table 1: </span>The recorded number of girls and boys for three simulated families.</caption>
-<thead>
-<tr class="header">
-<th align="left">Family</th>
-<th align="left">Girl</th>
-<th align="left">Boy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Family #1</td>
-<td align="left">✔</td>
-<td align="left">✔</td>
-</tr>
-<tr class="even">
-<td align="left">Family #2</td>
-<td align="left"></td>
-<td align="left">✔</td>
-</tr>
-<tr class="odd">
-<td align="left">Family #3</td>
-<td align="left">✔✔</td>
-<td align="left">✔</td>
-</tr>
-</tbody>
-</table>
-<p><br /></p>
-<p>We could carry out this simulation for many families, say 500 families, and use the results to provide an answer to the research question. You can imagine that carrying out even this simple simulation would quickly become quite tedious. Simulation studies, such as this, are typically carried out using computer programs. In this unit, you will learn to use a computer program called TinkerPlots™ to model processes in the real-world and carry out simulation studies.</p>
 </div>
-<div id="monte-carlo-simulation-assumptions" class="section level3 unnumbered">
-<h3>Monte Carlo Simulation Assumptions</h3>
-<p>“Wait,” you say. “Even if I carried out this simulation, I still would not be able to provide an answer to the research question! It doesn’t reflect reality! Some families may not want to have any children, while others might be happy to stop after a girl was born. What about multiple births?”</p>
-<p>Maybe you are even questioning whether the probability of having a boy or having a girl is really 50:50. These are all valid points, and all would likely affect the results of the simulation, which in turn affects the inferences and conclusions that are drawn.</p>
-<p>While the model used in the “one son” example is overly simplistic for drawing any sorts of meaningful conclusions about implementing such a policy in China, it could, however, provide a useful starting point for introducing additional complexity. Even in the most enormously complicated modeling problem, researchers often make many simplifying assumptions. (Remember that all models—even those that seem quite complex—are simplifications of reality and get many things wrong.) With enough simplification, a model can be constructed and studied. The model is evaluated and often revised or updated as certain assumptions are deemed tenable and others are not. Because of this process, simulation studies are generally iterative in their development. This iteration process continues until an adequate level of understanding is developed and the research question can be answered.</p>
-</div>
-<div id="monte-carlo-simulation-in-practice" class="section level3 unnumbered">
-<h3>Monte Carlo Simulation in Practice</h3>
-<p>In practice, statisticians often use incredibly complex models to generate their data. As an example, Electronic Arts, the video game company behind titles such as <em>Madden</em>, <em>NHL</em> and <em>FIFA</em>, uses game telemetry (the transmission of data from a game executable for recording and analysis) to model the gameplay patterns of players and identify the elements of their games that are highly correlated with player retention.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></p>
-<p>By understanding the behavior of players and the common patterns that are used, Electronic Arts game developers can focus their attention on more relevant features in future iterations of the game and ultimately reduce production costs. For example, in their examination of <em>Madden NFL 11</em>, Electronic Arts used 46 features to model players’ preferences, including their control usage, performance, and play-calling style. This is but one example of using simulation in video games.</p>
+<div id="colophon" class="section level3 unnumbered">
+<h3>Colophon</h3>
+<p>There are two <a href="https://fonts.google.com/">Google Fonts</a> used on the website. The headings use <a href="https://fonts.google.com/specimen/Playfair+Display">Playfair Display</a> and the display text is <a href="https://fonts.google.com/specimen/Alegreya">Alegreya</a>.</p>
+<p>Icons used on the website are:</p>
+<ul>
+<li><a href="https://thenounproject.com/iconproducer/collection/keys/?oq=key&amp;cidx=0&amp;i=713748">Key</a> by Iconic from the <a href="https://thenounproject.com/">Noun Project</a></li>
+</ul>
 
 </div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="5">
-<li id="fn5"><p>One-child policy. (2015, May 30). In Wikipedia, The Free Encyclopedia. Retrieved 18:02, June 1, 2015, from <a href="http://en.wikipedia.org/w/index.php?title=One-child_policy&amp;oldid=664745432">http://en.wikipedia.org/w/index.php?title=One-child_policy&amp;oldid=664745432</a><a href="monte-carlo-simulation.html#fnref5" class="footnote-back">↩︎</a></p></li>
-<li id="fn6"><p><a href="https://www.cia.gov/library/publications/the-world-factbook/fields/2127.html">World Factbook</a><a href="monte-carlo-simulation.html#fnref6" class="footnote-back">↩︎</a></p></li>
-<li id="fn7"><p>Weber, B. G., John, M., Mateas, M., &amp; Jhala, A. (2011). <em>Modeling player retention in Madden NFL 11.</em> Presented at Innovative Applications of Artificial Intelligence. <a href="http://users.soe.ucsc.edu/~bweber/pubs/madden11retention.pdf">http://users.soe.ucsc.edu/~bweber/pubs/madden11retention.pdf</a><a href="monte-carlo-simulation.html#fnref7" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="generating-data-from-models.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="modeling-sampling-variation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -283,6 +251,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

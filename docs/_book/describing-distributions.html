@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Sampling Variation and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Sampling Variation and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Describing Distributions | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Describing Distributions | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Sampling Variation and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="Describing Distributions | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Sampling Variation and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="Describing Distributions | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="internal-validity-evidence-and-random-assignment.html"/>
-<link rel="next" href="external-validity-evidence-and-random-sampling.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<link rel="prev" href="modeling-sampling-variation.html"/>
+<link rel="next" href="experimental-variation-and-the-randomization-test.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,45 +178,85 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sampling-variation-and-the-bootstrap-test" class="section level1 unnumbered">
-<h1>Sampling Variation and the Bootstrap Test</h1>
-<p>In Unit 3, we discovered that, even under the null hypothesis of no group differences, group means from randomized studies vary because of experimental variation. That is, variation in the result occurs because of random assignment. Recall in Unit 2, that the chance variation was a function of the sampling process; different samples drawn from the population (model) produced different results. When results vary because of the sampling process, the chance variation is referred to as <strong>sampling variation</strong>.</p>
-<div id="sampling-variation" class="section level3 unnumbered">
-<h3>Sampling Variation</h3>
-<p>Some designs for group comparisons also are affected by sampling variation. For example, a study design that employs random sampling to obtain observations would inherently be affected by sampling variation. Consider the following study that examined whether baby names are getting shorter over time.</p>
+<div id="describing-distributions" class="section level1 unnumbered">
+<h1>Describing Distributions</h1>
+<p>One of the important steps in any statistical analysis is that of summarizing data. It is good practice to examine both a graphical and a numerical summarization of your data. These summaries are often part of the evidence that researchers use to support any conclusions drawn from the data. They also allow researchers to discover structure that might have otherwise been overlooked in the raw data that was actually collected. Lastly, both graphical and numerical summaries of the data often point to other analyses that may be undertaken with the data.</p>
+<p>Once raw data has been collected in a study, it can be overwhelming to pull any kind of meaning out of it. For example, it is not uncommon for Google to be dealing with millions of cases. How can Google—or any researcher for that matter—go from all of that raw data to something that can help them answer their research questions?</p>
+<p>Rather than examining all of those cases individually, researchers examine the data collectively, often by plotting it. This is what is meant by a graphical summary of the data; it is quite literally, a picture of the distribution.</p>
+<p>There are many, many different types of plots that have been created to graphically summarize data. Each can provide a slightly different representation of the data. Metaphorically, you can imagine each of these different plot types as a different photo taken of the exact same person. Some may be color, others black and white. Some may be taken from different perspectives, angles or distances. While all photographs “summarize” the same person, you may notice characteristics of that person in some photos that are not evident in others. Many of the photos, however, will show the same thing.</p>
+<div id="shape" class="section level3 unnumbered">
+<h3>Shape</h3>
+<p>The dot plot that TinkerPlots™ provides is a very useful plot.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> It allows us to summarize the shape of the distribution very easily. Shape is used to describe a distribution’s symmetry. As you might expect, symmetric distributions are shaped the same on either side of the center. (Another way of thinking about this is that if you folded the distribution at the center, the folded half of the distribution would align pretty well on top of the other half.) For example, “bell-shaped” (“approximately normal”) distributions are symmetric.</p>
+<p>When a distribution is asymmetric, it is referred to as a <strong>skewed</strong> distribution. The distribution shown in Figure 1 is a skewed distribution. In this distribution, there appears to be a longer tail on the right side of the distribution. Because the tail is on the right side of the distribution, statisticians would say it is “skewed to the right” or “positively skewed”. In a similar way, a distribution that tails to the left is “skewed to the left” or “negatively skewed”.</p>
+<p><br /></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<img src="img/skewed-right.png" alt="This distribution is skewed to the right, or positively skewed." width="50%" />
+<p class="caption">
+Figure 1: This distribution is skewed to the right, or positively skewed.
+</p>
+</div>
+<p><br /></p>
+</div>
+<div id="location" class="section level3 unnumbered">
+<h3>Location</h3>
+<p>Aside from the overall shape of the distribution, it is also useful to summarize the location of the distribution. The location of the distribution provides a summarization of a so-called “typical” value for the data. A “typical” value can be estimated from the plot of the distribution. You can also use more formally calculated summaries of the location such as the mean, median, or mode. These values are easily calculated using TinkerPlots™.</p>
+<p>When looking at a plot of a distribution, data analysts often consider the number of modes or “humps” that are seen in a plot of the distribution. Here, the concept of mode is slightly different (although related) to the concept of mode that you may have learned in previous mathematics or statistics courses. The mode of a distribution gives a general sense of the values or measurements that occur frequently. This may be a single number, but many times is not. For example, the first hump of the distribution shown in the figure below suggests that values around nine are very common. The actual value of nine, however, may only show up once or twice in the data.</p>
+<p><br /></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<img src="img/bimodal.png" alt="A bimodal distribution showing two modes. One mode is around 9, and the other is near 12." width="50%" />
+<p class="caption">
+Figure 2: A bimodal distribution showing two modes. One mode is around 9, and the other is near 12.
+</p>
+</div>
+<p><br /></p>
+<p>A distribution can be <strong>unimodal</strong> (one mode), <strong>bimodal</strong> (two modes), <strong>multimodal</strong> (many modes), or <strong>uniform</strong> (no modes). The distribution shown above is bimodal—notice there are two humps. Uniform distributions have roughly the same frequency for all possible values (they look essentially flat) and thus have no modes.</p>
+</div>
+<div id="variation" class="section level3 unnumbered">
+<h3>Variation</h3>
+<p>A third characteristic of a distribution that should be summarized is the variation. Summarizing the variation gives an indication of how variable the data are. One method of numerically summarizing the variability in the data is to quantify how close the observations are relative to the “typical” value on average. Are the observations for the most part close to the “typical” value? Far away from the “typical” value? How close?</p>
+<p>It turns out, that the shape of the distribution also helps describe the variation in the data. For example, “bell-shaped” distributions have most observations close to the “typical” value, and more extreme observations show up both below and above the “typical” value (the variation is the same on both sides of the “typical” value). Whereas skewed distributions have many observations near the “typical” value, but extreme values only deviate from this value in one direction (there is more variation in the data on one side of the “typical” value than the other).</p>
+<p><br /></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
+<img src="img/skewed-right.png" alt="Most of the observations in this distribution are clustered between 0 and 2. There are some observations greater than 2 (up to 10), although these are rare." width="50%" />
+<p class="caption">
+Figure 3: Most of the observations in this distribution are clustered between 0 and 2. There are some observations greater than 2 (up to 10), although these are rare.
+</p>
+</div>
+<p><br /></p>
+<p>One thing that affects the variation, and should be described is whether there are observations that stand out from the other observations. Often these observations have extremely large or small values relative to the other observations. These observations are referred to as <strong>potential outliers</strong>, or <strong>extreme cases</strong>. For example, in the positively skewed distribution shown previously, the observation that has a value near 10 would likely be considered a potential outlier.</p>
+</div>
+<div id="putting-it-all-together" class="section level3 unnumbered">
+<h3>Putting It All Together</h3>
+<p><a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a> is a website which aggregates movie critics’ reviews of films. The website marks each review as either positive or negative and then gives the film a score based on the percentage of positive reviews. In addition to the critics’ score, each film is also given a score based on reviews from the general public using the same methodology (reviews are tabulated so that the score represents the percentage of positive reviews from the general public). The plot shown below shows a dot plot of the distribution of the general public’s scores for 134 movies released in 2009.</p>
+<p><br /></p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<img src="img/rotton-tomatoes.png" alt="The scores for 134 movies released in 2009 based on the general public’s reviews. The scores represent the percentage of positive reviews for each movie." width="50%" />
+<p class="caption">
+Figure 4: The scores for 134 movies released in 2009 based on the general public’s reviews. The scores represent the percentage of positive reviews for each movie.
+</p>
+</div>
+<p><br /></p>
+<p>A written description of the distribution might read as follows:</p>
 <blockquote>
-<p>The Social Security Administration (SSA) provides historical data on names for every baby born in the United States. Researchers used the population of all names that were included at least five times in the SSA database to randomly sample 25 names from babies born in 1945 and 25 names from babies born in 1995. The length (in letters) of each name was computed, and the two samples were compared.</p>
+<p>The distribution of scores for this sample of 134 movies is fairly symmetric. The median score for these movies is near 60, indicating that a typical movie released in 2009 is positively reviewed by about 60% of the public. The distribution also indicates that there is variation in the movies’ scores. Most of the movies in the sample have a score between 35 and 85, suggesting large differences in the public’s opinion of the quality of these movies.</p>
 </blockquote>
-<p><br /></p>
-<p><img src="img/babynames-data.png" width="50%" style="display: block; margin: auto;" /></p>
-<p><br /></p>
-<p>The plot above shows the distribution of name length for the two samples. Babies born in 1995 have shorter names, on average, than babies born in 1945. Is this difference in means is 0.72. Is this difference evidence that baby names are getting shorter over time?</p>
-<p>In order to answer that question, we need to understand how much variation we expect in differences of means just because of chance. Here, chance is a function of the process of random sampling; note there is no random assignment to groups (year) in these data. Similar to the randomization test, we need to specify a “no difference” model and then simulate from it. But, in the simulation, we need to model the random sampling that was used to generate the data, not randomization to groups.</p>
-</div>
-<div id="bootstrapping" class="section level3 unnumbered">
-<h3>Bootstrapping</h3>
-<p>If we had the larger population of all baby names from 1945 and 1995, we could combine them all and draw two random samples of size 25 from this mega-population; one sample we label “1945”, and the other we label “1995”. (We combine the two populations because the hypothesized model of “no differences” implies that there is really only one population; no difference between the two populations). We could do this many times, each time collecting the difference in mean name lengths between the two samples. By plotting the difference in means, and computing the standard deviation of these differences, we could quantify the amount of variation we expect just because of sampling variation.</p>
-<p>Unfortunately, we do not have the population of baby names from 1945 and 1995. What we do have is a random sample of those names. So, we are going to combine the names from our two samples to form a “mega-population”. Then, we are going to draw two random samples of size 25 from this “mega-population”.</p>
-<p>Wait a minute. When we combined our two samples together, our “mega-population” was only 50 names big. If we draw two samples, each of size 25, from this “mega-population”, isn’t that all of the “mega-population”? If we do that, isn’t that the same thing as the randomization test? How does that allow us to model sampling error? After all, the randomization test helps model experimental error.</p>
-<p>All true. We can, however, model sampling error, with one twist. When we draw our 25 names for each sample from our “mega-population”, we sample WITH REPLACEMENT. In this way, we mimic drawing random samples from a larger population without actually needing the larger population. It is a really nifty method called <strong>bootstrapping</strong> developed by Brad Efron in the late 1970’s. Efron’s big discovery was that by bootstrapping (sampling with replacement) from a random sample, a person could come up with a good estimate of the sampling variation.</p>
-</div>
-<div id="outline-and-goals-of-unit-4" class="section level3 unnumbered">
-<h3>Outline and Goals of Unit 4</h3>
-<p>The following schematic outlines the course readings, in-class activities, and assignments for Unit 4.</p>
-<p><br /></p>
-<p><img src="img/unit-04-outline.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
-<p><br /></p>
-<p>In the readings, course activities, and assignments in Unit 4, you will explore the process of modeling sampling variation to be able to evaluate observed differences between groups. You will learn about the bootstrap test (a Monte Carlo method for evaluating whether an observed result in compatible with sampling variation from a hypothesized model) and how to carry out this test using TinkerPlots™. You will also learn why random sampling helps provide validity evidence for generalizing results to the population (external validity evidence). Lastly, you will learn how to evaluate group differences from observational studies.</p>
+<p>Notice that the description includes a description of the distribution’s shape, location, and variation. It also incorporates the context of the data, in this case film scores. This helps a reader to interpret the description.</p>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="9">
+<li id="fn9"><p>TinkerPlots™ also provides other types of plots, including the box plot (sometimes called the box-and-whiskers plot) and the hat plot (a variation of the box plot).<a href="describing-distributions.html#fnref9" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="internal-validity-evidence-and-random-assignment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="external-validity-evidence-and-random-sampling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="modeling-sampling-variation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="experimental-variation-and-the-randomization-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -236,6 +279,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

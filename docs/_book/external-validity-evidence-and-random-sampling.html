@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>External Validity Evidence and Random Sampling | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="External Validity Evidence and Random Sampling | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="External Validity Evidence and Random Sampling | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="External Validity Evidence and Random Sampling | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="quantifying-results-p-value.html"/>
-<link rel="next" href="sampling-variation-and-the-bootstrap-test.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<link rel="prev" href="sampling-variation-and-the-bootstrap-test.html"/>
+<link rel="next" href="validity-evidence-and-inferences.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,47 +178,61 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="internal-validity-evidence-and-random-assignment" class="section level1 unnumbered">
-<h1>Internal Validity Evidence and Random Assignment</h1>
-<p>Medical researchers may be interested in showing that a drug helps improve people’s health (the cause of improvement is the drug), while educational researchers may be interested in showing a curricular innovation improves students’ learning (the curricular innovation causes improved learning).
-To attribute a causal relationship, there are three criteria a researcher needs to establish:</p>
-<ul>
-<li><strong>Temporal Precedence:</strong> The cause needs to happen BEFORE the effect.</li>
-<li><strong>Covariation of the Cause and Effect:</strong> There needs to be a correlational relationship between the cause and effect.</li>
-<li><strong>No Plausible Alternative Explanations:</strong> ALL other possible explanations for the effect need to be ruled out.</li>
-</ul>
-<p>Because of this third criteria, attributing a cause-and-effect relationship is very difficult. (You can read more about each of these criteria at the <a href="https://www.socialresearchmethods.net/kb/causeeff.php">Web Center for Social Research Methods</a>.)</p>
-<p>Experimental studies have their strength in meeting this third criteria. To rule out ALL other possible explanations for the effect, the control group and the treatment group need to be “identical” with respect to every possible characteristic (aside from the treatment) that could explain differences. This way the only characteristic that will be different is that the treatment group gets the treatment and the control group doesn’t. If there are differences in the outcome, then it must be attributable to the treatment, because the other possible explanations are ruled out.</p>
-<p>So, the key is to make the control and treatment groups “identical” when you are forming them. One thing that makes this task (slightly) easier is that they don’t have to be exactly identical, only <a href="https://www.socialresearchmethods.net/kb/expequi.php">probabilistically equivalent</a>. This means, for example, that if you were matching groups on age that you don’t need the two groups to have identical age distributions; they would only need to have roughly the same AVERAGE age. Here roughly means “the average ages should be the same within what we expect because of sampling error.”</p>
-<p>Now we just need to create the groups so that they have, on average, the same characteristics … for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a></p>
-<p>It turns out that creating probabilistically equivalent groups is a really difficult problem. One method that works pretty well for doing this is to randomly assign participants to the groups. This works best when you have large sample sizes, but even with small sample sizes random assignment has the advantage of at least <em>removing the systematic bias</em> between the two groups (any differences are due to chance and will probably even out between the groups). As <a href="https://en.wikipedia.org/wiki/Random_assignment">Wikipedia’s page on random assignment</a> points out,</p>
-<blockquote>
-<p>Random assignment of participants helps to ensure that any differences between and within the groups are not systematic at the outset of the experiment. Thus, any differences between groups recorded at the end of the experiment can be more confidently attributed to the experimental procedures or treatment. … Random assignment does not guarantee that the groups are matched or equivalent. The groups may still differ on some preexisting attribute due to chance. The use of random assignment cannot eliminate this possibility, but it greatly reduces it.</p>
-</blockquote>
-<p>Internal validity is the degree to which cause-and-effect inferences are accurate and meaningful. Causal attribution is the goal for many researchers. Thus, by using random assignment we have a pretty high degree of evidence for internal validity; we have a much higher belief in causal inferences. Much like evidence used in a court of law, it is useful to think about validity evidence on a continuum. We will visualize this continuum as a barometer. For example, a barometer visualizing the internal validity evidence for a study that employed random assignment in the design might be:</p>
+<div id="external-validity-evidence-and-random-sampling" class="section level1 unnumbered">
+<h1>External Validity Evidence and Random Sampling</h1>
+<p>In statistical inference, generalization refers to the process of using sample data to draw conclusions about the larger population from which the sample was drawn. The sample data provides statisticians with an estimate of the exact “truth” about the population. For example, data collected from 1,000 Americans about their voting preferences may be used to infer the voting preferences of Americans in general. Statisticians are typically concerned with making inferences about some summary measure of the population, a mean or population percentage. (<em>Some vocabulary:</em> Population summary measures are called <strong>parameters</strong>. Sample estimates of parameters are referred to as <strong>statistics</strong>.)</p>
+<p>How useful is a sample statistic when it comes to estimating a population parameter? Can we draw reasonable inference about a population from sample data? This question is at the heart of weighing evidence about external validity. External validity is the degree to which generalizations to the larger population are accurate and meaningful.</p>
+<p>There are two statistical aspects we need to consider when we evaluate evidence for external validity: sampling variation and bias. Sampling variation is the idea that statistics from different samples vary. For example, to use the earlier example, different samples of 1,000 Americans would produce different estimates of voting preferences. This variation needs to be accounted for when estimates are given. One way of thinking about sampling variation is to map it to the quality of precision. (We will focus more on this in Unit 5.)</p>
+<p>The second statistical characteristic we need to attend to is bias. Statistical bias is when sample statistics differ systematically from the population parameter. The key here is the word “systematically”. This implies that there is something in the underlying process (aside from random variation) that is affecting the estimation process.</p>
+<div id="statistical-bias" class="section level3 unnumbered">
+<h3>Statistical Bias</h3>
+<p>To help you think about bias, imagine a person, Arthur Dent, has lost his keys. The actual location of the keys, the Library, is akin to the population parameter. Arthur believes he lost his keys at the Supermarket and searches several places around the Supermarket. The locations where Arthur searches are like sample statistics.</p>
 <p><br /></p>
-<p><img src="img/internal-validity-evidence-barometer.png" width="70%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center"><span id="fig:bias-keys"></span>
+<img src="img/bias-keys.png" alt="This figure is a metaphor for statistical bias." width="70%" />
+<p class="caption">
+Figure 5: This figure is a metaphor for statistical bias.
+</p>
+</div>
 <p><br /></p>
-<p>The degree of internal validity evidence is high (in the upper-third). How high depends on other factors such as sample size.</p>
-<p>To learn more about random assignment, you can read the following:</p>
-<ul>
-<li>The research report, <a href="http://www.childtrends.org/wp-content/uploads/2008/01/Random-Assigment-Evaluations.pdf">Random Assignment Evaluation Studies: A Guide for Out-of-School Time Program Practitioners</a></li>
-</ul>
+<p>Figure <a href="external-validity-evidence-and-random-sampling.html#fig:bias-keys">5</a> is a metaphor for the concept of statistical bias. Arthur’s search locations (sample statistics) are systematically in the wrong place. On average, where Arthur searched (the middle of the yellow circle) is not the actual location of the keys. Compare this with the search locations in Figure <a href="external-validity-evidence-and-random-sampling.html#fig:unbiased-keys">6</a>.</p>
+<p><br /></p>
+<div class="figure" style="text-align: center"><span id="fig:unbiased-keys"></span>
+<img src="img/unbiased-keys.png" alt="This figure is a metaphor for unbiasedness." width="70%" />
+<p class="caption">
+Figure 6: This figure is a metaphor for unbiasedness.
+</p>
+</div>
+<p><br /></p>
+<p>Figure <a href="external-validity-evidence-and-random-sampling.html#fig:unbiased-keys">6</a> is a metaphor for unbiasedness. On average, where Arthur searched is the location of the keys. There are a couple of other concepts that this metaphor can help us think about.</p>
+<ol style="list-style-type: decimal">
+<li><p>Even in Figure <a href="external-validity-evidence-and-random-sampling.html#fig:unbiased-keys">6</a>, none of the actual search locations were right at the keys. Some of the locations were too far to the left of the keys, and others were too far to the right of the keys. However, ON AVERAGE, the search locations “found” the keys. The way we define unbiased is that the AVERAGE of the statistics is at the population parameter.</p></li>
+<li><p>Average has nothing to do with the size of the yellow circle. (The size of the circle is related to the amount of sampling variation, a concept we will deal with in Unit 5.) The two figures below also illustrate unbiasedness (left) and bias (right), despite the size of the yellow circle.</p></li>
+</ol>
+<div style="float: left; margin-right: 5px;">
+<p><img src="img/unbiased-keys-02.png" width="45%" />
+<img src="img/bias-keys-02.png" width="45%" /></p>
+</div>
+<div style="clear: both;">
+<ol start="3" style="list-style-type: decimal">
+<li>The last concept about bias to point out is that bias (or unbiasedness) is a property of the sampling method. The reason the search locations were not in the right place is because the method Arthur used to pick the search locations was biased. He thought he lost his keys in the Supermarket, so that is where he looked.</li>
+</ol>
+</div>
+<p>An unbiased sampling method is random sampling. Random sampling uses chance to select the sampling units (participants) from the larger population. When random sampling has been employed in a study, the unbiasedness of the sampling method is strong evidence for external validity; we have a much higher belief in generalizations to the larger population. In our validity barometer we would be in the upper-third (depending on other factors such as sample size).</p>
+<p><br /></p>
+<p><img src="img/external-validity-evidence-barometer.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br /></p>
+<p>In this course, we will discuss and utilize <a href="https://en.wikipedia.org/wiki/Simple_random_sample">simple random sampling</a>. To draw a simple random sample we need a list of EVERY member of the population. This list is called the <em>sampling frame</em>. (Obtaining a sampling frame can be very difficult. Try obtaining a list of everyone who lives in the United States!) Then we employ randomness to draw out sampling units, with the caveat that each unit in the sampling frame has an equal chance of being drawn.</p>
 
 </div>
-<div class="footnotes">
-<hr />
-<ol start="13">
-<li id="fn13"><p>According to <a href="https://en.wiktionary.org/wiki/zoinks">Wiktionary</a> the earliest usage of the work “zoinks” was by Norville “Shaggy” Rogers on the show Scooby-Doo.<a href="internal-validity-evidence-and-random-assignment.html#fnref13" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="quantifying-results-p-value.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sampling-variation-and-the-bootstrap-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sampling-variation-and-the-bootstrap-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="validity-evidence-and-inferences.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -238,6 +255,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

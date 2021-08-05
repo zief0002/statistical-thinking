@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Quantifying Results: p-Value | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="Modeling &amp; Simulation | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="experimental-variation-and-the-randomization-test.html"/>
-<link rel="next" href="internal-validity-evidence-and-random-assignment.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="generating-data-from-models.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,61 +178,41 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="quantifying-results-p-value" class="section level1 unnumbered">
-<h1>Quantifying Results: p-Value</h1>
-<p>In addition to computing the range of likely results from the model, statisticians also typically provide a quantification of the likelihood of the observed result given the hypothesized model. This quantification is referred to as a <span class="math inline">\(p\)</span>-value (the <span class="math inline">\(p\)</span> stands for probability).</p>
-<p>To compute a <span class="math inline">\(p\)</span>-value, you count the number of results that are at least as extreme as the observed result, and divide this by the total number of results.</p>
-<p><span class="math display">\[
-p = \frac{\mathrm{number~of~results~at~least~as~extreme~as~observed~result}}{\mathrm{total~number~of~simulated~results}}
-\]</span></p>
-<p>This value is then reported as a decimal value. It quantifies the probability of observing a result at least as extreme as the observed result under the hypothesized model.</p>
-<p>To illustrate this, we will re-examine simulation results from the <em>Sleep Deprivation</em> study. Recall in that activity, the observed data had a difference in means of 15.9. Below is a plot of 100 differences in means simulated under the “no-effect”" model. A vertical line is shown at the observed difference of 15.9.</p>
-<p><img src="img/sleep-deprivation-simulation.png" width="70%" style="display: block; margin: auto;" /></p>
-<p>Since 15.9 is to the right of 0 (i.e., it is on the right-hand side of the plot) results that are <em>more extreme than the observed result</em> are to the right of 15.9. (If the observed result was to the left of 0, more extreme results would be those more negative than the observed result.) Here there are two simulated results out of 100 that are at least as extreme as 15.9 (<span class="math inline">\(\geq 15.9\)</span>). We would report the <span class="math inline">\(p\)</span>-value as 0.02.</p>
-<div id="adjustment-for-simulation-results" class="section level3 unnumbered">
-<h3>Adjustment for Simulation Results</h3>
-<p>In simulation studies, we make one small adjustment to the <span class="math inline">\(p\)</span>-value computation; we add 1 to both the numerator and denominator:</p>
-<p><span class="math display">\[
-p = \frac{\mathrm{number~of~results~more~extreme~than~observed} + 1}{\mathrm{total~number~of~simulated~results} + 1}
-\]</span></p>
-<p>This adjustment assures that we never get a <span class="math inline">\(p\)</span>-value of 0. Consider the <span class="math inline">\(p\)</span>-value if our observed result would have been 18 (instead of 15.9). There are 0 results that are at least as extreme as 18 (<span class="math inline">\(\geq 18\)</span>). Without making the simulation adjustment, we would report a <span class="math inline">\(p\)</span>-value of 0. This implies that seeing a result at least as extreme as 18 under the “no-effect” model is impossible. The problem is that we only ran 100 trials of the simulation. If we had run this simulation for all possible randomizations of the data, we would have seen results <span class="math inline">\(\geq 18\)</span>. So, to report a <span class="math inline">\(p\)</span>-value of 0 is misleading. The <span class="math inline">\(p\)</span>-value we report should be,</p>
-<p><span class="math display">\[
-p = \frac{0 + 1}{100 + 1} = 0.0099
-\]</span></p>
-<p>After the adjustment, the <span class="math inline">\(p\)</span>-value is still quite small, indicating that had we seen an observed result of 18, we would say that it is inconsistent with the model of “no-effect”. In fact it is in the outer 0.01 (1%) of the results simulated from the hypothesized model.</p>
-<p>Going back to the <span class="math inline">\(p\)</span>-value computed from the observed value of 15.9,</p>
-<p><span class="math display">\[
-p = \frac{2 + 1}{100 + 1} = 0.0297
-\]</span></p>
-<p>We can interpret the <span class="math inline">\(p\)</span>-value of 0.030 as indicating that the observed difference of 15.9 is in the outer 0.03 (3%) of results simulated from the hypothesized model. It is quite unlikely that we would see a result as extreme as 15.9, or more extreme, under the hypothesized model of “no effect”.</p>
+<div id="modeling-simulation" class="section level1 unnumbered">
+<h1>Modeling &amp; Simulation</h1>
+<blockquote>
+<p>There is mounting evidence that the “model-building era”" that dominated the theoretical activities of the sciences for a long time is about to be succeeded or at least lastingly supplemented by the “simulation era”.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</blockquote>
+<p>Modeling is one of the most important topics you may ever learn. It is used in microbiology, macroeconomics, urban studies, sociology, psychology, public health, computer science, and of course, statistics. In fact, modeling is a method that is used in almost every discipline. Many think that it is an important skill to learn because it is so pervasive. While this is true, even more important is how closely the skills of modeling tie to the more general skills of problem solving. Starfield, Smith, and Bleloch (1994) summed this sentiment up nicely when they wrote, “learning to model is bound up with learning to solve problems and to think imaginatively and purposefully” (p. x).<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
+<p>A model is a simplified representation of a system that can be used to promote an understanding of a more complex system. For example, meteorologists use computers to build models of the climate to understand and predict the weather. The computer model includes behaviors or properties which correspond, in some way, to the particular real-world system of climate. The computer models, however, do not include every possible detail about climate. All models leave things out and get some things—many things—wrong. This is because all models are simplifications of reality. Since all models are simplifications of reality there is always a trade-off as to what level of detail is included in the model. If too little detail is included in the model one runs the risk of missing relevant interactions and the resultant model does not promote understanding. If too much detail is included in the model, the model may become overly complicated and actually preclude the development of understanding.</p>
+<p>Models have many purposes, but are primarily used to better understand phenomena in the real-world. Common uses of models are for description, exploration, prediction, and classification. For example, Google builds models to understand and predict peoples’ internet searching tendencies. These models are then used to help Google carry out more efficient and better searches of information. As another example, Netflix builds models to understand the characteristics of movies that their customers have rated highly so that they can then recommend other movies that the person may enjoy. Amazon and Apple iTunes both use models in similar manners.</p>
+<div id="outline-and-goals-of-unit-1" class="section level3 unnumbered">
+<h3>Outline and Goals of Unit 1</h3>
+<p>The following schematic outlines the course readings, in-class activities, and assignments for Unit 1.</p>
+<p><br /></p>
+<p><img src="img/unit-01-outline.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><br /></p>
+<p>In this unit, you will begin by exploring ideas of randomness. Randomness permeates, and is, in fact, fundamental to statistics. Then, you will learn how to use TinkerPlots™ to model several random processes and generate outcomes from those models. By generating data from different models, you will gain experience in considering the variation in outcomes that is produced by these random processes. This consideration will help you understand and overcome many misleading human intuitions about randomness.</p>
+<p>You will also be introduced to the Monte Carlo simulation process and learn how to carry out a Monte Carlo simulation using TinkerPlots™. This process allows you to quickly generate multiple data sets from a model in order to carry out hypothetical experiments. For example, we could ask the question: How likely is it to rain three out of the five days on my vacation given a particular forecast? By modeling the forecast and repeatedly generating data for the five days of vacation, we can then answer this question.</p>
+<p>As you progress through the unit, remember that the modeling process is a creative process that can often be very challenging. At times, this might lead to frustration as you are learning and practicing some of the material. But, as Mosteller et al. (1973) remind us, it is also a profitable experience since, “modeling is not only a technique of statistics…it is a method of study which can be applied in many other fields as well” (p. xii).<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
 </div>
-<div id="p-values-as-evidence" class="section level3 unnumbered">
-<h3>p-Values as Evidence</h3>
-<p>Large <span class="math inline">\(p\)</span>-values indicate that the observed data are more compatible with the results from the model, while small <span class="math inline">\(p\)</span>-values indicate that the observed data are not very compatible with the results from the model. As researchers, our goal is often to then translate this quantitative evidence into support for the hypothesized model. For example, in the <em>Sleep Deprivation</em> study, we obtained a <span class="math inline">\(p\)</span>-value of 0.03. This suggests a low degree of compatibility between the observed data (our empirical evidence) and the hypothesized model of “no effect”.</p>
-<p>The broader scientific question about whether sleep deprivation has a harmful effect on learning, however is difficult to ascertain from a <span class="math inline">\(p\)</span>-value. There are no hard-and-fast rules for gauging how strong the evidence is against the hypothesized model because what counts as evidence in one scientific discipline or context may not count in another scientific discipline or context. And, even if there were rules about the degree of evidence needed, you would still need to evaluate other criteria such as internal and external validity evidence, and sample size. Even then, the results from a single study are not typically convincing enough for most scientists to draw definitive conclusions. It is only through consistent findings that emerge from multiple studies (which may take decades) that we may have convincing evidence about the answer to the broader scientific question.</p>
-</div>
-<div id="six-principles-about-p-values" class="section level3 unnumbered">
-<h3>Six Principles about p-Values</h3>
-<p>Because they are so ubiquitous in the research literature for any field, and because they are often mis-interpreted (even by PhDs, researchers, and math teachers) it is important to be aware of what a <span class="math inline">\(p\)</span>-value tells you, and more importantly, what it doesn’t tell you. To this end, the American Statistical Association released a <a href="http://amstat.tandfonline.com/doi/abs/10.1080/00031305.2016.1154108#.Vt2XIOaE2MN">statement on <span class="math inline">\(p\)</span>-values</a> in which it listed six principles:<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a></p>
-<ul>
-<li><strong>Principle 1:</strong> <span class="math inline">\(P\)</span>-values can indicate how incompatible the data are with a specified statistical model.</li>
-<li><strong>Principle 2:</strong> <span class="math inline">\(P\)</span>-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.</li>
-<li><strong>Principle 3:</strong> Scientific conclusions and business or policy decisions should not be based only on whether a <span class="math inline">\(p\)</span>-value passes a specific threshold.</li>
-<li><strong>Principle 4:</strong> Proper inference requires full reporting and transparency.</li>
-<li><strong>Principle 5:</strong> A <span class="math inline">\(p\)</span>-value does not measure the size of an effect or the importance of a result.</li>
-<li><strong>Principle 6:</strong> By itself, a <span class="math inline">\(p\)</span>-value does not provide a good measure of evidence regarding a model or hypothesis.</li>
-</ul>
-<!-- Principle 3 is especially poignant, as many reserachers use the criterion of 0.05 when evaluating $p$-values to indicate whether a result is statistically significant ($p \leq 0.05$) or not. In fact, this use was so pervasive and problematic, that the journal *Basic and Applied Social Psychology* [banned the use of $p$-values](http://www.nature.com/news/psychology-journal-bans-p-values-1.17001) in its published articles. It also led to many jokes about $p$-values, including this [XKCD](https://xkcd.com) comic. -->
-<!-- <center> -->
-<!-- ![](https://imgs.xkcd.com/comics/p_values.png) -->
-<!-- </center> -->
+<div id="randomness" class="section level3 unnumbered">
+<h3>Randomness</h3>
+<p>One critical component of simulation is the random process used to generate data. To help you begin to understand randomness, watch the <a href="https://www.youtube.com/watch?v=H2lJLXS3AYM">Random Sequences: Human vs. Coin</a> YouTube video.</p>
+<p><br /></p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H2lJLXS3AYM" frameborder="q" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</center>
 
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="12">
-<li id="fn12"><p>Yaddanapudi (2016) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5187603/">published a paper</a> in the <em>Journal of Anaesthesiology, Clinical Pharmacology</em> in which she explains each of these six principles for practicing physician-scientists using an example of treatment efficacy for a drug.<a href="quantifying-results-p-value.html#fnref12" class="footnote-back">↩︎</a></p></li>
+<ol start="2">
+<li id="fn2"><p>Hartmann, S. (2005). <em>The world as a process: Simulations in the natural and social sciences.</em> <a href="http://philsci-archive.pitt.edu/2412/">http://philsci-archive.pitt.edu/2412/</a><a href="modeling-simulation.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Starfield, A. M., Smith, K. A., &amp; Bleloch, A. L. (1994). <em>How to model it: Problem solving for the computer age.</em> Edina, MN: Burgess International Group, Inc.<a href="modeling-simulation.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Mosteller, F., Kruskal, W. H., Link, R. F., Pieters, R. S., &amp; Rising, G. R. (1973). <em>Statistics by example: Finding models.</em> Reading, MA: Addison–Wesley.<a href="modeling-simulation.html#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -237,8 +220,8 @@ p = \frac{2 + 1}{100 + 1} = 0.0297
           </div>
         </div>
       </div>
-<a href="experimental-variation-and-the-randomization-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="internal-validity-evidence-and-random-assignment.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="generating-data-from-models.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -261,6 +244,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

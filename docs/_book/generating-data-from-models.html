@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Generating Data from Models | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Generating Data from Models | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="Generating Data from Models | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="Generating Data from Models | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="introduction.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<link rel="prev" href="modeling-simulation.html"/>
+<link rel="next" href="monte-carlo-simulation.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,58 +178,25 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Statistical Thinking: A Simulation Approach to Modeling Uncertainty</h1>
-<p class="author"><em></em></p>
-</div>
-<div id="front-matter" class="section level1 unnumbered">
-<h1>Front Matter</h1>
-<p><img src="img/catalst-textbook-cover-v4.png" width="25%" style="display: block; margin: auto;" /></p>
+<div id="generating-data-from-models" class="section level1 unnumbered">
+<h1>Generating Data from Models</h1>
+<p>One core skill of a practicing statistician is to be able to generate random data from a model. Most of the models you will encounter in this course are referred to as <em>probability models</em>. That is just a fancy way of associating probabilities with different events, or outcomes, in a model.</p>
+<p>For example, the model of flipping a “fair” coin is a probability model. There are two events/outcomes in the model: heads and tails. Each of these outcomes has a probability of 0.5 associated with it. (Note that although we could say 50%, that probabilities are on the scale from 0 to 1, so are defined using decimal values.)</p>
+<p>In the in-class activity, <em>Generating Random Data—Cat Factory</em>, you will create several probability models to generate data about cats. To prepare for this activity, watch the <a href="http://www.tinkerplots.com/movies/probability-simulation">Probability Simulation</a> TinkerPlots™ tutorial video.</p>
 <p><br /></p>
-<p>This website is intended to serve as an organizational hub for the most current version of the CATALST Project’s <em>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</em>. Here you will be able to access materials such as readings, data sets, and the lab manual. The website also includes helpful links and resources for each of the course topics.</p>
-<p><br /></p>
-<p>The resources that accompany this website include:</p>
-<ul>
-<li>A lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_2.pdf?raw=true">PDF copy available here</a></li>
-<li>Data sets used in the lab manual:
-<ul>
-<li><a href="https://github.com/zief0002/statistical-thinking/blob/master/tp3-data.zip?raw=true">TinkerPlots 3 Data Files</a></li>
-<li><a href="https://github.com/zief0002/statistical-thinking/blob/master/data.zip?raw=true">TinkerPlots 2 Data Files</a></li>
-</ul></li>
-</ul>
-<p>You can read more about these resources in the introduction.</p>
-<p><br /></p>
-<div id="licensing-and-attribution" class="section level3 unnumbered">
-<h3>Licensing and Attribution</h3>
-<p>Copyright © 2019 Catalysts for Change</p>
-<p>PUBLISHED BY CATALYST PRESS</p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
-<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to share, remix, and make commercial use of the work under the condition that you provide proper attribution. To reference this work, use:</p>
-<ul>
-<li>Zieffler, A., &amp; Catalysts for Change. (2019). <em>Statistical Thinking: A simulation approach to uncertainty</em> (4.2th ed.). Minneapolis, MN: Catalyst Press. <a href="http://zief0002.github.io/statistical-thinking/">http://zief0002.github.io/statistical-thinking/</a></li>
-</ul>
-<p>The work to create the material appearing in the book was made possible by the National Science Foundation (DUE–0814433).</p>
-<p>The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Dan Butler, Tony Casci, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Jeffrey Finholm, Chris Fiscus, Elizabeth Fry, Joan Garfield, Theresa Gieschen, Meg Goerdt, Robert Gould, Adam Gust, Melissa Hanson, John Holcomb, Michael Huberty, Rebekah Isaak, Kari Johnson, Nicola Justice, Laura Le, Chelsey Legacy, Suzanne Loch, Matthew Mullenbach, Michael Nguyen, Amy Okan, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler</p>
-<p>Additionally, some of the activities presented in the lab manual were originally developed by Beth Chance, George Cobb, John Holcomb, and Allan Rossman as part of their NSF-funded project <a href="http://statweb.calpoly.edu/csi/">Concepts of Statistical Inference: A Randomization-Based Curriculum</a> (NSF CCLI- DUE-0633349).</p>
-<p><br /></p>
-</div>
-<div id="colophon" class="section level3 unnumbered">
-<h3>Colophon</h3>
-<p>There are two <a href="https://fonts.google.com/">Google Fonts</a> used on the website. The headings use <a href="https://fonts.google.com/specimen/Playfair+Display">Playfair Display</a> and the display text is <a href="https://fonts.google.com/specimen/Alegreya">Alegreya</a>.</p>
-<p>Icons used on the website are:</p>
-<ul>
-<li><a href="https://thenounproject.com/iconproducer/collection/keys/?oq=key&amp;cidx=0&amp;i=713748">Key</a> by Iconic from the <a href="https://thenounproject.com/">Noun Project</a></li>
-</ul>
+<center>
+<iframe width="560" height="420" src="https://www.youtube.com/embed/udeuvbJKGeI" frameborder="0" allowfullscreen>
+</iframe>
+</center>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="modeling-simulation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="monte-carlo-simulation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -249,6 +219,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

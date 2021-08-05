@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Observational Studies and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Observational Studies and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <title>Estimating Uncertainty | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Estimating Uncertainty | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Observational Studies and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:title" content="Estimating Uncertainty | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Observational Studies and the Bootstrap Test | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="twitter:title" content="Estimating Uncertainty | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
   
   
   
@@ -29,9 +29,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="validity-evidence-and-inferences.html"/>
-<link rel="next" href="estimating-uncertainty.html"/>
-<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<link rel="prev" href="observational-studies-and-the-bootstrap-test.html"/>
+<link rel="next" href="uncertainty-and-bias.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script type="text/javascript" src="jquery.js"></script>
 
 <script type="text/javascript">
@@ -66,6 +68,7 @@ $(document).ready(function()
 
 
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
 
 
 
@@ -175,54 +178,91 @@ $(document).ready(function()
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="observational-studies-and-the-bootstrap-test" class="section level1 unnumbered">
-<h1>Observational Studies and the Bootstrap Test</h1>
-<p>In some studies, researchers do not assign study participants to groups/conditions. One example of this is the second study described in <em>Validity Evidence and Conclusions: Peanut Allergies</em>. In this study, the two groups being compared, mothers that ate peanuts during pregnancy and mothers that did not eat peanuts during pregnancy, were not assigned by the researchers — they “self-selected” into the groups based on whether or not they ate peanuts during pregnancy. When the study participants are not assigned to conditions by a researcher the study is referred to as an <a href="http://atlasti.com/observational-research/">observational study</a>.</p>
-<p>Inferences a researcher can draw from an observational study are much weaker. Typically cause-and-effect conclusions cannot be made based on data collected from observational studies. This is because the possibility of alternative explanations always exists.</p>
-<p>Drawing causal conclusions from an observational study is misleading and can even be construed as unethical. In 1988, results released to the public from the National Household Survey on Drug Abuse created the false perception that crack cocaine smoking was related to ethnicity. The analysis, which was based on observational data (researchers cannot assign race) showed that the rates of crack use among blacks and Hispanics were twice as high as among whites. The data were re-analyzed in 1992 by researchers from Johns Hopkins University to take into account social factors such as where the users lived and how easily the drug could be obtained. They found that after adjusting for these factors, there were no differences among blacks, Hispanics and whites in the use of crack cocaine.</p>
-<div id="analyzing-data-from-observational-studies" class="section level3 unnumbered">
-<h3>Analyzing Data from Observational Studies</h3>
-<p>Although you probably won’t be able to draw a cause-and-effect inference, it is still useful to study and analyze observational data. Observational studies are often precursors to randomized studies— recall that one criteria of cause is that correlation exists, and observational data is a good for examining correlation.</p>
-<p>To analyze data from an observational study, researchers use similar methods as they use for data from a study in which the study participants were randomly assigned to groups. The key difference, however, is that the variation in results is not due to experimental variation. It turns out that the variation is more akin to sampling variation. This means we need to adapt our randomization test to account for sampling variation rather than experimental variation.</p>
-<p>To account for sampling variation in the randomization test, we change <code>replacement</code> option so that the <strong>outcome variable is sampled with replacement</strong>. Note that the group labels should still be sampled without replacement. (We want to model the same number of participants in each group as in any observational data.)</p>
-<p>Sampling the outcome values with replacement will increase the variation in the simulated results (larger standard deviation of the mean values). This increased variation is compatible with sampling from a larger population. Sampling with replacement from the observed data is called <strong>bootstrapping</strong>. Subsequently, this test is referred to as a <em>bootstrap test</em>. The table below shows a comparison of the randomization test and the bootstrap test.</p>
+<div id="estimating-uncertainty" class="section level1 unnumbered">
+<h1>Estimating Uncertainty</h1>
+<blockquote>
+<p>Far better an approximate answer to the right question … than an exact answer to the wrong question.<a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a></p>
+</blockquote>
+<p>Aside from hypothesis testing, one of the most common uses of statistical inference is the estimation of unknown parameters using sample data. Polling is one application where statistical estimation is used. For example, <a href="http://www.gallup.com/">Gallup</a> and the <a href="http://www.pewresearch.org/">Pew Research Center</a> are organizations that use statistical estimation to provide snapshots of public attitudes and opinions on topics from politics and the economy, to social awareness and health and well-being. The results of their polls are seen on a daily basis in almost every newspaper, news blog and website across the world.</p>
+<p>Statistical estimation is used by more than pollsters. Biologists, social scientists, and medical researchers use statistical estimation to quantify population characteristics. For example, each year the Minnesota Department of Natural Resources estimates the populations of various species of animal, bird, and fish. These estimates are used to help set hunting and fishing regulations, as well as to allocate resources.<a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a></p>
+<div id="quantifying-uncertainty-compatibility-intervals" class="section level3 unnumbered">
+<h3>Quantifying Uncertainty: Compatibility Intervals</h3>
+<p>When statisticians report sample estimates, they typically provide the value of the estimate along with the quantification of uncertainty in this estimate. This uncertainty measurement gives us an indication of the “precision” of the estimate. For example, consider again the example of the person who lost his keys. In those pictures, recall, the places where he searched for his keys (the red x’s) represents that sample data.</p>
 <p><br /></p>
-<table>
-<colgroup>
-<col width="9%" />
-<col width="14%" />
-<col width="75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Test</th>
-<th>Variation Modeled</th>
-<th>TinkerPlots™</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Randomization</td>
-<td>Experimental variation</td>
-<td>Two sampling devices: <br />  (1) outcomes (sampled without replacement); and <br />  (2) group labels (sampled without replacement)</td>
-</tr>
-<tr class="even">
-<td>Bootstrap</td>
-<td>Sampling variation</td>
-<td>Two sampling devices: <br />  (1) outcomes (sampled with replacement); and <br />  (2) group labels (sampled without replacement)</td>
-</tr>
-</tbody>
-</table>
+<div class="figure" style="text-align: center"><span id="fig:uncertainty-keys"></span>
+<img src="img/uncertainty-keys.png" alt="This figure is a metaphor for statistical uncertainty." width="70%" />
+<p class="caption">
+Figure 7: This figure is a metaphor for statistical uncertainty.
+</p>
+</div>
+<p><br /></p>
+<p>One estimate that can be made from that data is the “mean” location.<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a> This location is marked with a big blue dot. This estimate is the one-location best guess about where the actual keys (the population parameter) are located. The yellow area represents the uncertainty; other places where the keys might be aside from the on-location best guess. Interpreting this uncertainty gives him a range of locations where the actual keys might be; the compatibility interval.</p>
+</div>
+<div id="quantification-of-uncertainty-margin-of-error" class="section level3 unnumbered">
+<h3>Quantification of Uncertainty: Margin of Error</h3>
+<p>Compatibility intervals are often reported using the sample estimate (statistic) and a margin of error. For example, consider the following poll results reported in the <a href="http://query.nytimes.com/gst/fullpage.html?res=980DE0DF1530F933A05755C0A9679D8B63">New York Times on June 30, 2011</a>:</p>
+<blockquote>
+<p>As the housing market slumped over the last few years with a speed and magnitude not seen since the Great Depression, aspects of homeownership have been debated as never before. There are tough questions about the role the government should take…includ[ing] how much of a down payment lenders should demand. Whether buyers need to come up with a 20 percent down payment—the standard for decades, but beyond the reach of many families now—is hotly debated. Fifty-eight percent of respondents say lenders should require this, while 36 percent say they should not. The nationwide telephone poll was conducted June 24–28 with 979 adults and has a margin of sampling error of plus or minus three percentage points for all adults.</p>
+</blockquote>
+<p>In this article, the percentage of all adults in the United States who believe that lenders should require a 20% down payment on a house was reported as:</p>
+<ul>
+<li><strong>Sample estimate:</strong> 58%</li>
+<li><strong>Margin of error:</strong> 3%</li>
+</ul>
+<p>Although the compatibility interval isn’t directly reported, it can be computed using the sample estimate and margin of error as,</p>
+<p><span class="math display">\[
+\mathrm{Sample~Estimate} \pm \mathrm{Margin~of~Error}
+\]</span></p>
+<p>In this example,</p>
+<p><span class="math display">\[
+58\% \pm 3\% = \left[55\%,~61\%\right]
+\]</span></p>
+<p>Statisticians refer to this as a <strong>compatibility interval</strong> because it gives an interval of plausible values for the percentage of all adults in the United States who believe that lenders should require a 20% down payment on a house that are compatible with the observed data. Based on the observed data, the best estimate for the “truth” (the population parameter) is that 58% of all adults in the United States believe that lenders should require a 20% down payment on a house. However, because of the uncertainty associated with random sampling, it may be that anywhere between 55% and 61% of all adults in the United States believe that lenders should require a 20% down payment on a house.</p>
+<p>In the interpretation above, we associated the amount of uncertainty with variation because of random sampling. It turns out that the margin of error is directly related to the quantification of sampling error. In fact,</p>
+<p><span class="math display">\[
+\mathrm{Margin~of~Error} = 2 \times \mathrm{Standard~Error}
+\]</span></p>
+<p>While statistians tend to use two standard errors to compute the uncertainty estimate, this is a somewhat arbitrary choice. Some researchers choose one or three standard errors.</p>
+<div id="what-is-the-standard-error" class="section level4" number="0.0.0.1">
+<h4><span class="header-section-number">0.0.0.1</span> What is the Standard Error?</h4>
+<p>The standard error is just a fancy name for the standard deviation when the distribution is composed of statistics (e.g., means, percentages). In other words, the standard deviation of a set of simulated results. That means, in practice, we can use bootstrapping to model the sampling variation, obtain the standard deviation of the bootstrapped results, and use that along with the estimate from the observed data to obtain a compatibility interval.</p>
+<p>As you interpret compatibility intervals, there are a couple things to keep in mind.</p>
+<ul>
+<li>The compatibility interval is being used to estimate the population parameter.</li>
+<li>The compatibility interval gives a range of compatible values for the population parameter.</li>
+<li>Each value in the range is not equally compatible with the data (Values in the middle of the range are more compatible with the data than values at the ends of the range.) Moreover, the values outside the range are not incompatibile with the data; just far, far less compatible.</li>
+</ul>
+<p>To further help you understand ideas related to the standard error and the margin of error, we would like you to read Chapter 10 (<em>What is a Margin of Error?</em>) from a short pamphlet put together by the American Statistical Association’s Section on Survey Research.</p>
+<ul>
+<li>It is available at <a href="http://www.prm.nau.edu/prm447/asa%20brochures/margin.pdf">http://www.prm.nau.edu/prm447/asa%20brochures/margin.pdf</a>.</li>
+</ul>
+</div>
+</div>
+<div id="outline-and-goals-of-unit-5" class="section level3 unnumbered">
+<h3>Outline and Goals of Unit 5</h3>
+<p>The following schematic outlines the course readings, in-class activities, and assignments for Unit 5.</p>
+<p><br /></p>
+<p><img src="img/unit-05-outline.png" width="50%" style="display: block; margin: auto auto auto 0;" /></p>
+<p><br /></p>
+<p>In the readings, course activities, and assignments in Unit 5, you will explore the use of bootstrapping to make statistical estimates using TinkerPlots™. You will also learn about how sample size affects the precision/uncertainty of statistical estimates. Lastly, you will learn about the connections between hypothesis testing and estimation.</p>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="17">
+<li id="fn17"><p>Tukey, J. (1962). The future of data analysis. <em>Annals of Mathematical Statistics 33</em>(1), 1–67.<a href="estimating-uncertainty.html#fnref17" class="footnote-back">↩︎</a></p></li>
+<li id="fn18"><p>Here is the <a href="http://files.dnr.state.mn.us/wildlife/wolves/2016/survey-wolf.pdf">Wolf Population report for 2016</a>.<a href="estimating-uncertainty.html#fnref18" class="footnote-back">↩︎</a></p></li>
+<li id="fn19"><p>In two-dimensional space, like on a map, the “mean” is referred to as a <a href="https://en.wikipedia.org/wiki/Centroid">centroid</a>.<a href="estimating-uncertainty.html#fnref19" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="validity-evidence-and-inferences.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="estimating-uncertainty.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="observational-studies-and-the-bootstrap-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="uncertainty-and-bias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -245,6 +285,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
