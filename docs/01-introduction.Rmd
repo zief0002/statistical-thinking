@@ -22,6 +22,7 @@ You will work from the lab manual every day in class. As such, you will need to 
 
 There are several data sets used in the lab manual, as well as in EPsy 3264 assignments. To download a ZIP file to your computer that includes all the data sets, click one of the links below. Once the ZIP file has been downloaded to your computer, double-click the ZIP file to unzip it and access the materials.
 
+- [TinkerPlots 2 Data Files](https://github.com/zief0002/statistical-thinking/blob/master/tp2-data.zip?raw=true)
 - [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/master/tp3-data.zip?raw=true)
 
 
