@@ -1,9 +1,0 @@
-tab:unnamed-chunk-3
-fig:unnamed-chunk-5
-fig:unnamed-chunk-6
-fig:unnamed-chunk-7
-fig:unnamed-chunk-8
-fig:bias-keys
-fig:unbiased-keys
-fig:uncertainty-keys
-what-is-the-standard-error
