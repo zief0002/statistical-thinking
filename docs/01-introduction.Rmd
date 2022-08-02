@@ -11,9 +11,9 @@ The materials on this website and in the lab manual will introduce you to the se
 Course readings should be completed outside of class and are intended to help you learn and extend the ideas, skills, and concepts you learn in the classroom. The readings themselves are not all "traditional" readings in the sense of words written on the screen, but instead often link to video clips, blogs and other multimedia material. 
 
 
-### TinkerPlots&trade; Software {-}
+### TinkerPlots 3&trade; Software {-}
 
-Much of the material presented in the lab manual requires the use of TinkerPlots&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/](http://www.tinkerplots.com/). If you have a Mac and are running a new version of the OS, download the [most recent beta version](ttp://www.tinkerplots.com/beta) of TinkerPlots3.
+Much of the material presented in the lab manual requires the use of TinkerPlots 3&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/](http://www.tinkerplots.com/).
 
 
 ### Lab Manual and Data Sets {-}
@@ -22,7 +22,6 @@ You will work from the lab manual every day in class. As such, you will need to 
 
 There are several data sets used in the lab manual, as well as in EPsy 3264 assignments. To download a ZIP file to your computer that includes all the data sets, click one of the links below. Once the ZIP file has been downloaded to your computer, double-click the ZIP file to unzip it and access the materials.
 
-- [TinkerPlots 2 Data Files](https://github.com/zief0002/statistical-thinking/blob/master/tp2-data.zip?raw=true)
 - [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/master/tp3-data.zip?raw=true)
 
 

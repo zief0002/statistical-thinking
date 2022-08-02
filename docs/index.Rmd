@@ -34,7 +34,6 @@ The resources that accompany this website include:
 
 - A lab manual [PDF copy available here](https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_3.pdf?raw=true)
 - Data sets used in the lab manual:
-  + [TinkerPlots 2 Data Files](https://github.com/zief0002/statistical-thinking/blob/master/tp2-data.zip?raw=true)
   + [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/master/tp3-data.zip?raw=true)
 
 
