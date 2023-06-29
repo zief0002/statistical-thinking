@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
+  <meta name="description" content="Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Internal Validity Evidence and Random Assignment | Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="quantifying-results-p-value.html"/>
+<link rel="next" href="sampling-variation-and-the-bootstrap-test.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the element with class msg_body
+  $(".msg_body").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".msg_body").slideToggle(600);
+  });
+});
+</script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="statistical-thinking.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Front Matter</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#licensing-and-attribution"><i class="fa fa-check"></i>Licensing and Attribution</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#colophon"><i class="fa fa-check"></i>Colophon</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-material"><i class="fa fa-check"></i>Course Material</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#tinkerplots-3-software"><i class="fa fa-check"></i>TinkerPlots 3™ Software</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#lab-manual-and-data-sets"><i class="fa fa-check"></i>Lab Manual and Data Sets</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#participation-in-the-learning-process"><i class="fa fa-check"></i>Participation in the Learning Process</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html"><i class="fa fa-check"></i>Modeling &amp; Simulation</a>
+<ul>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html#outline-and-goals-of-unit-1"><i class="fa fa-check"></i>Outline and Goals of Unit 1</a></li>
+<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html#randomness"><i class="fa fa-check"></i>Randomness</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="generating-data-from-models.html"><a href="generating-data-from-models.html"><i class="fa fa-check"></i>Generating Data from Models</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html"><i class="fa fa-check"></i>Monte Carlo Simulation</a>
+<ul>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#example-of-a-monte-carlo-simulation-study"><i class="fa fa-check"></i>Example of a Monte Carlo Simulation Study</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#monte-carlo-simulation-assumptions"><i class="fa fa-check"></i>Monte Carlo Simulation Assumptions</a></li>
+<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#monte-carlo-simulation-in-practice"><i class="fa fa-check"></i>Monte Carlo Simulation in Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html"><i class="fa fa-check"></i>Modeling Sampling Variation</a>
+<ul>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html#simulation-process-for-evaluating-hypotheses"><i class="fa fa-check"></i>Simulation Process for Evaluating Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html#outline-and-goals-of-unit-2"><i class="fa fa-check"></i>Outline and Goals of Unit 2</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html"><i class="fa fa-check"></i>Describing Distributions</a>
+<ul>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#shape"><i class="fa fa-check"></i>Shape</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#location"><i class="fa fa-check"></i>Location</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#variation"><i class="fa fa-check"></i>Variation</a></li>
+<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#putting-it-all-together"><i class="fa fa-check"></i>Putting It All Together</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html"><i class="fa fa-check"></i>Experimental Variation and the Randomization Test</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html#experimental-variation"><i class="fa fa-check"></i>Experimental Variation</a></li>
+<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html#outline-and-goals-of-unit-3"><i class="fa fa-check"></i>Outline and Goals of Unit 3</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html"><i class="fa fa-check"></i>Quantifying Results: p-Value</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#adjustment-for-simulation-results"><i class="fa fa-check"></i>Adjustment for Simulation Results</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#p-values-as-evidence"><i class="fa fa-check"></i>p-Values as Evidence</a></li>
+<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#six-principles-about-p-values"><i class="fa fa-check"></i>Six Principles about p-Values</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="internal-validity-evidence-and-random-assignment.html"><a href="internal-validity-evidence-and-random-assignment.html"><i class="fa fa-check"></i>Internal Validity Evidence and Random Assignment</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Sampling Variation and the Bootstrap Test</a>
+<ul>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#sampling-variation"><i class="fa fa-check"></i>Sampling Variation</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#bootstrapping"><i class="fa fa-check"></i>Bootstrapping</a></li>
+<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#outline-and-goals-of-unit-4"><i class="fa fa-check"></i>Outline and Goals of Unit 4</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html"><i class="fa fa-check"></i>External Validity Evidence and Random Sampling</a>
+<ul>
+<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html#statistical-bias"><i class="fa fa-check"></i>Statistical Bias</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html"><i class="fa fa-check"></i>Validity Evidence and Inferences</a>
+<ul>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#studies-of-peanut-allergies"><i class="fa fa-check"></i>Studies of Peanut Allergies</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-1"><i class="fa fa-check"></i>Study Design #1</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-2"><i class="fa fa-check"></i>Study Design #2</a></li>
+<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-3"><i class="fa fa-check"></i>Study Design #3</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Observational Studies and the Bootstrap Test</a>
+<ul>
+<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html#analyzing-data-from-observational-studies"><i class="fa fa-check"></i>Analyzing Data from Observational Studies</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html"><i class="fa fa-check"></i>Estimating Uncertainty</a>
+<ul>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#quantifying-uncertainty-compatibility-intervals"><i class="fa fa-check"></i>Quantifying Uncertainty: Compatibility Intervals</a></li>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#quantification-of-uncertainty-margin-of-error"><i class="fa fa-check"></i>Quantification of Uncertainty: Margin of Error</a></li>
+<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#outline-and-goals-of-unit-5"><i class="fa fa-check"></i>Outline and Goals of Unit 5</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="uncertainty-and-bias.html"><a href="uncertainty-and-bias.html"><i class="fa fa-check"></i>Uncertainty and Bias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistical Thinking: A Simulation Approach to Modeling Uncertainty</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="internal-validity-evidence-and-random-assignment" class="section level1 unnumbered hasAnchor">
+<h1>Internal Validity Evidence and Random Assignment<a href="internal-validity-evidence-and-random-assignment.html#internal-validity-evidence-and-random-assignment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Medical researchers may be interested in showing that a drug helps improve people’s health (the cause of improvement is the drug), while educational researchers may be interested in showing a curricular innovation improves students’ learning (the curricular innovation causes improved learning).
+To attribute a causal relationship, there are three criteria a researcher needs to establish:</p>
+<ul>
+<li><strong>Temporal Precedence:</strong> The cause needs to happen BEFORE the effect.</li>
+<li><strong>Covariation of the Cause and Effect:</strong> There needs to be a correlational relationship between the cause and effect.</li>
+<li><strong>No Plausible Alternative Explanations:</strong> ALL other possible explanations for the effect need to be ruled out.</li>
+</ul>
+<p>Because of this third criteria, attributing a cause-and-effect relationship is very difficult. (You can read more about each of these criteria at the <a href="https://www.socialresearchmethods.net/kb/causeeff.php">Web Center for Social Research Methods</a>.)</p>
+<p>Experimental studies have their strength in meeting this third criteria. To rule out ALL other possible explanations for the effect, the control group and the treatment group need to be “identical” with respect to every possible characteristic (aside from the treatment) that could explain differences. This way the only characteristic that will be different is that the treatment group gets the treatment and the control group doesn’t. If there are differences in the outcome, then it must be attributable to the treatment, because the other possible explanations are ruled out.</p>
+<p>So, the key is to make the control and treatment groups “identical” when you are forming them. One thing that makes this task (slightly) easier is that they don’t have to be exactly identical, only <a href="https://www.socialresearchmethods.net/kb/expequi.php">probabilistically equivalent</a>. This means, for example, that if you were matching groups on age that you don’t need the two groups to have identical age distributions; they would only need to have roughly the same AVERAGE age. Here roughly means “the average ages should be the same within what we expect because of sampling error.”</p>
+<p>Now we just need to create the groups so that they have, on average, the same characteristics … for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a></p>
+<p>It turns out that creating probabilistically equivalent groups is a really difficult problem. One method that works pretty well for doing this is to randomly assign participants to the groups. This works best when you have large sample sizes, but even with small sample sizes random assignment has the advantage of at least <em>removing the systematic bias</em> between the two groups (any differences are due to chance and will probably even out between the groups). As <a href="https://en.wikipedia.org/wiki/Random_assignment">Wikipedia’s page on random assignment</a> points out,</p>
+<blockquote>
+<p>Random assignment of participants helps to ensure that any differences between and within the groups are not systematic at the outset of the experiment. Thus, any differences between groups recorded at the end of the experiment can be more confidently attributed to the experimental procedures or treatment. … Random assignment does not guarantee that the groups are matched or equivalent. The groups may still differ on some preexisting attribute due to chance. The use of random assignment cannot eliminate this possibility, but it greatly reduces it.</p>
+</blockquote>
+<p>Internal validity is the degree to which cause-and-effect inferences are accurate and meaningful. Causal attribution is the goal for many researchers. Thus, by using random assignment we have a pretty high degree of evidence for internal validity; we have a much higher belief in causal inferences. Much like evidence used in a court of law, it is useful to think about validity evidence on a continuum. We will visualize this continuum as a barometer. For example, a barometer visualizing the internal validity evidence for a study that employed random assignment in the design might be:</p>
+<p><br /></p>
+<p><img src="img/internal-validity-evidence-barometer.png" width="70%" style="display: block; margin: auto;" /></p>
+<p><br /></p>
+<p>The degree of internal validity evidence is high (in the upper-third). How high depends on other factors such as sample size.</p>
+<p>To learn more about random assignment, you can read the following:</p>
+<ul>
+<li>The research report, <a href="http://www.childtrends.org/wp-content/uploads/2008/01/Random-Assigment-Evaluations.pdf">Random Assignment Evaluation Studies: A Guide for Out-of-School Time Program Practitioners</a></li>
+</ul>
+
+</div>
+<div class="footnotes">
+<hr />
+<ol start="13">
+<li id="fn13"><p>According to <a href="https://en.wiktionary.org/wiki/zoinks">Wiktionary</a> the earliest usage of the work “zoinks” was by Norville “Shaggy” Rogers on the show Scooby-Doo.<a href="internal-validity-evidence-and-random-assignment.html#fnref13" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="quantifying-results-p-value.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sampling-variation-and-the-bootstrap-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
