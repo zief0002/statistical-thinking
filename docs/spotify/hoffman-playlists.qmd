@@ -1,0 +1,124 @@
+---
+title: "Albert Hoffman's Playlists"
+date: today
+output:
+  html:
+    highlight: "a11y-dark"
+    css: "playlists.css"
+    includes:
+      in_header: "playlist-header.html"
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+
+```{r}
+#| label: setup
+library(dplyr)
+library(kableExtra)
+```
+
+These are Mr. Hoffman’s original 3 playlists. Evaluate them using your rules.
+
+
+
+# Playlist \#1
+
+```{r}
+data.frame(SONG = "She Wolf",                         ARTIST = "Shakira", ALBUM = "She Wolf",             YEAR = 2009, PEAK = 4) |>
+add_row(SONG = "Signs",                    ARTIST = "Drake", ALBUM = "Signs",                   YEAR = 2017, PEAK = 14) |>
+add_row(SONG = "Work It Out",                       ARTIST = "Beyoncé", ALBUM = "Dangerously in Love", YEAR = 2003, PEAK = 7) |>
+add_row(SONG = "Crazy In Love",                     ARTIST = "Beyoncé", ALBUM = "Dangerously in Love", YEAR = 2003, PEAK = 1) |>
+add_row(SONG = "Bloodstream",        ARTIST = "Ed Sheeran", ALBUM = "\\×", YEAR = 2014, PEAK = 2) |>
+add_row(SONG = "Photograph",         ARTIST = "Ed Sheeran", ALBUM = "\\×", YEAR = 2014, PEAK = 15) |>
+add_row(SONG = "Lego House",         ARTIST = "Ed Sheeran", ALBUM = "\\÷", YEAR = 2011, PEAK = 5) |>
+add_row(SONG = "Can't Remember To Forget",         ARTIST = "Shakira", ALBUM = "Shakira",              YEAR = 2014, PEAK = 11) |>
+add_row(SONG = "Whenever Wherever",                ARTIST = "Shakira", ALBUM = "Laundry Service",      YEAR = 2001, PEAK = 2) |>
+add_row(SONG = "I Knew You Were Trouble", ARTIST = "Taylor Swift", ALBUM = "Red",                 YEAR = 2012, PEAK = 2) |>
+add_row(SONG = "Blank Space", ARTIST = "Taylor Swift", ALBUM = "1989",                YEAR = 2014, PEAK = 4) |> 
+add_row(SONG = "Too Good",                 ARTIST = "Drake", ALBUM = "Views",                   YEAR = 2016, PEAK = 3) |>
+add_row(SONG = "Underneath Your Clothes",          ARTIST = "Shakira", ALBUM = "Laundry Service",      YEAR = 2001, PEAK = 3) |>
+add_row(SONG = "XO",                                ARTIST = "Beyoncé", ALBUM = "Beyoncé",             YEAR = 2013, PEAK = 22) |>
+add_row(SONG = "Jumpman",                  ARTIST = "Drake", ALBUM = "What A Time To Be Alive", YEAR = 2015, PEAK = 58) |>
+add_row(SONG = "Objection (Tango)",                ARTIST = "Shakira", ALBUM = "Laundry Service",      YEAR = 2001, PEAK = 17) |>
+add_row(SONG = "The A Team",         ARTIST = "Ed Sheeran", ALBUM = "\\+", YEAR = 2011, PEAK = 2) |>
+add_row(SONG = "7 Rings",               ARTIST = "Ariana Grande", ALBUM = "Thank U, Next",   YEAR = 2019, PEAK = 1) |>
+add_row(SONG = "One Last Time",         ARTIST = "Ariana Grande", ALBUM = "My Everything",   YEAR = 2014, PEAK = 2) |>
+add_row(SONG = "Passionfruit",             ARTIST = "Drake", ALBUM = "More Life",               YEAR = 2017, PEAK = 3) |>
+  kable() |>
+  kable_styling(bootstrap_options = "hover", full_width = T) |>
+  row_spec(1:20, color = "white", background = "#191414", 
+           extra_css = "border-top: 1px solid #a0a0a0;border-bottom: 1px solid #a0a0a0") |>
+  row_spec(0, color = "white", background = "#191414", 
+           extra_css = "border-top: 1px solid #a0a0a0;border-bottom: 1px solid #a0a0a0")
+```
+
+<br /><br />
+
+# Playlist \#2
+
+```{r}
+data.frame(SONG = "Diamonds",                 ARTIST = "Rihanna", ALBUM = "Unapologetic",                 YEAR = 2012, PEAK = 1) |>
+add_row(SONG = "One Last Time",         ARTIST = "Ariana Grande", ALBUM = "My Everything",   YEAR = 2014, PEAK = 2) |>
+add_row(SONG = "S&M",                      ARTIST = "Rihanna", ALBUM = "Loud",                         YEAR = 2010, PEAK = 3) |>
+add_row(SONG = "We Are Never Ever Getting Back Together", ARTIST = "Taylor Swift", ALBUM = "Red", YEAR = 2012, PEAK = 4) |> 
+add_row(SONG = "Hips Don't Lie",                   ARTIST = "Shakira", ALBUM = "Oral Fixation Vol. 2", YEAR = 2005, PEAK = 1) |>
+add_row(SONG = "Can't Remember To Forget",         ARTIST = "Shakira", ALBUM = "Shakira",              YEAR = 2014, PEAK = 11) |>
+add_row(SONG = "Everything Has Changed", ARTIST = "Taylor Swift", ALBUM = "Red",                 YEAR = 2012, PEAK = 7) |> 
+add_row(SONG = "Rude Boy",                 ARTIST = "Rihanna", ALBUM = "Rated R",                      YEAR = 2009, PEAK = 2) |>
+add_row(SONG = "Blem",                     ARTIST = "Drake", ALBUM = "More Life",               YEAR = 2017, PEAK = 10) |>
+add_row(SONG = "You Need To Calm Down", ARTIST = "Taylor Swift", ALBUM = "Lover",               YEAR = 2019, PEAK = 2) |>
+add_row(SONG = "One Dance",                ARTIST = "Drake", ALBUM = "Views",                   YEAR = 2016, PEAK = 1) |>
+add_row(SONG = "Waka Waka (This Time For Africa)", ARTIST = "Shakira", ALBUM = "Sale el Sol",          YEAR = 2010, PEAK = 21) |>
+add_row(SONG = "Look What You Made Me Do", ARTIST = "Taylor Swift", ALBUM = "Reputation",          YEAR = 2017, PEAK = 1) |> 
+add_row(SONG = "XO",                                ARTIST = "Beyoncé", ALBUM = "Beyoncé",             YEAR = 2013, PEAK = 22) |>
+add_row(SONG = "God Is A Woman",        ARTIST = "Ariana Grande", ALBUM = "Sweetener",       YEAR = 2018, PEAK = 4) |>
+add_row(SONG = "What's My Name",           ARTIST = "Rihanna", ALBUM = "Loud",                         YEAR = 2010, PEAK = 1) |>
+add_row(SONG = "Locked Out Of Heaven",           ARTIST = "Bruno Mars", ALBUM = "Unorthodox Jukebox",   YEAR = 2012, PEAK = 2) |>
+add_row(SONG = "Grenade",                        ARTIST = "Bruno Mars", ALBUM = "Doo-Wops & Hooligans", YEAR = 2010, PEAK = 1) |>
+add_row(SONG = "Work It Out",                       ARTIST = "Beyoncé", ALBUM = "Dangerously in Love", YEAR = 2003, PEAK = 7) |>
+add_row(SONG = "We Found Love", ARTIST = "Rihanna", ALBUM = "Talk That Talk",               YEAR = 2011, PEAK = 1) |>
+  kable() |>
+  kable_styling(bootstrap_options = "hover", full_width = T) |>
+  row_spec(1:20, color = "white", background = "#191414", 
+           extra_css = "border-top: 1px solid #a0a0a0;border-bottom: 1px solid #a0a0a0") |>
+  row_spec(0, color = "#a0a0a0", background = "#191414", 
+           extra_css = "border-top: 1px solid #a0a0a0;border-bottom: 1px solid #a0a0a0")
+```
+
+<br /><br />
+
+# Playlist \#3
+
+```{r}
+data.frame(SONG = "Only Girl (In The World)", ARTIST = "Rihanna", ALBUM = "Loud",                         YEAR = 2010, PEAK = 1) |>
+add_row(SONG = "The A Team",         ARTIST = "Ed Sheeran", ALBUM = "\\+", YEAR = 2011, PEAK = 2) |>
+add_row(SONG = "7 Rings",               ARTIST = "Ariana Grande", ALBUM = "Thank U, Next",   YEAR = 2019, PEAK = 1) |>
+add_row(SONG = "Just The Way You Are (Amazing)", ARTIST = "Bruno Mars", ALBUM = "Doo-Wops & Hooligans", YEAR = 2010, PEAK = 1) |>
+add_row(SONG = "We Are Never Ever Getting Back Together", ARTIST = "Taylor Swift", ALBUM = "Red", YEAR = 2012, PEAK = 4) |> 
+add_row(SONG = "Walk On Water",                     ARTIST = "Beyoncé", ALBUM = "Revival",             YEAR = 2017, PEAK = 7) |>
+add_row(SONG = "Drunk In Love",                     ARTIST = "Beyoncé", ALBUM = "Beyoncé",             YEAR = 2013, PEAK = 9) |>
+add_row(SONG = "Hotline Bling",            ARTIST = "Drake", ALBUM = "Views",                   YEAR = 2016, PEAK = 3) |>
+add_row(SONG = "I Knew You Were Trouble", ARTIST = "Taylor Swift", ALBUM = "Red",                 YEAR = 2012, PEAK = 2) |>
+add_row(SONG = "Thank U, Next",         ARTIST = "Ariana Grande", ALBUM = "Thank U, Next",   YEAR = 2019, PEAK = 1) |>
+add_row(SONG = "Billionaire",                    ARTIST = "Bruno Mars", ALBUM = "Lazarus",              YEAR = 2010, PEAK = 3) |>  
+add_row(SONG = "XO",                                ARTIST = "Beyoncé", ALBUM = "Beyoncé",             YEAR = 2013, PEAK = 22) |>
+add_row(SONG = "Don't Bother",                     ARTIST = "Shakira", ALBUM = "Oral Fixation Vol. 2", YEAR = 2005, PEAK = 9) |>
+add_row(SONG = "She Wolf",                         ARTIST = "Shakira", ALBUM = "She Wolf",             YEAR = 2009, PEAK = 4) |>
+add_row(SONG = "Underneath Your Clothes",          ARTIST = "Shakira", ALBUM = "Laundry Service",      YEAR = 2001, PEAK = 3) |>
+add_row(SONG = "Work It Out",                       ARTIST = "Beyoncé", ALBUM = "Dangerously in Love", YEAR = 2003, PEAK = 7) |>
+add_row(SONG = "Can't Remember To Forget",         ARTIST = "Shakira", ALBUM = "Shakira",              YEAR = 2014, PEAK = 11) |>
+add_row(SONG = "I Don't Wanna Live Forever", ARTIST = "Taylor Swift", ALBUM = "Fifty Shades Darker", YEAR = 2017, PEAK = 5) |> 
+add_row(SONG = "Hold On We're Going Home", ARTIST = "Drake", ALBUM = "Nothing Was the Same",    YEAR = 2013, PEAK = 4) |>
+add_row(SONG = "Shake It Off", ARTIST = "Taylor Swift", ALBUM = "1989",                YEAR = 2014, PEAK = 2) |> 
+  kable() |>
+  kable_styling(bootstrap_options = "hover", full_width = T) |>
+  row_spec(1:20, color = "white", background = "#191414", 
+           extra_css = "border-top: 1px solid #a0a0a0;border-bottom: 1px solid #a0a0a0") |>
+  row_spec(0, color = "#a0a0a0", background = "#191414", 
+           extra_css = "border-top: 1px solid #a0a0a0;border-bottom: 1px solid #a0a0a0")
+```
+
+

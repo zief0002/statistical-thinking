@@ -1,0 +1,48 @@
+# Introduction {-}
+
+Learning statistics is sexy. Hal Varian, Google's chief economist, believes this. During an [interview in McKinsey Quarterly](http://www.mckinsey.com/industries/high-tech/our-insights/hal-varian-on-how-the-web-challenges-managers), Varian stated, "I keep saying the sexy job in the next ten years will be statisticians. People think I'm joking, but who would've guessed that computer engineers would've been the sexy job of the 1990s?" Varian is not the only person to express this sentiment either. Hans Rosling in the 2010 BBC documentary Joy of Stats^[Watch *Joy of Stats* online at [http://www.gapminder.org/videos/the-joy-of-stats/](http://www.gapminder.org/videos/the-joy-of-stats/)] referred to statistics as the "sexiest subject around".
+
+Whether you believe it is the sexiest subject or not, it is incontrovertible that the use of statistics and data are prevalent in today's information age. Almost every person on earth will benefit from learning some foundational ideas of statistics. This is true because statistics forms the basis of our everyday world just as much as do science, technology, and politics. Google, Netflix, Twitter, Facebook, OKCupid, Match.com, Amazon, iTunes, and the Federal Government are just a handful of the companies and organizations that use statistics on a daily basis. Journalism, political science, biology, sociology, psychology, graphic design, economics, sports science, and dance are all disciplines that have made use of statistical methodology.
+
+<br />
+
+
+## Course Material {-}
+
+The materials on this website and in the lab manual will introduce you to the seminal ideas underlying the discipline of statistics. In addition, they have been designed with your learning in mind. For example, many of the class activities were developed using pedagogical principles, such as small group activities and discussion, that have been shown in research to improve student learning. 
+
+Course readings should be completed outside of class and are intended to help you learn and extend the ideas, skills, and concepts you learn in the classroom. The readings themselves are not all "traditional" readings in the sense of words written on the screen, but instead often link to video clips, blogs and other multimedia material. 
+
+<br />
+
+
+### TinkerPlots 3&trade; Software {-}
+
+Much of the material presented in the lab manual requires the use of TinkerPlots 3&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/](http://www.tinkerplots.com/).
+
+<br />
+
+
+### Lab Manual and Data Sets {-}
+
+You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: <https://github.com/zief0002/statistical-thinking/blob/main/statistical-thinking-v4_5.pdf?raw=true>.
+
+There are several data sets used in the lab manual, as well as in EPsy 3264 assignments. To download a ZIP file to your computer that includes all the data sets, click one of the links below. Once the ZIP file has been downloaded to your computer, double-click the ZIP file to unzip it and access the materials.
+
+- [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/main/tp3-data.zip?raw=true)
+
+<br />
+
+
+
+### Participation in the Learning Process {-}
+
+The lab manual, instructors, and teaching assistants are all resources that are at your disposal to help you learn the material. In the end, however, you will have to do all of the hard work associated with actually learning that material. To successfully navigate this process, it is vital that you be an active participant in the learning process. Coming to class, participating in the activities and discussions, reading, completing the assignments, and asking questions are essential to successful learning.
+
+Learning anything new takes time and effort and this is especially true of learning statistics, as you are not just learning a set of methods, but rather a disciplined way of thinking about the world. Changing your habits of mind will take continual practice. It will also take a great deal of patience and persistence. 
+
+As you engage in and use the skills, concepts and ideas introduced in the material, you will find yourself thinking about data and evidence in a different way. This may lead you to make different decisions or choices. But, even if this course does not change your world overnight, you will at the very least be able to critically think about inferences and conclusions drawn from data.
+
+<br />
+
+

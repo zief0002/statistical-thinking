@@ -1,0 +1,258 @@
+/*-- scss:defaults --*/
+
+// Fonts
+$font-weight-base: 400 !default;
+
+
+// Links
+$link-decoration: underline !default;
+$toc-color: #b3d3f5;  /*-- Set active link color for TOC sidebar (RIGHT) --*/
+
+
+
+/*-- scss:rules --*/
+
+
+body {
+  /*background-color: #273043;*/
+  background-image: radial-gradient(circle, #f5e0ea, #afc5d4, #8bb5d2);
+  /*background-image: radial-gradient(circle, #86d4bc, #c2e4c6, #20a2a3);
+  background-image: radial-gradient(circle, #ebbed3, #f5e0ea, #b8396b);*/
+  font-size: 16px;
+}
+
+.content {
+  background-color: #fff;
+  border: 1px solid #273043;
+  border-radius: 25px;
+  padding: 25px 60px 25px;
+}
+
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+.header-section-number {
+  color: #000;
+}
+
+
+// Main text
+p {
+  font-family: 'Atkinson Hyperlegible', serif;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+// List elements
+li {
+  font-family: 'Atkinson Hyperlegible', serif;
+  line-height: 1.5em;
+}
+
+li > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Mouse over link
+a:hover {
+    color: #c10088;
+}
+
+
+// Figure caption
+.figure-caption {
+  font-size: 12pt;
+  font-style: italic;
+  color: #000;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#callout {
+  font-size: 12pt;
+}
+
+
+// Sidebar navigation - LEFT SIDE
+.sidebar-title {
+  color: #fff;
+}
+
+.sidebar-navigation a {
+  color: #fff;
+}
+
+.sidebar-navigation a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.sidebar-item .chapter-number {
+  color: #fff;
+}
+
+div.sidebar-item-container .active .chapter-number {
+  color: #fff;
+}
+
+//Sidebar navigation - RIGHT SIDE
+#quarto-margin-sidebar {
+  background-color: #383F56;
+}
+
+// Title color
+#TOC, #toc-title {
+  color: #fff;
+  font-size: 14pt;
+}
+
+// Nonactive sidebar items
+.sidebar nav[role="doc-toc"] ul > li > a {
+  color: #fff;
+}
+
+.sidebar.header-section-number{
+  color: #fff;
+}
+
+// Active sidebar item
+div.sidebar-item-container .active {
+  color: #fff;
+}
+
+
+.sidebar nav[role="doc-toc"] ul > li > a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a:hover .header-section-number {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+// Bottom of the page navigation
+.nav-page .bi, span.nav-page-text {
+  color: #c10088;
+}
+
+
+// Style cover art
+.cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+
+// Style source code
+div.sourceCode {
+ border-radius: 0;
+}
+
+/** Make the caption italic and black
+.table caption{
+  font-style: italic;
+  color: black;
+  font-family: 'Atkinson Hyperlegible', serif;
+  font-size: 11px;
+}
+
+.table caption span{
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+}**/
+
+
+
+/** Change border color to black **/
+.table thead tr th {
+  border-color: black;
+  border-width: 1px;
+  font-family: 'Atkinson Hyperlegible', serif;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+
+
+/** Add a top border to the table header row **/
+.table thead th {
+  border-top: 1px solid black;
+  border-left: 0;
+  border-right: 0;
+}
+
+
+/** Format and remove borders within the table body **/
+.table tbody tr td {
+  border: none;
+  font-family: 'Atkinson Hyperlegible', serif;
+  font-size: 13px;
+}
+
+
+/** Add a bottom border to the table body **/
+.table tbody tr:last-child {
+  border-bottom: 1px solid black;
+}
+
+
+/** Format and remove borders within the table footer **/
+.table tfoot {
+  border: none;
+  font-family: 'Atkinson Hyperlegible', serif;
+  font-size: 12px;
+}
+
+.blockquote {
+  color: #5A5A5A;
+  border-left: .25rem solid #5A5A5A;
+}
+
+
+/* Show/Hide Solution buttons*/
+
+.solution-btn-default {
+  color: #fff;
+  background-color: #0B4F6C;
+  border-color: #000;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  min-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+
+.solution-btn-default:hover {
+  background-color: #07364A;
+  color: white;
+}
+
+#references {
+  margin-bottom: 5em;
+}

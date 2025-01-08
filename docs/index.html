@@ -1,305 +1,746 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</title>
-  <meta name="description" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
 
-  <meta property="og:title" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  <meta property="og:type" content="book" />
-  
-  
-  
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Statistical Thinking: A Simulation Approach to Modeling Uncertainty" />
-  
-  
-  
+<meta name="author" content="Andrew Zieffler &amp; Catalysts for Change">
+<meta name="dcterms.date" content="2025-01-08">
 
-<meta name="author" content="" />
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-
-<link rel="next" href="introduction.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function()
-{
-  //hide the all of the element with class msg_body
-  $(".msg_body").hide();
-  //toggle the componenet with class msg_body
-  $(".msg_head").click(function()
-  {
-    $(this).next(".msg_body").slideToggle(600);
-  });
-});
-</script>
-
-
-<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant+SC|EB+Garamond|News+Cycle|Playfair+Display" rel="stylesheet">
-
-
-
-<style type="text/css">
-  
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+<title>Statistical Thinking</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 
-<link rel="stylesheet" href="statistical-thinking.css" type="text/css" />
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./01-introduction.html" rel="next">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d3043699f4f525e226433170f63674df.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-170b79e60be2c0a4ca31cab69e7487e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="text/javascript">
+// Function to toggle the visibility of solutions in exercises
+function toggle_visibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'block')
+      e.style.display = 'none';
+   else
+      e.style.display = 'block';
+}
+</script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="assets/sticky-notes.css">
 </head>
 
-<body>
+<body class="nav-sidebar floating fullcontent">
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Front Matter</a>
-<ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#licensing-and-attribution"><i class="fa fa-check"></i>Licensing and Attribution</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#colophon"><i class="fa fa-check"></i>Colophon</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
-<ul>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#course-material"><i class="fa fa-check"></i>Course Material</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#tinkerplots-3-software"><i class="fa fa-check"></i>TinkerPlots 3™ Software</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#lab-manual-and-data-sets"><i class="fa fa-check"></i>Lab Manual and Data Sets</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#participation-in-the-learning-process"><i class="fa fa-check"></i>Participation in the Learning Process</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html"><i class="fa fa-check"></i>Modeling &amp; Simulation</a>
-<ul>
-<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html#outline-and-goals-of-unit-1"><i class="fa fa-check"></i>Outline and Goals of Unit 1</a></li>
-<li class="chapter" data-level="" data-path="modeling-simulation.html"><a href="modeling-simulation.html#randomness"><i class="fa fa-check"></i>Randomness</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="generating-data-from-models.html"><a href="generating-data-from-models.html"><i class="fa fa-check"></i>Generating Data from Models</a></li>
-<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html"><i class="fa fa-check"></i>Monte Carlo Simulation</a>
-<ul>
-<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#example-of-a-monte-carlo-simulation-study"><i class="fa fa-check"></i>Example of a Monte Carlo Simulation Study</a></li>
-<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#monte-carlo-simulation-assumptions"><i class="fa fa-check"></i>Monte Carlo Simulation Assumptions</a></li>
-<li class="chapter" data-level="" data-path="monte-carlo-simulation.html"><a href="monte-carlo-simulation.html#monte-carlo-simulation-in-practice"><i class="fa fa-check"></i>Monte Carlo Simulation in Practice</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html"><i class="fa fa-check"></i>Modeling Sampling Variation</a>
-<ul>
-<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html#simulation-process-for-evaluating-hypotheses"><i class="fa fa-check"></i>Simulation Process for Evaluating Hypotheses</a></li>
-<li class="chapter" data-level="" data-path="modeling-sampling-variation.html"><a href="modeling-sampling-variation.html#outline-and-goals-of-unit-2"><i class="fa fa-check"></i>Outline and Goals of Unit 2</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html"><i class="fa fa-check"></i>Describing Distributions</a>
-<ul>
-<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#shape"><i class="fa fa-check"></i>Shape</a></li>
-<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#location"><i class="fa fa-check"></i>Location</a></li>
-<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#variation"><i class="fa fa-check"></i>Variation</a></li>
-<li class="chapter" data-level="" data-path="describing-distributions.html"><a href="describing-distributions.html#putting-it-all-together"><i class="fa fa-check"></i>Putting It All Together</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html"><i class="fa fa-check"></i>Experimental Variation and the Randomization Test</a>
-<ul>
-<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html#experimental-variation"><i class="fa fa-check"></i>Experimental Variation</a></li>
-<li class="chapter" data-level="" data-path="experimental-variation-and-the-randomization-test.html"><a href="experimental-variation-and-the-randomization-test.html#outline-and-goals-of-unit-3"><i class="fa fa-check"></i>Outline and Goals of Unit 3</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html"><i class="fa fa-check"></i>Quantifying Results: p-Value</a>
-<ul>
-<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#adjustment-for-simulation-results"><i class="fa fa-check"></i>Adjustment for Simulation Results</a></li>
-<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#p-values-as-evidence"><i class="fa fa-check"></i>p-Values as Evidence</a></li>
-<li class="chapter" data-level="" data-path="quantifying-results-p-value.html"><a href="quantifying-results-p-value.html#six-principles-about-p-values"><i class="fa fa-check"></i>Six Principles about p-Values</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="internal-validity-evidence-and-random-assignment.html"><a href="internal-validity-evidence-and-random-assignment.html"><i class="fa fa-check"></i>Internal Validity Evidence and Random Assignment</a></li>
-<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Sampling Variation and the Bootstrap Test</a>
-<ul>
-<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#sampling-variation"><i class="fa fa-check"></i>Sampling Variation</a></li>
-<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#bootstrapping"><i class="fa fa-check"></i>Bootstrapping</a></li>
-<li class="chapter" data-level="" data-path="sampling-variation-and-the-bootstrap-test.html"><a href="sampling-variation-and-the-bootstrap-test.html#outline-and-goals-of-unit-4"><i class="fa fa-check"></i>Outline and Goals of Unit 4</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html"><i class="fa fa-check"></i>External Validity Evidence and Random Sampling</a>
-<ul>
-<li class="chapter" data-level="" data-path="external-validity-evidence-and-random-sampling.html"><a href="external-validity-evidence-and-random-sampling.html#statistical-bias"><i class="fa fa-check"></i>Statistical Bias</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html"><i class="fa fa-check"></i>Validity Evidence and Inferences</a>
-<ul>
-<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#studies-of-peanut-allergies"><i class="fa fa-check"></i>Studies of Peanut Allergies</a></li>
-<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-1"><i class="fa fa-check"></i>Study Design #1</a></li>
-<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-2"><i class="fa fa-check"></i>Study Design #2</a></li>
-<li class="chapter" data-level="" data-path="validity-evidence-and-inferences.html"><a href="validity-evidence-and-inferences.html#study-design-3"><i class="fa fa-check"></i>Study Design #3</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html"><i class="fa fa-check"></i>Observational Studies and the Bootstrap Test</a>
-<ul>
-<li class="chapter" data-level="" data-path="observational-studies-and-the-bootstrap-test.html"><a href="observational-studies-and-the-bootstrap-test.html#analyzing-data-from-observational-studies"><i class="fa fa-check"></i>Analyzing Data from Observational Studies</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html"><i class="fa fa-check"></i>Estimating Uncertainty</a>
-<ul>
-<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#quantifying-uncertainty-compatibility-intervals"><i class="fa fa-check"></i>Quantifying Uncertainty: Compatibility Intervals</a></li>
-<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#quantification-of-uncertainty-margin-of-error"><i class="fa fa-check"></i>Quantification of Uncertainty: Margin of Error</a></li>
-<li class="chapter" data-level="" data-path="estimating-uncertainty.html"><a href="estimating-uncertainty.html#outline-and-goals-of-unit-5"><i class="fa fa-check"></i>Outline and Goals of Unit 5</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="uncertainty-and-bias.html"><a href="uncertainty-and-bias.html"><i class="fa fa-check"></i>Uncertainty and Bias</a></li>
-</ul>
-
-      </nav>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Front Matter</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
     </div>
-
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistical Thinking: A Simulation Approach to Modeling Uncertainty</a>
-          </h1>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Statistical Thinking</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
         </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Front Matter</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-modeling-and-simulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modeling &amp; Simulation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-data-generation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generating Data from Models</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-monte-carlo-simulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monte Carlo Simulation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-modeling-sampling-variation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modeling Sampling Variation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-describing-distributions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Describing Distributions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-experimental-variation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Experimental Variation and the Randomization Test</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-p-value.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quantifying Results: p-Value</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-internal-validity-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Internal Validity Evidence and Random Assignment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-sampling-variation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sampling Variation and the Bootstrap Test</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-external-validity-evidence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">External Validity Evidence and Random Sampling</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-validity-evidence-and-inferences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validity Evidence and Inferences</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-observational-studies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Observational Studies and the Bootstrap Test</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-statistical-estimation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Estimating Uncertainty</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-uncertainty-and-bias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uncertainty and Bias</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
 
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Statistical Thinking: A Simulation Approach to Modeling Uncertainty</h1>
-<p class="author"><em></em></p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Statistical Thinking</h1>
+<p class="subtitle lead">A Simulation Approach to Modeling Uncertainty</p>
 </div>
-<div id="front-matter" class="section level1 unnumbered hasAnchor">
-<h1>Front Matter<a href="index.html#front-matter" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="img/catalst-textbook-cover-v4_4.png" width="25%" style="display: block; margin: auto;" /></p>
-<p><br /></p>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Andrew Zieffler &amp; Catalysts for Change </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 8, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/book-logo2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Book Logo"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="front-matter" class="level1 unnumbered">
+<h1 class="unnumbered">Front Matter</h1>
 <p>This website is intended to serve as an organizational hub for the most current version of the CATALST Project’s <em>Statistical Thinking: A Simulation Approach to Modeling Uncertainty</em>. Here you will be able to access materials such as readings, data sets, and the lab manual. The website also includes helpful links and resources for each of the course topics.</p>
-<p><br /></p>
+<p><br></p>
 <p>The resources that accompany this website include:</p>
 <ul>
-<li>A lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/master/statistical-thinking-v4_4.pdf?raw=true">PDF copy available here</a></li>
+<li>A lab manual <a href="https://github.com/zief0002/statistical-thinking/blob/main/statistical-thinking-v4_5.pdf?raw=true">PDF copy available here</a></li>
 <li>Data sets used in the lab manual:
 <ul>
-<li><a href="https://github.com/zief0002/statistical-thinking/blob/master/tp3-data.zip?raw=true">TinkerPlots 3 Data Files</a></li>
+<li><a href="https://github.com/zief0002/statistical-thinking/blob/main/tp3-data.zip?raw=true">TinkerPlots 3 Data Files</a></li>
 </ul></li>
 </ul>
 <p>You can read more about these resources in the introduction.</p>
-<p><br /></p>
-<div id="licensing-and-attribution" class="section level3 unnumbered hasAnchor">
-<h3>Licensing and Attribution<a href="index.html#licensing-and-attribution" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Copyright © 2023 Catalysts for Change</p>
+<p><br></p>
+<section id="licensing-and-attribution" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="licensing-and-attribution">Licensing and Attribution</h3>
+<p>Copyright © 2025 Catalysts for Change</p>
 <p>PUBLISHED BY CATALYST PRESS</p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a></p>
 <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are free to share, remix, and make commercial use of the work under the condition that you provide proper attribution. To reference this work, use:</p>
 <ul>
-<li>Zieffler, A., &amp; Catalysts for Change. (2023). <em>Statistical Thinking: A simulation approach to uncertainty</em> (4.4th ed.). Minneapolis, MN: Catalyst Press. <a href="http://zief0002.github.io/statistical-thinking/">http://zief0002.github.io/statistical-thinking/</a></li>
+<li>Zieffler, A., &amp; Catalysts for Change. (2025). <em>Statistical Thinking: A simulation approach to uncertainty</em> (4.5th ed.). Minneapolis, MN: Catalyst Press. <a href="http://zief0002.github.io/statistical-thinking/">http://zief0002.github.io/statistical-thinking/</a></li>
 </ul>
 <p>The work to create the material appearing in the book was made possible by the National Science Foundation (DUE–0814433).</p>
 <p>The material on this website and in the lab manual is a direct reflection of the ideas, work, and effort of several Catalysts for Change. They include (alphabetically): Ethan Brown, Jonathan Brown, Dan Butler, Tony Casci, Beth Chance, George Cobb, Robert delMas, Katherine Edwards, Michelle Everson, Jeffrey Finholm, Chris Fiscus, Elizabeth Fry, Joan Garfield, Theresa Gieschen, Meg Goerdt, Robert Gould, Adam Gust, Melissa Hanson, John Holcomb, Michael Huberty, Rebekah Isaak, Kari Johnson, Nicola Justice, Laura Le, Chelsey Legacy, Regina Lisinker, Suzanne Loch, Matthew Mullenbach, Michael Nguyen, Amy Okan, Vimal Rao, Allan Rossman, Anelise Sabbag, Andrew Zieffler, and Laura Ziegler.</p>
 <p>Additionally, some of the activities presented in the lab manual were originally developed by Beth Chance, George Cobb, John Holcomb, and Allan Rossman as part of their NSF-funded project <a href="http://statweb.calpoly.edu/csi/">Concepts of Statistical Inference: A Randomization-Based Curriculum</a> (NSF CCLI- DUE-0633349).</p>
-<p><br /></p>
-</div>
-<div id="colophon" class="section level3 unnumbered hasAnchor">
-<h3>Colophon<a href="index.html#colophon" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>There are two <a href="https://fonts.google.com/">Google Fonts</a> used on the website. The headings use <a href="https://fonts.google.com/specimen/Playfair+Display">Playfair Display</a> and the display text is <a href="https://fonts.google.com/specimen/Alegreya">Alegreya</a>.</p>
+<p><br></p>
+</section>
+<section id="colophon" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="colophon">Colophon</h3>
+<p>The book is typeset using <a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible">Atkinson Hyperlegible</a>. The color palette was generated using <a href="https://coolors.co/">coolors.co</a>.</p>
 <p>Icons used on the website are:</p>
 <ul>
 <li><a href="https://thenounproject.com/iconproducer/collection/keys/?oq=key&amp;cidx=0&amp;i=713748">Key</a> by Iconic from the <a href="https://thenounproject.com/">Noun Project</a></li>
 </ul>
 
-</div>
-</div>
-            </section>
 
-          </div>
-        </div>
-      </div>
+</section>
+</section>
 
-<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-}
-});
-});
-</script>
+  <div class="nav-page nav-page-next">
+      <a href="./01-introduction.html" class="pagination-link" aria-label="Introduction">
+        <span class="nav-page-text">Introduction</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-</body>
 
-</html>
+
+
+</body></html>
