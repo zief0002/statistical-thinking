@@ -1,0 +1,19 @@
+{
+  "hash": "dfa2273aba7bae508404f9dfec2d5fe0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Uncertainty and Bias {-}\n\nSince statistical estimation is a method of inference, we need to weigh validity evidence the same way we did for tests of hypotheses. Whether the estimate is a \"good\" estimate depends on how the sample was drawn. If a biased method of drawing the sample was used, the compatibility interval will likely be biased. Let's again illustrate using our key example.\n\n\n\n\n\n::: {#fig-bias-uncertainty .cell layout-ncol=\"2\" layout-valign=\"bottom\"}\n::: {.cell-output-display}\n![Unbiased Sampling Method](img/uncertainty-and-bias-02.png){#fig-bias-uncertainty-1 fig-alt='Metaphor for bias in compatibility intervals.' width=512}\n:::\n\n::: {.cell-output-display}\n![Biased Sampling Method](img/uncertainty-and-bias-01.png){#fig-bias-uncertainty-2 fig-alt='Metaphor for bias in compatibility intervals.' width=512}\n:::\n\nMetaphor for bias in compatibility intervals.\n:::\n\n\n\n\n\n<br />\n\n<!-- <div style=\"float: left; margin-right: 5px;\"> -->\n<!-- <img src=\"img/uncertainty-and-bias-02.png\" width=\"45%\" /> -->\n<!-- <img src=\"img/uncertainty-and-bias-01.png\" width=\"45%\" /> -->\n<!-- </div> -->\n\n<!-- <div style=\"clear: both;\"> -->\n\nThe figure on the left is a metaphor for the compatibility interval resulting from an unbiased sampling method, such as random sampling. The figure on the right is a metaphor for the compatibility interval resulting from an biased sampling method, such as convenience sampling. Remember the goal of estimation is to give a range of likely values for the population parameter (the keys). If a biased sampling method is used the resulting compatibility interval will likely be wrong (biased).\n\nDon't confuse uncertainty with bias. In our key example, remember the amount of uncertainty is shown by the size of the yellow circle. In the figures above, the uncertainty for both the biased and unbiased sampling methods was the same. Now, consider the following figures.\n\n\n\n\n\n::: {#fig-bias-uncertainty2 .cell layout-ncol=\"2\" layout-valign=\"bottom\"}\n::: {.cell-output-display}\n![Biased Sampling Method with Small Uncertainty](img/uncertainty-and-bias-03.png){#fig-bias-uncertainty2-1 fig-alt='Metaphor for the bias AND uncertainty in compatibility intervals.' width=512}\n:::\n\n::: {.cell-output-display}\n![Unbiased Sampling Method with Large Uncertainty](img/uncertainty-and-bias-04.png){#fig-bias-uncertainty2-2 fig-alt='Metaphor for the bias AND uncertainty in compatibility intervals.' width=512}\n:::\n\nMetaphor for the bias AND uncertainty in compatibility intervals.\n:::\n\n\n\n\n\n<br />\n\n<!-- <div style=\"float: left; margin-right: 5px;\"> -->\n<!-- <img src=\"img/uncertainty-and-bias-03.png\" width=\"45%\" /> -->\n<!-- <img src=\"img/uncertainty-and-bias-04.png\" width=\"45%\" /> -->\n<!-- </div> -->\n\nThe figure on the left is a metaphor for a compatibility interval that has a small amount of uncertainty (large sample size) resulting from a biased sampling method. The figure on the right is a metaphor for a compatibility interval that has a large amount of uncertainty (small sample size) resulting from an unbiased sampling method. In terms of estimating where the actual keys are, the compatibility interval represented in the right-hand figure would be better. This is an important lesson: **Sample size only matters if the sampling method is unbiased.**\n\n<br />\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

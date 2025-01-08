@@ -2,7 +2,7 @@ Statistical Thinking: A Simulation Approach to Modeling Uncertainty
 ================
 
 
-<img src="images/all-covers.png" alt="Covers for all editions." width="60%" style="display: block; margin-left: auto; margin-right: auto" />
+<img src="img/all-covers.png" alt="Covers for all editions." width="60%" style="display: block; margin-left: auto; margin-right: auto" />
 
 This is the GitHub repository for the supplementary materials for the book [_Statistical Thinking: A Simulation Approach to Modeling Uncertainty_](http://zief0002.github.io/statistical-thinking/). Here you can find a PDF file of the lab manual, as well as the TinkerPlots&#8482; datasets used in the book. The materials in the book are based on the NSF-funded [CATALST Project](http://www.tc.umn.edu/~catalst/) (DUE-0814433). The book itself can be accessed at [http://zief0002.github.io/statistical-thinking/](http://zief0002.github.io/statistical-thinking/).
 
