@@ -50,21 +50,21 @@
     ]
   },
   {
-    "objectID": "02-modeling-and-simulation.html#footnotes",
-    "href": "02-modeling-and-simulation.html#footnotes",
-    "title": "Modeling & Simulation",
-    "section": "",
-    "text": "Hartmann, S. (2005). The world as a process: Simulations in the natural and social sciences. http://philsci-archive.pitt.edu/2412/↩︎\nStarfield, A. M., Smith, K. A., & Bleloch, A. L. (1994). How to model it: Problem solving for the computer age. Edina, MN: Burgess International Group, Inc.↩︎\nMosteller, F., Kruskal, W. H., Link, R. F., Pieters, R. S., & Rising, G. R. (1973). Statistics by example: Finding models. Reading, MA: Addison–Wesley.↩︎",
-    "crumbs": [
-      "Modeling &amp; Simulation"
-    ]
-  },
-  {
     "objectID": "02-modeling-and-simulation.html#randomness",
     "href": "02-modeling-and-simulation.html#randomness",
     "title": "Modeling & Simulation",
     "section": "Randomness",
     "text": "Randomness\nOne critical component of simulation is the random process used to generate data. To help you begin to understand randomness, watch the Random Sequences: Human vs. Coin YouTube video.",
+    "crumbs": [
+      "Modeling &amp; Simulation"
+    ]
+  },
+  {
+    "objectID": "02-modeling-and-simulation.html#footnotes",
+    "href": "02-modeling-and-simulation.html#footnotes",
+    "title": "Modeling & Simulation",
+    "section": "",
+    "text": "Hartmann, S. (2005). The world as a process: Simulations in the natural and social sciences. http://philsci-archive.pitt.edu/2412/↩︎\nStarfield, A. M., Smith, K. A., & Bleloch, A. L. (1994). How to model it: Problem solving for the computer age. Edina, MN: Burgess International Group, Inc.↩︎\nMosteller, F., Kruskal, W. H., Link, R. F., Pieters, R. S., & Rising, G. R. (1973). Statistics by example: Finding models. Reading, MA: Addison–Wesley.↩︎",
     "crumbs": [
       "Modeling &amp; Simulation"
     ]
@@ -160,10 +160,10 @@
     ]
   },
   {
-    "objectID": "06-describing-distributions.html#shape",
-    "href": "06-describing-distributions.html#shape",
+    "objectID": "06-describing-distributions.html#location",
+    "href": "06-describing-distributions.html#location",
     "title": "Describing Distributions",
-    "section": "",
+    "section": "Location",
     "text": "Location\nAside from the overall shape of the distribution, it is also useful to summarize the location of the distribution. The location of the distribution provides a summarization of a so-called “typical” value for the data. A “typical” value can be estimated from the plot of the distribution. You can also use more formally calculated summaries of the location such as the mean, median, or mode. These values are easily calculated using TinkerPlots™.\nWhen looking at a plot of a distribution, data analysts often consider the number of modes or “humps” that are seen in a plot of the distribution. Here, the concept of mode is slightly different (although related) to the concept of mode that you may have learned in previous mathematics or statistics courses. The mode of a distribution gives a general sense of the values or measurements that occur frequently. This may be a single number, but many times is not. For example, the first hump of the distribution shown in the figure below suggests that values around nine are very common. The actual value of nine, however, may only show up once or twice in the data.\n\n\n\n\n\n\n\n\n\nFigure 2: A bimodal distribution showing two modes. One mode is around 9, and the other is near 12.\n\n\n\n\n\n\nA distribution can be unimodal (one mode), bimodal (two modes), multimodal (many modes), or uniform (no modes). The distribution shown above is bimodal—notice there are two humps. Uniform distributions have roughly the same frequency for all possible values (they look essentially flat) and thus have no modes.",
     "crumbs": [
       "Describing Distributions"
@@ -230,31 +230,11 @@
     ]
   },
   {
-    "objectID": "06-describing-distributions.html#location",
-    "href": "06-describing-distributions.html#location",
-    "title": "Describing Distributions",
-    "section": "Location",
-    "text": "Location\nAside from the overall shape of the distribution, it is also useful to summarize the location of the distribution. The location of the distribution provides a summarization of a so-called “typical” value for the data. A “typical” value can be estimated from the plot of the distribution. You can also use more formally calculated summaries of the location such as the mean, median, or mode. These values are easily calculated using TinkerPlots™.\nWhen looking at a plot of a distribution, data analysts often consider the number of modes or “humps” that are seen in a plot of the distribution. Here, the concept of mode is slightly different (although related) to the concept of mode that you may have learned in previous mathematics or statistics courses. The mode of a distribution gives a general sense of the values or measurements that occur frequently. This may be a single number, but many times is not. For example, the first hump of the distribution shown in the figure below suggests that values around nine are very common. The actual value of nine, however, may only show up once or twice in the data.\n\n\n\n\n\n\n\n\n\nFigure 2: A bimodal distribution showing two modes. One mode is around 9, and the other is near 12.\n\n\n\n\n\n\nA distribution can be unimodal (one mode), bimodal (two modes), multimodal (many modes), or uniform (no modes). The distribution shown above is bimodal—notice there are two humps. Uniform distributions have roughly the same frequency for all possible values (they look essentially flat) and thus have no modes.",
-    "crumbs": [
-      "Describing Distributions"
-    ]
-  },
-  {
     "objectID": "08-p-value.html",
     "href": "08-p-value.html",
     "title": "Quantifying Results: p-Value",
     "section": "",
     "text": "Adjustment for Simulation Results\nIn addition to computing the range of likely results from the model, statisticians also typically provide a quantification of the likelihood of the observed result given the hypothesized model. This quantification is referred to as a p-value (the p stands for probability).\nTo compute a p-value, you count the number of results that are at least as extreme as the observed result, and divide this by the total number of results.\n\\[\np = \\frac{\\mathrm{number~of~results~at~least~as~extreme~as~observed~result}}{\\mathrm{total~number~of~simulated~results}}\n\\]\nThis value is then reported as a decimal value. It quantifies the probability of observing a result at least as extreme as the observed result under the hypothesized model.\nTo illustrate this, we will re-examine simulation results from the Sleep Deprivation study. Recall in that activity, the observed data had a difference in means of 15.9. Below is a plot of 100 differences in means simulated under the “no-effect” model. A vertical line is shown at the observed difference of 15.9.\nSince 15.9 is to the right of 0 (i.e., it is on the right-hand side of the plot) results that are more extreme than the observed result are to the right of 15.9. (If the observed result was to the left of 0, more extreme results would be those more negative than the observed result.) Here there are two simulated results out of 100 that are at least as extreme as 15.9 (\\(\\geq 15.9\\)). We would report the p-value as 0.02.\nIn simulation studies, we make one small adjustment to the p-value computation; we add 1 to both the numerator and denominator:\n\\[\np = \\frac{\\mathrm{number~of~results~more~extreme~than~observed} + 1}{\\mathrm{total~number~of~simulated~results} + 1}\n\\]\nThis adjustment assures that we never get a p-value of 0. Consider the p-value if our observed result would have been 18 (instead of 15.9). There are 0 results that are at least as extreme as 18 (\\(\\geq 18\\)). Without making the simulation adjustment, we would report a p-value of 0. This implies that seeing a result at least as extreme as 18 under the “no-effect” model is impossible. The problem is that we only ran 100 trials of the simulation. If we had run this simulation for all possible randomizations of the data, we would have seen results \\(\\geq 18\\). So, to report a p-value of 0 is misleading. The p-value we report should be,\n\\[\np = \\frac{0 + 1}{100 + 1} = 0.0099\n\\]\nAfter the adjustment, the p-value is still quite small, indicating that had we seen an observed result of 18, we would say that it is inconsistent with the model of “no-effect”. In fact it is in the outer 0.01 (1%) of the results simulated from the hypothesized model.\nGoing back to the p-value computed from the observed value of 15.9,\n\\[\np = \\frac{2 + 1}{100 + 1} = 0.0297\n\\]\nWe can interpret the p-value of 0.030 as indicating that the observed difference of 15.9 is in the outer 0.03 (3%) of results simulated from the hypothesized model. It is quite unlikely that we would see a result as extreme as 15.9, or more extreme, under the hypothesized model of “no effect”.",
-    "crumbs": [
-      "Quantifying Results: p-Value"
-    ]
-  },
-  {
-    "objectID": "08-p-value.html#footnotes",
-    "href": "08-p-value.html#footnotes",
-    "title": "Quantifying Results: p-Value",
-    "section": "",
-    "text": "Yaddanapudi (2016) published a paper in the Journal of Anaesthesiology, Clinical Pharmacology in which she explains each of these six principles for practicing physician-scientists using an example of treatment efficacy for a drug.↩︎",
     "crumbs": [
       "Quantifying Results: p-Value"
     ]
@@ -277,6 +257,36 @@
     "text": "Six Principles about p-Values\nBecause they are so ubiquitous in the research literature for any field, and because they are often mis-interpreted (even by PhDs, researchers, and math teachers) it is important to be aware of what a p-value tells you, and more importantly, what it doesn’t tell you. To this end, the American Statistical Association released a statement on p-values in which it listed six principles:1\n\nPrinciple 1: p-values can indicate how incompatible the data are with a specified statistical model.\nPrinciple 2: p-values do not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.\nPrinciple 3: Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold.\nPrinciple 4: Proper inference requires full reporting and transparency.\nPrinciple 5: A p-value does not measure the size of an effect or the importance of a result.\nPrinciple 6: By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis.",
     "crumbs": [
       "Quantifying Results: p-Value"
+    ]
+  },
+  {
+    "objectID": "08-p-value.html#footnotes",
+    "href": "08-p-value.html#footnotes",
+    "title": "Quantifying Results: p-Value",
+    "section": "",
+    "text": "Yaddanapudi (2016) published a paper in the Journal of Anaesthesiology, Clinical Pharmacology in which she explains each of these six principles for practicing physician-scientists using an example of treatment efficacy for a drug.↩︎",
+    "crumbs": [
+      "Quantifying Results: p-Value"
+    ]
+  },
+  {
+    "objectID": "09-internal-validity-evidence.html",
+    "href": "09-internal-validity-evidence.html",
+    "title": "Internal Validity Evidence and Random Assignment",
+    "section": "",
+    "text": "Medical researchers may be interested in showing that a drug helps improve people’s health (the cause of improvement is the drug), while educational researchers may be interested in showing a curricular innovation improves students’ learning (the curricular innovation causes improved learning). To attribute a causal relationship, there are three criteria a researcher needs to establish:\nBecause of this third criteria, attributing a cause-and-effect relationship is very difficult. (You can read more about each of these criteria at the Web Center for Social Research Methods.)\nExperimental studies have their strength in meeting this third criteria. To rule out ALL other possible explanations for the effect, the control group and the treatment group need to be “identical” with respect to every possible characteristic (aside from the treatment) that could explain differences. This way the only characteristic that will be different is that the treatment group gets the treatment and the control group doesn’t. If there are differences in the outcome, then it must be attributable to the treatment, because the other possible explanations are ruled out.\nSo, the key is to make the control and treatment groups “identical” when you are forming them. One thing that makes this task (slightly) easier is that they don’t have to be exactly identical, only probabilistically equivalent. This means, for example, that if you were matching groups on age that you don’t need the two groups to have identical age distributions; they would only need to have roughly the same AVERAGE age. Here roughly means “the average ages should be the same within what we expect because of sampling error.”\nNow we just need to create the groups so that they have, on average, the same characteristics … for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!1\nIt turns out that creating probabilistically equivalent groups is a really difficult problem. One method that works pretty well for doing this is to randomly assign participants to the groups. This works best when you have large sample sizes, but even with small sample sizes random assignment has the advantage of at least removing the systematic bias between the two groups (any differences are due to chance and will probably even out between the groups). As Wikipedia’s page on random assignment points out,\nInternal validity is the degree to which cause-and-effect inferences are accurate and meaningful. Causal attribution is the goal for many researchers. Thus, by using random assignment we have a pretty high degree of evidence for internal validity; we have a much higher belief in causal inferences. Much like evidence used in a court of law, it is useful to think about validity evidence on a continuum. We will visualize this continuum as a barometer. For example, a barometer visualizing the internal validity evidence for a study that employed random assignment in the design might be:\nThe degree of internal validity evidence is high (in the upper-third). How high depends on other factors such as sample size.\nTo learn more about random assignment, you can read the following:",
+    "crumbs": [
+      "Internal Validity Evidence and Random Assignment"
+    ]
+  },
+  {
+    "objectID": "09-internal-validity-evidence.html#footnotes",
+    "href": "09-internal-validity-evidence.html#footnotes",
+    "title": "Internal Validity Evidence and Random Assignment",
+    "section": "",
+    "text": "According to Wiktionary the earliest usage of the work “zoinks” was by Norville “Shaggy” Rogers on the show Scooby-Doo.↩︎",
+    "crumbs": [
+      "Internal Validity Evidence and Random Assignment"
     ]
   },
   {
@@ -340,41 +350,11 @@
     ]
   },
   {
-    "objectID": "09-internal-validity-evidence.html",
-    "href": "09-internal-validity-evidence.html",
-    "title": "Internal Validity Evidence and Random Assignment",
-    "section": "",
-    "text": "Medical researchers may be interested in showing that a drug helps improve people’s health (the cause of improvement is the drug), while educational researchers may be interested in showing a curricular innovation improves students’ learning (the curricular innovation causes improved learning). To attribute a causal relationship, there are three criteria a researcher needs to establish:\nBecause of this third criteria, attributing a cause-and-effect relationship is very difficult. (You can read more about each of these criteria at the Web Center for Social Research Methods.)\nExperimental studies have their strength in meeting this third criteria. To rule out ALL other possible explanations for the effect, the control group and the treatment group need to be “identical” with respect to every possible characteristic (aside from the treatment) that could explain differences. This way the only characteristic that will be different is that the treatment group gets the treatment and the control group doesn’t. If there are differences in the outcome, then it must be attributable to the treatment, because the other possible explanations are ruled out.\nSo, the key is to make the control and treatment groups “identical” when you are forming them. One thing that makes this task (slightly) easier is that they don’t have to be exactly identical, only probabilistically equivalent. This means, for example, that if you were matching groups on age that you don’t need the two groups to have identical age distributions; they would only need to have roughly the same AVERAGE age. Here roughly means “the average ages should be the same within what we expect because of sampling error.”\nNow we just need to create the groups so that they have, on average, the same characteristics … for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!1\nIt turns out that creating probabilistically equivalent groups is a really difficult problem. One method that works pretty well for doing this is to randomly assign participants to the groups. This works best when you have large sample sizes, but even with small sample sizes random assignment has the advantage of at least removing the systematic bias between the two groups (any differences are due to chance and will probably even out between the groups). As Wikipedia’s page on random assignment points out,\nInternal validity is the degree to which cause-and-effect inferences are accurate and meaningful. Causal attribution is the goal for many researchers. Thus, by using random assignment we have a pretty high degree of evidence for internal validity; we have a much higher belief in causal inferences. Much like evidence used in a court of law, it is useful to think about validity evidence on a continuum. We will visualize this continuum as a barometer. For example, a barometer visualizing the internal validity evidence for a study that employed random assignment in the design might be:\nThe degree of internal validity evidence is high (in the upper-third). How high depends on other factors such as sample size.\nTo learn more about random assignment, you can read the following:",
-    "crumbs": [
-      "Internal Validity Evidence and Random Assignment"
-    ]
-  },
-  {
-    "objectID": "09-internal-validity-evidence.html#footnotes",
-    "href": "09-internal-validity-evidence.html#footnotes",
-    "title": "Internal Validity Evidence and Random Assignment",
-    "section": "",
-    "text": "According to Wiktionary the earliest usage of the work “zoinks” was by Norville “Shaggy” Rogers on the show Scooby-Doo.↩︎",
-    "crumbs": [
-      "Internal Validity Evidence and Random Assignment"
-    ]
-  },
-  {
     "objectID": "12-validity-evidence-and-inferences.html",
     "href": "12-validity-evidence-and-inferences.html",
     "title": "Validity Evidence and Inferences",
     "section": "",
     "text": "Studies of Peanut Allergies\nHow subjects are selected from the larger population (sampling) and how those selected subjects are then assigned to experimental conditions (design) both play a large role in the inferences that can be drawn. These two facets are directly related to questions about external validity and internal validity, respectively.\nValidity is the degree to which inferences and conclusions are meaningful and accurate. It is important that you note that the validation is about the inferences, not the study. (You should never claim a study is valid.) Unfortunately, it is almost impossible to know whether the inferences we draw are valid or not. Therefore, the best we can do is to provide evidence that supports the claims of validity and present that evidence to people. In research studies there are two major types of validity evidence that should be considered:\nMuch like evidence used in a court of law, it is useful to think about validity evidence on a continuum. For example, after reading about the sampling and design of a particular study you might envision the following two “barometers” of the internal and external validity evidence for a study’s inferences:\nThe inferences drawn from this study may generalize, but are probably not causal. As you read research studies (and work on the class activities) you will learn how to situate the yellow dot along these two continuums by considering the sampling and design plans used in the study.\nBelow, you will be presented with excerpts of the research design from three different studies of peanut allergies. The researchers who conducted these studies all used different study designs. After reading the excerpts of each study, try to create the two barometers to situate the internal and external validity evidence. This will help us consider the inferences and conclusions that can be appropriately drawn.\nRemember there are two primary questions that you should ask when evaluating a study’s design: (1) How were the study participants selected from the population? This helps us think about the degree of external validity evidence, and (2) How were the selected study participants assigned to conditions? This helps us situate the internal validity evidence.",
-    "crumbs": [
-      "Validity Evidence and Inferences"
-    ]
-  },
-  {
-    "objectID": "12-validity-evidence-and-inferences.html#footnotes",
-    "href": "12-validity-evidence-and-inferences.html#footnotes",
-    "title": "Validity Evidence and Inferences",
-    "section": "",
-    "text": "Du Toit, G., et al. (2015). Randomized trial of peanut consumption in infants at risk for peanut allergy. New England Journal of Medicine, 372(9), 803–813.↩︎\nSicherer, S. H., Wood, R. A., Stablein, D., Lindblad, R., Burks, A. W., Liu, A. H., Jones, S. M., Fleischer, D. M., Leung, D. Y., & Sampson, H. A. (2010). Maternal consumption of peanut during pregnancy is associated with peanut sensitization in atopic infants. Journal of Allergy and Clinical Immunology, 126(6), 1191–1197.↩︎\nSicherer, S. H., Muñoz-Furlong, A., & Sampson, H. A. (2003). Prevalence of peanut and tree nut allergy in the United States determined by means of a random digit dial telephone survey: A 5-year follow-up study. Journal of Allergy and Clinical Immunology, 112(6), 1203–1207.↩︎",
     "crumbs": [
       "Validity Evidence and Inferences"
     ]
@@ -390,6 +370,16 @@
     ]
   },
   {
+    "objectID": "12-validity-evidence-and-inferences.html#footnotes",
+    "href": "12-validity-evidence-and-inferences.html#footnotes",
+    "title": "Validity Evidence and Inferences",
+    "section": "",
+    "text": "Du Toit, G., et al. (2015). Randomized trial of peanut consumption in infants at risk for peanut allergy. New England Journal of Medicine, 372(9), 803–813.↩︎\nSicherer, S. H., Wood, R. A., Stablein, D., Lindblad, R., Burks, A. W., Liu, A. H., Jones, S. M., Fleischer, D. M., Leung, D. Y., & Sampson, H. A. (2010). Maternal consumption of peanut during pregnancy is associated with peanut sensitization in atopic infants. Journal of Allergy and Clinical Immunology, 126(6), 1191–1197.↩︎\nSicherer, S. H., Muñoz-Furlong, A., & Sampson, H. A. (2003). Prevalence of peanut and tree nut allergy in the United States determined by means of a random digit dial telephone survey: A 5-year follow-up study. Journal of Allergy and Clinical Immunology, 112(6), 1203–1207.↩︎",
+    "crumbs": [
+      "Validity Evidence and Inferences"
+    ]
+  },
+  {
     "objectID": "13-observational-studies.html",
     "href": "13-observational-studies.html",
     "title": "Observational Studies and the Bootstrap Test",
@@ -400,31 +390,11 @@
     ]
   },
   {
-    "objectID": "13-observational-studies.html#analyzing-data-from-observational-studies",
-    "href": "13-observational-studies.html#analyzing-data-from-observational-studies",
-    "title": "Observational Studies and the Bootstrap Test",
-    "section": "",
-    "text": "Test\nVariation Modeled\nTinkerPlots™\n\n\n\n\nRandomization\nExperimental variation\nTwo sampling devices:   (1) outcomes (sampled without replacement); and   (2) group labels (sampled without replacement)\n\n\nBootstrap\nSampling variation\nTwo sampling devices:   (1) outcomes (sampled with replacement); and   (2) group labels (sampled without replacement)",
-    "crumbs": [
-      "Observational Studies and the Bootstrap Test"
-    ]
-  },
-  {
     "objectID": "14-statistical-estimation.html",
     "href": "14-statistical-estimation.html",
     "title": "Estimating Uncertainty",
     "section": "",
     "text": "Quantifying Uncertainty: Compatibility Intervals\nAside from hypothesis testing, one of the most common uses of statistical inference is the estimation of unknown parameters using sample data. Polling is one application where statistical estimation is used. For example, Gallup and the Pew Research Center are organizations that use statistical estimation to provide snapshots of public attitudes and opinions on topics from politics and the economy, to social awareness and health and well-being. The results of their polls are seen on a daily basis in almost every newspaper, news blog and website across the world.\nStatistical estimation is used by more than pollsters. Biologists, social scientists, and medical researchers use statistical estimation to quantify population characteristics. For example, each year the Minnesota Department of Natural Resources estimates the populations of various species of animal, bird, and fish. These estimates are used to help set hunting and fishing regulations, as well as to allocate resources.2\nWhen statisticians report sample estimates, they typically provide the value of the estimate along with the quantification of uncertainty in this estimate. This uncertainty measurement gives us an indication of the “precision” of the estimate. For example, consider again the example of the person who lost his keys. In those pictures, recall, the places where he searched for his keys (the red x’s) represents that sample data.\nThis figure is a metaphor for statistical uncertainty.\nOne estimate that can be made from that data is the “mean” location.3 This location is marked with a big blue dot. This estimate is the one-location best guess about where the actual keys (the population parameter) are located. The yellow area represents the uncertainty; other places where the keys might be aside from the on-location best guess. Interpreting this uncertainty gives him a range of locations where the actual keys might be; the compatibility interval.",
-    "crumbs": [
-      "Estimating Uncertainty"
-    ]
-  },
-  {
-    "objectID": "14-statistical-estimation.html#footnotes",
-    "href": "14-statistical-estimation.html#footnotes",
-    "title": "Estimating Uncertainty",
-    "section": "",
-    "text": "Tukey, J. (1962). The future of data analysis. Annals of Mathematical Statistics 33(1), 1–67.↩︎\nHere is the Wolf Population report for 2016.↩︎\nIn two-dimensional space, like on a map, the “mean” is referred to as a centroid.↩︎",
     "crumbs": [
       "Estimating Uncertainty"
     ]
@@ -445,6 +415,16 @@
     "title": "Estimating Uncertainty",
     "section": "Outline and Goals of Unit 5",
     "text": "Outline and Goals of Unit 5\nThe following schematic outlines the course readings, in-class activities, and assignments for Unit 5.\n\n\n\n\n\n\n\n\n\n\n\nIn the readings, course activities, and assignments in Unit 5, you will explore the use of bootstrapping to make statistical estimates using TinkerPlots™. You will also learn about how sample size affects the precision/uncertainty of statistical estimates. Lastly, you will learn about the connections between hypothesis testing and estimation.",
+    "crumbs": [
+      "Estimating Uncertainty"
+    ]
+  },
+  {
+    "objectID": "14-statistical-estimation.html#footnotes",
+    "href": "14-statistical-estimation.html#footnotes",
+    "title": "Estimating Uncertainty",
+    "section": "",
+    "text": "Tukey, J. (1962). The future of data analysis. Annals of Mathematical Statistics 33(1), 1–67.↩︎\nHere is the Wolf Population report for 2016.↩︎\nIn two-dimensional space, like on a map, the “mean” is referred to as a centroid.↩︎",
     "crumbs": [
       "Estimating Uncertainty"
     ]
