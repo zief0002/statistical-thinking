@@ -6,27 +6,29 @@
 #| fig-alt: "Book Logo"
 #| fig-align: 'center'
 #| out-width: "100%"
-knitr::include_graphics("img/book-logo2.png")
+knitr::include_graphics("img/00-book-logo2.png")
 ```
+
+---
 
 <br />
 
 #  Front Matter {.unnumbered}
 
-This website is intended to serve as an organizational hub for the most current version of the CATALST Project's *Statistical Thinking: A Simulation Approach to Modeling Uncertainty*. Here you will be able to access materials such as readings, data sets, and the lab manual. The website also includes helpful links and resources for each of the course topics.
+This website is the textbook for EPSY 3264: Basic and Applied Statistics.
 
 <br />
 
-The resources that accompany this website include:
+<!-- The resources that accompany this website include: -->
 
-- A lab manual [PDF copy available here](https://github.com/zief0002/statistical-thinking/blob/main/statistical-thinking-v4_5.pdf?raw=true)
-- Data sets used in the lab manual:
-  + [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/main/tp3-data.zip?raw=true)
+<!-- - A lab manual [PDF copy available here](https://github.com/zief0002/statistical-thinking/blob/main/statistical-thinking-v4_5.pdf?raw=true) -->
+<!-- - Data sets used in the lab manual: -->
+<!--   + [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/main/tp3-data.zip?raw=true) -->
 
 
-You can read more about these resources in the introduction.
+<!-- You can read more about these resources in the introduction. -->
 
-<br />
+<!-- <br /> -->
 
 ### Licensing and Attribution {.unnumbered}
 

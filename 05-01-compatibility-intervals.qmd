@@ -1,0 +1,46 @@
+# Compatibility Intervals: Accounting for Uncertainty in a Statistical Estimate {-}
+
+The Pew Research Center is an organization that... In 2023 they carried out a [survey to better understand the views and experiences of public K-12 school teachers](https://www.pewresearch.org/social-trends/2024/04/04/whats-it-like-to-be-a-teacher-in-america-today/). The 2,531 teachers surveyed constitute a nationally representative panel of public K-12 school teachers. One question they asked was about challenges they faced in the classroom. Pew reported that 72% of high school teachers surveyed indicated that students being distracted by their cellphones in the classroom is a major problem. 
+
+This summary of the data (72%) is a statistical estimate of the percentage of public high school teachers in the nation who believe that students being distracted by their cellphones in the classroom is a major problem. When we use a sample summary (i.e., a statistic) as an estimate for the population summary (i.e., parameter), we are making a statistical estimate. In this case, the estimate is referred to as a **point estimate**. A point estimate is a single number estimate of the population parameter.
+
+But, if there is one thing you have learned in this class, it is that had Pew chosen a different sample of teachers, they would have gotten a different point estimate. That is, our point estimate varies because of sampling error. Because of this, when statisticians report sample point estimates, they also typically provide a quantification of the amount of sampling error. In the accompanying [technical report](https://www.pewresearch.org/social-trends/wp-content/uploads/sites/3/2024/03/ST_24.04.04_teacher-survey_topline.pdf), Pew writes that the **margin of error** at 95% confidence level is +/- 2.4 percentage points. The margin of error is a commonly reported measure statisticians use to quantify the amount of sampling variation when reporting statistical estimates.
+
+<br />
+
+
+## Statistical Error as Uncertainty
+
+One way that we can view statistical error (e.g., sampling or experimental variation) is to think about it as measuring "uncertainty". That is, when we report a statistical estimate from a sample, there is some uncertainty around using that value as a stand-in for the population parameter. The uncertainty comes from not only understanding that different samples would provide different point estimates, but also that a sample is only part of the population, so the estimate is being made from incomplete information about the population. If we take this view of statistical error as uncertainty, the statistical estimate from Pew has more nuance. 
+
+> What is the percentage of public high school teachers in the nation who believe that students being distracted by their cellphones in the classroom is a major problem? Our estimate for this percentage is 72% +/- 2.4%. That is, based on our sample, we believe taht 72% of public high school teachers in the nation believe that students being distracted by their cellphones in the classroom is a major problem. However, we have some uncertainty around that, so the true estimate is likely within 2.4% of that point estimate. 
+
+<br />
+
+
+## Compatibility Intervals: Combining the Point Estimate and Margin of Error
+
+There are multiple ways to report the amount of uncertainty in a statistical estimate. One method is to simply report the point estimate and margin of error like Pew did: $72\% \pm 2.4\%$. Another way to report this is to actually carry out the mathematics and report the resulting interval:
+
+$$
+\begin{split}
+72\% &\pm 2.4\%\\
+[72\% - 2.4\%,&~~72\% + 2.4\%]\\
+[69.6\%,&~~74.4\%]
+\end{split}
+$$
+
+This is referred to as a **compatibility interval** (i.e., a confidence interval). A compatibility interval acknowledges the uncertainty in the estimate by giving a range of potential values for the estimate of the parameter. 
+
+> We believe that the percentage of public high school teachers in the nation who believe that students being distracted by their cellphones in the classroom is a major problem is somewhere between 69.6% and 74.4%.
+
+As you interpret compatibility intervals, there are a couple things to keep in mind.
+
+- The compatibility interval is being used to estimate the population parameter.
+- The compatibility interval gives a range of compatible values for the population parameter. 
+- Each value in the range is not equally compatible with the data (Values in the middle of the range are more compatible with the data than values at the ends of the range.) Moreover, the values outside the range are not incompatibile with the data; just far, far less compatible.
+
+
+
+<br />
+

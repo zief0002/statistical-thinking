@@ -1,0 +1,22 @@
+# Evaluating Hypotheses {-}
+
+In the course activities and homework assignments, you have been using probability models to generate random outcomes. You have also learned how to use Monte Carlo simulation to generate many data sets from a given model. This is the same kind of process that researchers, scientists, and statisticians engage in when they evaluate (or test) hypotheses about the world. 
+
+For example, consider evaluating whether the admission rate for public universities is higher then 0.50. Imagine you collected data from 15 public universities and found that the admission rate for those 15 schools was 0.62. Based on this evidence, we could say that the average admission rate for our sample of 15 universities was higher than 0.50. But, is this true when we grow our sample to ALL public universities? Is the mean admission rate for ALL public universities higher than 0.50?
+
+
+Drawing conclusions beyond the data we have is called **inference**, and the associated methods that allow researchers to allows us to learn from incomplete or imperfect data are referred to as *statistical inference* [@Gelman:2007]. One thing that makes inference difficult is **sampling variation**. Sampling variation is the variation in summary measures that arises because of having different samples from the model (or population). You have experienced this in the previous unit in all the simulations that you have carried out---you have seen that we get variation in the results (summary measures) just because of chance (randomness).
+
+
+<br />
+
+
+### Goals of Unit 2 {-}
+
+In this unit, you will learn the language statisticians use to describe distributions. You will also explore the process of evaluating statistical hypotheses. As part of that you will be introduced to how to write testable statisitical hypotheses. You will also use TinkerPlots to generate simulated data to account for sampling variation in the results that would be expected under these hypotheses. 
+
+You will also learn how to formally quantify the variation in a distribution. This is helpful as we evaluate whether a particular result in observed data is compatible with results produced from the given model. Lastly, you will learn about common misconceptions regarding model evaluation (e.g., we can never say a model produced the data, only that it produces results compatible with the data), and how to use probabilistic language when providing an "answer" to a research question.
+
+<br />
+
+

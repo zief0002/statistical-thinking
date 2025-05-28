@@ -8,6 +8,8 @@ $font-weight-base: 400 !default;
 $link-decoration: underline !default;
 $toc-color: #b3d3f5;  /*-- Set active link color for TOC sidebar (RIGHT) --*/
 
+// Captions
+$body-secondary: #273043;
 
 
 /*-- scss:rules --*/
@@ -175,6 +177,11 @@ div.sourceCode {
 }**/
 
 
+/** Add space around figures **/
+figure { 
+  padding: 3em 0 3em 0; 
+  
+}
 
 /** Change border color to black **/
 .table thead tr th {

@@ -1,0 +1,37 @@
+# Cause-and-Effect Inferences {-}
+
+One of the most powerful type of inferences that researchers can draw is cause-and-effect. This type of inference allows researchers to attribute any group differences to the treatment that was given to the treatment group. For example, in the memorization activity we did in class, a cause-and-effect inference would allow us to attribute the improvement in average score for the familiar chunking group to the familiar chunking. That is, the reason that there is improved scores (the effect) is because of the familiar chunking (the cause).
+
+Cause-and-effect inferences are useful in a variety of disciplines. For example, medical researchers may be interested in showing that a drug helps improve people's health (the cause of improvement is the drug), while educational researchers may be interested in showing a curricular innovation improves students' learning (the curricular innovation causes improved learning). However, it is often difficult to draw cause-and-effect inferences. To attribute a causal relationship, there are three criteria a researcher needs to establish:
+
+- **Temporal Precedence:** The cause needs to happen BEFORE the effect.
+- **Group Difference beyond experimental variation:** There needs to be difference between the control and treatment group beyond experimental variation.
+- **No Plausible Alternative Explanations:** ALL other possible explanations for the effect need to be ruled out.
+
+Because of this third criteria, attributing a cause-and-effect relationship is very difficult. (You can read more about each of these criteria at the [Web Center for Social Research Methods](https://www.socialresearchmethods.net/kb/causeeff.php).)
+
+<br />
+
+
+## Statistical Experiments: The Key to Cause-and-Effect Inference
+
+Studies that employ a statistical experiment are the key to making cause-and-effect inferences. This is because to rule out ALL other possible explanations for the effect, the control group and the treatment group need to be "identical" with respect to every possible characteristic (aside from the treatment) that could explain differences. This way the only characteristic that will be different is that the treatment group gets the treatment and the control group doesn't. If there are differences in the outcome, then it must be attributable to the treatment, because the other possible explanations are ruled out.
+
+So, in order to make causal inferences, we need to make the control and treatment groups "identical" when we create them. One thing that makes this task (slightly) easier is that they don't have to be exactly identical, only [probabilistically equivalent](https://www.socialresearchmethods.net/kb/expequi.php). This means, for example, that if you were matching groups on age that you don't need the two groups to have identical age distributions; they would only need to have roughly the same AVERAGE age. Here roughly means "the average ages should be the same within what we expect because of sampling error."
+
+Now we just need to create the groups so that they have, on average, the same characteristics &hellip; for EVERY POSSIBLE CHARCTERISTIC that could explain differences in the outcome. Zoinks!^[According to [Wiktionary](https://en.wiktionary.org/wiki/zoinks) the earliest usage of the work "zoinks" was by Norville "Shaggy" Rogers on the show Scooby-Doo.] 
+
+It turns out that creating probabilistically equivalent groups is a really difficult problem. But, one method that works pretty well for doing this is to **randomly assign participants to the groups**. This works best when you have large sample sizes, but even with small sample sizes random assignment has the advantage of at least *removing the systematic bias* between the two groups (any differences are due to chance and will probably even out between the groups). As [Wikipedia's page on random assignment](https://en.wikipedia.org/wiki/Random_assignment) points out,
+
+> Random assignment of participants helps to ensure that any differences between and within the groups are not systematic at the outset of the experiment. Thus, any differences between groups recorded at the end of the experiment can be more confidently attributed to the experimental procedures or treatment. &hellip; Random assignment does not guarantee that the groups are matched or equivalent. The groups may still differ on some preexisting attribute due to chance. The use of random assignment cannot eliminate this possibility, but it greatly reduces it.
+
+
+:::protip
+**KEY QUESTION FOR CAUSE-AND_EFFECT INFERENCE**
+
+One key question to ask when you are considering whether cause-and-effect inference is appropriate is: How were the sample cases assigned to groups? If the answer is they were assigned to groups randomly, then you can make a causal attribution about the group differences to the treatment. If the answer is that they were not assigned to groups randomly, then you cannot ake a causal attribution because there may be some other systematic difference between the groups that may be causing the differences.
+:::
+
+
+<br />
+

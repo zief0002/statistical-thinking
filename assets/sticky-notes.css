@@ -43,6 +43,32 @@
   }
 
 
+
+/* -----------Protip Note (Centered)------------- */
+
+.protip {
+  padding: 1em;
+  margin: 1em 0;
+  padding-left: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  color: #000;
+  background-color: #fffdc0;
+  border: solid 3px #ffb71e;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius:15px 255px;
+  }
+  
+  
+
+
 /* -----------Grey Math Note------------- */
 
 .mathnote {

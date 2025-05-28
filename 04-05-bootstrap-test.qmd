@@ -1,0 +1,55 @@
+# Bootstrap Test: Modeling Sampling Variation {-}
+
+In some studies, researchers do not assign study participants to groups/conditions. As an example, imagine that Dr. Bunsen Honeydew wants to study whether Comedians or Musicians have more followers on Instagram (IG). He collects data by selecting 5 of his favorite comedians and 5 of his favorite musicians and then getting the number of followers from IG. These data are shownin @tbl-data-obs.
+
+
+```{r}
+#| label: tbl-data-obs
+#| tbl-cap: "Data for Dr. Honeydew's study comapring the average number of IG followers of comedians and musicians."
+#| echo: false
+library(gt)
+
+data.frame(
+  Name = c("Emo Phillips", "Steven Wright", "Maria Bamford", "Arthur Greenleaf Holmes", "Kristin Key", "Tim Minchin", "Jonathan Coulton", "Susanna Hoffs", "Madi Diaz", "Arlo Guthrie"),
+  Group = c("Comedian", "Comedian", "Comedian", "Comedian", "Comedian", "Musician", "Musician", "Musician", "Musician", "Musician"),
+  Followers = c(16.3, 6.5, 183, 12.9, 334, 357, 12.8, 85.8, 83.1, 18.1)
+) |>
+  gt() |>
+  fmt_markdown(columns = everything()) |>
+  fmt_markdown() |>  
+  cols_width(
+    Name ~ pct(40),
+    Group ~ pct(30),
+    Followers ~ pct(30)
+  )
+```
+
+
+In this study, the two groups being compared are comedians and musicians. The 10 subjects in the data, of course, were not assigned by Dr. Honeydew to these groups &mdash; they "self-selected" into the groups based on whether they chose to become a comedian or a musician. When the study participants are not assigned to conditions by a researcher the study is referred to as an [observational study](http://atlasti.com/observational-research/).
+
+In observational studies, we often think about the underlying variation that we need to account for to make statistical inferences differently than we do when participants have been assigned to groups by the researcher. In the latter situation (i.e., statistical experiments), we model and account for the *experimental variation* that arises due to random assignment. In observational studies, since there is no random assignment, we instead model and account for *sampling variation*, similar to when we were trying to account for random sampling.
+
+<br />
+
+
+## Bootstrapping: Modeling Sampling Variation when Comparing Groups
+
+To analyze data from an observational study, we need to adapt our randomization test to account for sampling variation rather than experimental variation. To account for sampling variation in the randomization test, we change `replacement` option for the sampling device producing the response/outcome attribute so that the it is being **sampled with replacement**. (Note that the group labels should still be sampled without replacement since we want to model the same number of participants in each group as in any observational data.) Sampling the outcome values with replacement is called **bootstrapping** and the subsequent test to compare groups is referred to as a *bootstrap test*.
+
+@fig-bootstrap-sampler shows the TinkerPlots sampler to carry out a bootstrap test using Dr. Honeydew's data.
+
+
+```{r}
+#| label: fig-bootstrap-sampler
+#| echo: false
+#| fig-cap: "The sampler for carrying out a bootstrap test to model sampling variation. In this sampler the responses are being sampled with replacement and the groups are being sampled without replacement."
+#| fig-alt: "The sampler for carrying out a bootstrap test to model sampling variation. In this sampler the responses are being sampled with replacement and the groups are being sampled without replacement."
+#| fig-align: "center"
+#| out-width: "90%"
+knitr::include_graphics("img/04-05-01-bootstrap-sampler.png")
+```
+
+
+
+<br />
+
