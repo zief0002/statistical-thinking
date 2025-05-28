@@ -1,0 +1,77 @@
+# Modeling Variation to Compare Groups {-}
+
+When we compare groups we now need to consider two different sources of variation that impact the differences in summary measures: experimental variation and sampling variation. In practice, these sources of variation are a function of the study design---how participants are selected from the larger population, and how they are assigned to groups. 
+
+
+```{r}
+#| label: fig-study-design
+#| echo: false
+#| fig-cap: "The two key questions for determining the source of variation that needs to be modeled are: (1) How are people selected into the sample from the population? and (2) How are people assigned to groups?. For both questions was it random or not?"
+#| fig-alt: "The two key questions for determining the source of variation that needs to be modeled are: (1) How are people selected into the sample from the population? and (2) How are people assigned to groups?. For both questions was it random or not?"
+#| fig-align: "center"
+#| out-width: "90%"
+knitr::include_graphics("img/04-06-01-study-design.png")
+```
+
+If we dichotomize the answers to these two key questions as either "randomly" or "not randomly", this results in four potential study designs. These designs are listed in @tbl-source-of-variation along with the source of variation that we need to model for each of them.
+
+
+```{r}
+#| label: tbl-source-of-variation
+#| tbl-cap: "Four potential study designs based on whether the answers to the two key questions are 'random' or 'not random'. The source of variation we model in practice for each study design is also indicated."
+#| echo: false
+library(gt)
+
+data.frame(
+  sampling = c("Random selection", "Non-random selection", "Random selection", "Non-random selection"),
+  experiment = c("Random assignment", "Random assignment", "Non-random assignment", "Non-random assignment"),
+  variation = c("Sampling variation<br />(from selection from the population)", "Experimental variation<br />(from assignment to groups)", "Sampling variation<br />(from selection from the population)", "Experimental variation<br />(from assignment to groups)")
+) |>
+  gt() |>
+  fmt_markdown(columns = everything()) |>
+    fmt_markdown() |>
+  cols_label(
+    sampling = "How are people selected into the sample from the population?",
+    experiment = "How are people assigned to groups?",
+    variation = "Variation to be Modeled",
+  ) |>  
+  cols_width(
+    sampling ~ pct(30),
+    experiment ~ pct(30),
+    variation ~ pct(40)
+  )
+```
+
+
+Lastly, we indicate the test and the corresponding TinkerPlots sampler for modeling these sources of variation in @tbl-test.
+
+
+```{r}
+#| label: tbl-test
+#| tbl-cap: "How to model different sources of variation."
+#| echo: false
+library(gt)
+
+data.frame(
+  variation = c("Experimental variation<br />(from assignment to groups)", "Sampling variation<br />(from selection from the population)"),
+  test = c("Randomization", "Bootstrap"),
+  tinkerplots = c("Two sampling devices: <br />&nbsp;&nbsp;(1) outcomes (sampled without replacement); and <br />&nbsp;&nbsp;(2) group labels (sampled without replacement)", "Two sampling devices: <br />&nbsp;&nbsp;(1) outcomes (sampled with replacement); and <br />&nbsp;&nbsp;(2) group labels (sampled without replacement)") 
+) |>
+  gt() |>
+  fmt_markdown(columns = everything()) |>
+    fmt_markdown() |>
+  cols_label(
+    test = "Test",
+    variation = "Variation Modeled",
+    tinkerplots = md("TinkerPlots Sampler")
+  ) |>  
+  cols_width(
+    test ~ pct(20),
+    variation ~ pct(30),
+    tinkerplots ~ pct(50)
+  )
+```
+
+<br />
+
+

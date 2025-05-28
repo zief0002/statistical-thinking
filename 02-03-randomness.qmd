@@ -1,0 +1,15 @@
+# Randomness {-}
+
+One critical component of simulation is the random process used to generate data. To help you begin to understand randomness, watch Stephan Dreiseitl's TEDxMCInnsbruck talk:  [Math and the Art of Describing Randomness](https://www.youtube.com/watch?v=j1dKvoa2ITw) 
+
+[What is Random](https://www.youtube.com/watch?v=9rIy0xY99a0)
+
+
+<br />
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j1dKvoa2ITw" title="Math and the art of describing randomness" frameborder="q" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+

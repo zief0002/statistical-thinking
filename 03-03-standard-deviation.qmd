@@ -1,0 +1,238 @@
+# Quantifying Variation: The Standard Deviation {-}
+
+Recall that the mean is a single number that can be used to summarize the data; it is a summary of the typical value in the data. Of course, not every observation in a distribution is at the typical value (in fact all of them might be different from the typical value). Thus, it is also useful to have a summary measure of how different the data tends to be from this typical value. This summary is what statisticians refer to as the **standard deviation**. This measure quantifies variability by determining how far data cases typically deviate from the mean value.
+
+
+<br />
+
+
+## Example Data {-}
+
+Consider the following data which give the admission rates for 15 public universities. The plot of the data suggests that the distribution of admission rates is unimodal and roughly symmetric. The mean admission rate for these universities is 0.782. There is also variability in the admission rates, with most univerisites in the sample having an admission rate between 0.7 and 0.9.
+
+
+
+
+<br />
+
+```{r}
+#| echo: false
+#| label: fig-admission-data
+#| fig-cap: "Data and plot showing the admission rates for 15 public universities."
+#| fig-alt: "Data and plot showing the admission rates for 15 public universities."
+#| fig-align: 'center'
+#| out-width: "70%"
+knitr::include_graphics("img/03-03-01-admission-data.png")
+```
+
+<br />
+
+
+## Calculating the Standard Deviation {-}
+
+The formula for the standard deviation is:
+
+$$
+\mathrm{SD} = \sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}
+$$
+
+while this may look ominous it really isn't. The key is to break it down into its different steps.
+
+1. Calculate the deviations from the mean
+2. Square those deviations
+3. Sum the squared deviations
+4. Divide that sum by $n-1$
+5. Take the square root
+
+Let's walk through this with our admissions data!
+
+<br />
+
+
+### Step 1: Calculate the deviations from the mean
+
+Our first step is to calculate the deviations from the mean. To do this we take each data point and subtract the mean. For example, the deviation for the first admission rate is calculatedas:
+
+$$
+0.98 - 0.782 = 0.198
+$$
+
+
+The positive value of the deviation tells us that this admission rate is higher than the mean admission rate by 0.198.
+
+
+
+```{r}
+#| echo: false
+Adm_Rate = c(.98, .81, .74, .65, .80, .62, .63, .85, .80, .77, .68, .79, .88, .81, .92)
+Deviation = round(Adm_Rate - mean(Adm_Rate), 3)
+
+  
+d = data.frame(Adm_Rate, Deviation)
+
+knitr::kable(
+  d, booktabs = TRUE, align = "c",
+  caption = 'The admission rates and their deviations from the mean of 0.782.'
+) |>
+  kableExtra::kable_styling(full_width = F)
+
+```
+
+
+<br />
+
+
+### Step 2: Square those deviations
+
+In the next step we square the deviations we just calculated.
+
+
+
+```{r}
+#| echo: false
+Adm_Rate = c(.98, .81, .74, .65, .80, .62, .63, .85, .80, .77, .68, .79, .88, .81, .92)
+Deviation = round(Adm_Rate - mean(Adm_Rate), 3)
+Sq_Dev = Deviation^2
+
+  
+d = data.frame(Adm_Rate, Deviation, `Squared Deviation` = Sq_Dev)
+
+knitr::kable(
+  d, booktabs = TRUE, align = "c",
+  caption = 'The admission rates, their deviations from the mean of 0.782, and their squared deviations.'
+) |>
+  kableExtra::kable_styling(full_width = F)
+
+```
+
+
+
+<br />
+
+
+### Step 3: Sum the squared deviations
+
+In Step 3, we sum all of the squared deviations.
+
+$$
+\begin{split}
+0.15384 = 0.039204 &+ 0.000784 + 0.001764 + 0.017424 + 0.000324 + 0.026244 +\\
+0.023104 &+ 0.004624 + 0.000324 + 0.000144 + 0.010404 + 0.000064 +\\
+0.009604 &+ 0.000784 + 0.019044
+\end{split}
+$$
+
+<br />
+
+
+### Step 4: Divide that sum by $n-1$
+
+In our sample we have 15 data points, so $n = 15$. We are now dividing our sum of squared deviations by $n-1$, or in our example, by 14.
+
+$$
+\frac{0.15384}{14} = 0.01098857
+$$
+
+<br />
+
+
+### Step 5: Take the square root
+
+Finally we are going to take the square root.
+
+$$
+\sqrt{0.01098857} = 0.1048264
+$$
+<!-- SD = .104826 -->
+<br />
+
+
+
+### Interpreting the Standard Deviation
+
+To understand how we interpret this value, let's again look back at the formula:
+
+$$
+\mathrm{SD} = \sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}
+$$
+
+Notice that the square root essentially removes the squaring that we did. If we omit the squaring and square root, that essentially leaves us with adding deviations and then essentially dividing by how many deviations there are. This is like the formula for average. So the standard deviation is essentially computing the average deviation from the mean. That is, it is indicating how far away from the mean value observations in the distribution are, on average.
+
+In our example, the standard deviation was 0.1048. This tells us that, on average, the admission rates in our distribution are 0.1048 away from the mean. Another way to think about this is that most observations in the distribution are within 0.1048 units of the mean. Since the mean is 0.782, that tells us that most admission rates are in the range of $0.782 \pm 0.1048$, or are between 0.6772 and 0.8868. 
+
+
+:::protip
+**FYI**
+
+From statistical theory, we know that most of the observations in a distribution are within one standard deviation of the mean. 
+:::
+
+
+From the formula, we can also derive two other truths about the standard deviation. 
+
+- The standard deviation cannot be a negative value. While the deviations from the mean can be nagative, once we square these, they become positive. Also, remember that the standard deviation is measuring the average *distance* from the mean; distances are non-negative.
+- The only way that the standard deviation ban be 0 is if every deviation is 0. That implies that every observation has the value of the mean. Another way to think about that is that every observation has to havethe same value---there is no variation.
+
+
+<br />
+
+
+## Tinkerplots 101: Computing the Standard Deviation
+
+In practice, we will not use the formula to compute the standard deviation, but instead will use TinkerPlots to do the computation. Unlike other summary measures that we have computed (which are computed in the plot), the standard deviation is computed in the case table. To compute the standard deviation for the data in a case table, we first create a new attribute called "SD" in our case table.
+
+- Click on the attribute name `<New>` and edit the text to `SD`
+- Right-click the `SD` (attribute name) and select `Edit Formula`
+
+This will open the formula editor. In the formula editor window type `stdDev()` which is the TinkerPlots formula for standard deviation. Inside the parentheses, we need to include the exact name of the attribute that you want to compute the standard deviation for. In our example, the name of that attribute is `AdmRate`. So the entire formula would read: `stdDev(AdmRate)`. 
+
+- After you have entered your formula click the `Apply` button. This should populate the `SD` attribute in the case table with the value of the standard deviation.
+- Click `OK` to close the formula editor.
+
+
+
+```{r}
+#| echo: false
+#| label: fig-tp-sd
+#| fig-cap: "LEFT: Right-click the SD attribute name and select 'Edit Formula'. RIGHT: Write the formula for computing the standard deviation in the formula editor."
+#| fig-alt: "LEFT: Right-click the SD attribute name and select 'Edit Formula'. RIGHT: Write the formula for computing the standard deviation in the formula editor."
+#| fig-align: 'center'
+#| out-width: "90%"
+knitr::include_graphics("img/03-03-02-tp-sd.png")
+```
+
+<br />
+
+
+## Standard Deviation and the Normal Distribution
+
+Earlier, it was pointed out that most of the observations in a distribution are within one standard deviation of the mean. For specific distributions we can be much more specific about the percantage of observations that are within one standard deviation of the mean. One of those distributions is the normal distribution. In the normal disribution 68% of the observations are within one standard deviation of the mean. We also know that 95% of the observations in a normal distribution are within two standard deviations of the mean, and 99% of the observations are within three standard deviations of the mean.
+
+
+
+```{r}
+#| echo: false
+#| label: fig-emp-rule
+#| fig-cap: "In a normal distribution 68% of the observations are within one standard deviation of the mean, 95% of the observations are within two standard deviations of the mean, and 99% of the observations are within three standard deviations of the mean."
+#| fig-alt: "In a normal distribution 68% of the observations are within one standard deviation of the mean, 95% of the observations are within two standard deviations of the mean, and 99% of the observations are within three standard deviations of the mean."
+#| fig-align: 'center'
+#| out-width: "70%"
+knitr::include_graphics("img/03-03-03-empirical-rule.png")
+```
+
+
+:::protip
+**FWIW**
+
+This distribution of observations in the normal distribution is referred to as the Empirical Rule, or the 68--95--99 Rule.
+:::
+
+
+<!-- Another fun fact about the normal distribution is that you can always estimate the value of the standard deviation from a plot---even if you aren't initially given its value. To do this, we  -->
+
+
+<br />
+
+
+
+

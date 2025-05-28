@@ -9,27 +9,73 @@ Whether you believe it is the sexiest subject or not, it is incontrovertible tha
 
 ## Course Material {-}
 
-The materials on this website and in the lab manual will introduce you to the seminal ideas underlying the discipline of statistics. In addition, they have been designed with your learning in mind. For example, many of the class activities were developed using pedagogical principles, such as small group activities and discussion, that have been shown in research to improve student learning. 
+The content in this textbook and in the lab manual will introduce you to the seminal ideas underlying the discipline of statistics. In addition, they have been designed with your learning in mind. For example, many of the class activities were developed using pedagogical principles, such as small group activities and discussion, that have been shown in research to improve student learning. 
 
-Course readings should be completed outside of class and are intended to help you learn and extend the ideas, skills, and concepts you learn in the classroom. The readings themselves are not all "traditional" readings in the sense of words written on the screen, but instead often link to video clips, blogs and other multimedia material. 
+Course readings should be completed outside of class and are intended to help you learn and extend the ideas, skills, and concepts you learn in the classroom. The readings themselves are not all "traditional" readings in the sense of words written on the screen, but instead often link to video clips, blogs and other multimedia material.
+
+
+:::protip
+**PROTIP**
+
+Because the textbook includes background reading and information that will help you complete the activities from the Lab Manual, it is most helpful if you complete the textbook readings prior to coming to class.
+:::
 
 <br />
 
 
 ### TinkerPlots 3&trade; Software {-}
 
-Much of the material presented in the lab manual requires the use of TinkerPlots 3&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/](http://www.tinkerplots.com/).
+Much of the material presented in the lab manual requires the use of TinkerPlots 3&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/]. You will need to do two things to obtain the TinkerPlots 3 software: (1) download the software to your computer and install it, and (2) purchase a license for it.
+
+:::protip
+**FYI**
+
+TinkerPlots can only be installed on a Mac or Windows computer. You cannot install it on a ChromeBook!
+:::
 
 <br />
 
 
-### Lab Manual and Data Sets {-}
+1. Download TinkerPlots 3 from the [TinkerPlots website](http://www.tinkerplots.com/). Click the "Get TinkerPlots" link on the left-hand side of the website. Then agree to the license agreement, and select the link that corresponds to your computer’s operating system. **Make sure you are clicking this link in the TinkerPlots 3.0 box and not the TinkerPlots 2.3 box!**
 
-You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: <https://github.com/zief0002/statistical-thinking/blob/main/statistical-thinking-v4_5.pdf?raw=true>.
+2. While that is downloading, purchase a license (further down the same page). You can do this with PayPal or a credit card. If you are using a credit card, note that the company that runs TinkerPlots is in Australia. Depending on your credit card, you may need to contact your financial institution to okay the international transaction.
 
-There are several data sets used in the lab manual, as well as in EPsy 3264 assignments. To download a ZIP file to your computer that includes all the data sets, click one of the links below. Once the ZIP file has been downloaded to your computer, double-click the ZIP file to unzip it and access the materials.
+After you have downloaded the TinkerPlots installer, double-click it to open the installer. Follow the instructions to get it installed on your computer. Once it is installed you can delete the installer. Finally open the TinkerPlots 3 application and enter your license number when prompted.
 
-- [TinkerPlots 3 Data Files](https://github.com/zief0002/statistical-thinking/blob/main/tp3-data.zip?raw=true)
+
+<br />
+
+
+### Lab Manual
+
+You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: <https://osf.io/download/683741827891878874a4ddc1/>.
+
+
+<!-- <iframe src="https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2F683741827891878874a4ddc1%2F%3Fdirect%26mode%3Drender" -->
+<!--     width="50%" -->
+<!--     scrolling="yes" -->
+<!--     height="400px" -->
+<!--     marginheight="0" -->
+<!--     frameborder="0" -->
+<!--     allowfullscreen -->
+<!--     webkitallowfullscreen -->
+<!--     align="middle" -->
+<!-- > -->
+
+
+### TinkerPlots Data Sets
+
+There are several data sets used in the lab manual, as well as in EPsy 3264 individual exams and group quizzes. You can download a ZIP file of these TinkerPlots data sets by clicking this link: <https://osf.io/download/683745fa3b7d1cff5b85b5ac/>. 
+
+
+
+**Extracting a ZIP File:** After you download the ZIP file (which will have the file extension .zip), you will need to extract (i.e., unzip) it. (A ZIP file is simply a file that has been compressed to reduce the size of the file.) How you extract or unzip the file depends on the type of computer you are using:
+
+- **Windows:** Right-click the ZIP file, Select `Extract All...`, Choose a location to extract the files (put it inside your Documents folder, or somewhere where you can easily access it), and click `Extract`. Once you have extracted the contents, you can delete the .zip file.
+- **Mac:** Double-click the ZIP file. This will extract the folder. Delete the .zip file, and then move the extracted folder to a location where you can easily access it (e.g., your Documents folder).
+
+
+
 
 <br />
 

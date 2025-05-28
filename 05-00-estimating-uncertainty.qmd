@@ -1,0 +1,20 @@
+# Estimating Uncertainty {-}
+
+<!-- > Far better an approximate answer to the right question &hellip; than an exact answer to the wrong question.^[Tukey, J. (1962). The future of data analysis. *Annals of Mathematical Statistics 33*(1), 1&ndash;67.] -->
+
+
+Aside from hypothesis testing, one of the most common uses of statistical inference is the estimation of unknown parameters using sample data. Polling is one application where statistical estimation is used. For example, [Gallup](http://www.gallup.com/) and the [Pew Research Center](http://www.pewresearch.org/) are organizations that use statistical estimation to provide snapshots of public attitudes and opinions on topics from politics and the economy, to social awareness and health and well-being. The results of their polls are seen on a daily basis in almost every newspaper, news blog and website across the world.
+
+Statistical estimation is used by more than pollsters. Biologists, social scientists, and medical researchers use statistical estimation to quantify population characteristics. For example, each year the Minnesota Department of Natural Resources estimates the populations of various species of animal, bird, and fish. These estimates are used to help set hunting and fishing regulations, as well as to allocate resources.^[Here is the [Wolf Population report for 2016](http://files.dnr.state.mn.us/wildlife/wolves/2016/survey-wolf.pdf).]
+
+<br />
+
+
+
+## Goals of Unit 4 {-}
+
+In this unit, you will learn about using bootstrapping to quantify the uncertainty in an observed estimate. You will learn how to incorporate that uncertainty into the estimate to produce a ccompatibility interval. You will explore how sample size impacts the amount of uncertainty in our compatibility interval. Finally, you will also learn about how compatibility intervals can be used to evaluate statistical hypotheses. 
+
+
+<br />
+

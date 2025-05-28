@@ -13,6 +13,7 @@ book:
   subtitle: "A Simulation Approach to Modeling Uncertainty"
   author: "Andrew Zieffler & Catalysts for Change"
   date: today
+  page-navigation: false
   sidebar:
     search: true
     background: '#383F56' #"#9f86c0"
@@ -20,23 +21,43 @@ book:
   chapters:
     - index.qmd
     - 01-introduction.qmd
-    - 02-modeling-and-simulation.qmd
-    - 03-data-generation.qmd
-    - 04-monte-carlo-simulation.qmd
-    - 05-modeling-sampling-variation.qmd
-    - 06-describing-distributions.qmd
-    - 07-experimental-variation.qmd
-    - 08-p-value.qmd
-    - 09-internal-validity-evidence.qmd
-    - 10-sampling-variation.qmd
-    - 11-external-validity-evidence.qmd
-    - 12-validity-evidence-and-inferences.qmd
-    - 13-observational-studies.qmd
-    - 14-statistical-estimation.qmd
-    - 15-uncertainty-and-bias.qmd
+    - part: 02-00-modeling-and-simulation.qmd
+      chapters:
+        - 02-01-cases-and-attributes.qmd
+        - 02-02-tinkerplots-101-importing-data-and-plotting.qmd
+        - 02-03-randomness.qmd
+        - 02-04-tinkerplots-101-generating-simulated-data.qmd
+        - 02-06-monte-carlo-simulation.qmd
+        - 02-07-tinkerplots-101-collecting-summaries.qmd
+    - part: 03-00-evaluating-hypotheses.qmd
+      chapters:
+        - 03-02-describing-distributions.qmd
+        - 03-01-simulation-process.qmd
+        - 03-03-standard-deviation.qmd
+        - 03-04-range-of-likely-values.qmd
+        - 03-05-generalization.qmd
+    - part: 04-00-comparing-groups.qmd
+      chapters:
+        - 04-01-experimental-variation.qmd
+        - 04-02-tinkerplots-101-randomization-test.qmd
+        - 04-03-tinkerplots-101-data-structure-for-comparing-groups.qmd
+        - 04-04-cause-and-effect.qmd
+        - 04-05-bootstrap-test.qmd
+        - 04-06-modeling-variation-to-compare-groups.qmd
+        - 04-07-dummy-coding.qmd
+        - 04-08-p-value.qmd
+    - part: 05-00-estimating-uncertainty.qmd
+      chapters:
+        - 05-01-compatibility-intervals.qmd
+        - 05-02-tinkerplots-101-bootstrap-uncertainty.qmd
+        - 05-03-unbiasedness-and-precision.qmd
+        - 05-04-evaluating-hypotheses-with-compatibility-intervals.qmd
 
-# bibliography: ["assets/modeling.bib", "assets/packages.bib"]
-# csl: 'assets/apa-single-spaced.csl'
+    # - 12-validity-evidence-and-inferences.qmd
+    # - 15-uncertainty-and-bias.qmd
+
+bibliography: ["assets/statistical-thinking.bib"]
+csl: 'assets/apa.csl'
 
 format:
   html:
