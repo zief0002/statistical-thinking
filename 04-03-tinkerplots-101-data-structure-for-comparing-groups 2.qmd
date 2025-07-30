@@ -1,0 +1,75 @@
+# TinkerPlots 101: Data Structure For Comparing Groups {-}
+
+
+The data for comparing groups may be presented in a variety of ways, depending on how it was collected and recorded. For example, one common structure that group data is recorded is the data for each group is recorded in a seperate column. 
+
+```{r}
+#| label: tbl-data
+#| tbl-cap: "Data from Dr. Honeydew's study presented in a structure where each group's data is in a different column."
+#| echo: false
+
+data.frame(
+  Bean = c(5.0, 2.9, 3.2),
+  NoBean = c(2.7, 2.1, 3.1)
+) |>
+  gt::gt() |>
+  gt::cols_label(
+    NoBean = "No Bean"
+  ) |>
+  gt::cols_align(
+    align = "center",
+    columns = gt::everything()
+  ) |>
+  gt::tab_options(table.width = gt::pct(30))
+```
+
+
+While this structure for the data may be useful for recording the data, it is not the structure we need when we use  statistical software (including TinkerPlots) to analyze the data. Most software requires that we have all of the response data for both groups in a single column. Then a second column indicates the group associated with these responses.
+
+```{r}
+#| label: tbl-data-2
+#| tbl-cap: "Data from Dr. Honeydew's study presented in a structure that is required for TinkerPlots. In this structure all of the response data for both groups in a single column and a second column indicates the group."
+#| echo: false
+
+data.frame(
+  Response = c(5.0, 2.9, 3.2, 2.7, 2.1, 3.1),
+  Group = c("Bean", "Bean", "Bean", "No Bean", "No Bean", "No Bean")
+) |>
+  gt::gt() |>
+  gt::cols_align(
+    align = "left",
+    columns = gt::everything()
+  ) |>
+  gt::tab_options(table.width = gt::pct(30))
+```
+
+
+<br />
+
+
+## Adding Data to the Sampling Device
+
+Aside from needing the data in this structure to create a plot that allows us to compare the groups and obtain the group means in TinkerPlots, there is one other big advantage to this structure. When we create our sampler for the randomization test, since all of the response data is in a single column in the case table, we can copy the entire attribute and paste the results into our mixer (rather than having to record each data point on a mixer element one-at-a-time).
+
+To do this, after your data are entered into a case table in the appropriate structure, click on the attribute name to highlight the column with the response values. Then use key commands to copy the attribute. (On a Mac the key command for copy is Command-C, and on a PC it is Control-C.) Then in the mixer, use the remove elements icon (the `-` below the sampling device) to remove all of the elements in the mixer until it is empty. Click on the empty mixer and then use key commands to paste the response values into the mixer. (On a Mac the key command for paste is Command-V, and on a PC it is Control-V.)
+
+```{r}
+#| label: fig-copy-paste
+#| echo: false
+#| fig-cap: "LEFT: Click on the attribute name to highlight the column and copy this using key commands. RIGHT: Remove all of the elements from the mixer so it is empty. Click on the empty mixer and then use key commands to paste."
+#| fig-alt: "LEFT: Click on the attribute name to highlight the column and copy this using key commands. RIGHT: Remove all of the elements from the mixer so it is empty. Click on the empty mixer and then use key commands to paste."
+#| fig-align: "center"
+#| out-width: "90%"
+knitr::include_graphics("img/04-03-01-copy-paste.png")
+```
+
+:::protip
+**FYI**
+
+It is easiest to enter the group data in the stacks device manually.
+:::
+
+
+<br />
+
+

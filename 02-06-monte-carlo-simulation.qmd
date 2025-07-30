@@ -2,7 +2,7 @@
 
 Monte Carlo simulation is one method that statisticians use to understand real-world phenomena. In Monte Carlo simulation, a model is used to generate multiple (sometimes millions) of data sets. By examining the data sets produced (or summaries of the data sets produced), researchers can draw insight about and predict what might happen in the real-world under a given set of circumstances. You can read about the fascinating origins of Monte Carlo simulation in the following article: 
 
-- [The Beginning of the Monte Carlo Method](http://www.webpages.uidaho.edu/~stevel/565/literature/The%20Beginning%20of%20Monte%20Carlo%20Method.pdf)
+- [The Beginning of the Monte Carlo Method](https://sgp.fas.org/othergov/doe/lanl/pubs/00326866.pdf)
 
 <br />
 
