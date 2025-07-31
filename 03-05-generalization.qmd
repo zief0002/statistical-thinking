@@ -44,12 +44,12 @@ knitr::include_graphics("img/03-05-01-bias-keys.png")
 
 <br />
 
-@fig-bias-keys is a metaphor for the concept of statistical bias. Arthur's search locations (sample statistics) are systematically in the wrong place. On average, where Arthur searched (the middle of the yellow circle) is not the actual location of the keys. Compare this with the search locations in @fig-unbiased-keys.
+@fig-bias-keys is a metaphor for the concept of statistical bias. Arthur's search locations (sample statistics) are systematically in the wrong place. On average, where Arthur searched (the middle of the yellow circle) is not the actual location of the keys. Compare this with the search locations in @fig-unbiased.
 
 <br />
 
 ```{r}
-#| label: fig-unbiased-keys
+#| label: fig-unbiased
 #| fig-cap: "This figure is a metaphor for unbiasedness."
 #| fig-alt: "This figure is a metaphor for unbiasedness."
 #| fig-align: 'left'
@@ -60,9 +60,9 @@ knitr::include_graphics("img/03-05-02-unbiased-keys.png")
 
 <br />
 
-@fig-unbiased-keys is a metaphor for unbiasedness. On average, where Arthur searched is the location of the keys. There are a couple of other concepts that this metaphor can help us think about.
+@fig-unbiased is a metaphor for unbiasedness. On average, where Arthur searched is the location of the keys. There are a couple of other concepts that this metaphor can help us think about.
 
-1. Even in @fig-unbiased-keys, none of the actual search locations were right at the keys. Some of the locations were too far to the left of the keys, and others were too far to the right of the keys. However, ON AVERAGE, the search locations "found" the keys. The way we define unbiased is that the AVERAGE of the statistics is at the population parameter.
+1. Even in @fig-unbiased, none of the actual search locations were right at the keys. Some of the locations were too far to the left of the keys, and others were too far to the right of the keys. However, ON AVERAGE, the search locations "found" the keys. The way we define unbiased is that the AVERAGE of the statistics is at the population parameter.
 
 2. Average has nothing to do with the size of the yellow circle. (The size of the circle is related to the amount of sampling variation, a concept we will deal with in Unit 4.) The two figures in @fig-bias-precision2 (below) also illustrate unbiasedness (left) and bias (right), despite the size of the yellow circle.
 
