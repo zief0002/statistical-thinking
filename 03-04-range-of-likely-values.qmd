@@ -1,6 +1,6 @@
 # Range of Likely Values {-}
 
-Recall that to evaluate a hypothesis, we build a model under the assumption that the null hypothesis is true, and then use that model to generate data from whih we produce summary measures. We then create a range of likely values for those summary measures that we use to evaluate the summary measure from the actual observed data. Up until now, you have been eyeballing the distribution of summary measures and creating that range of likely values subjectively. We are now going to introduce a more formal method for creating that range of likely values. To formally create the range of likely values, we need two pieces of information:
+Recall that to evaluate a hypothesis, we build a model under the assumption that the null hypothesis is true, and then use that model to generate data from which we produce summary measures. We then create a range of likely values for those summary measures that we use to evaluate the summary measure from the actual observed data. Up until now, you have been eyeballing the distribution of summary measures and creating that range of likely values subjectively. We are now going to introduce a more formal method for creating that range of likely values. To formally create the range of likely values, we need two pieces of information:
 
 - The expected value of the summary measure if the null hypothesis is true; and
 - The standard error of summary measures.

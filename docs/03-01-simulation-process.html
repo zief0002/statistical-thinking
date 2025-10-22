@@ -432,7 +432,7 @@ H_0:~ \pi_{\mathrm{Heads}} = 0.50
 <p>We can set up a TinkerPlots sampler based on this hypothesis. In our sampler, we need a device that has two potential outcomes (heads and tails). The heads outcome needs to have a probability of 0.50. We then set the repeat value to 100 to mimic our sample observed data in which we flipped the coin 100 times.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-coin-model" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="TinkerPlots sampler to model the null hypothesis that a coin if fair and produces heads with a probability of 0.50.">
+<div id="fig-coin-model" class="quarto-float quarto-figure quarto-figure-center anchored" alt="TinkerPlots sampler to model the null hypothesis that a coin if fair and produces heads with a probability of 0.50." data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-coin-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/03-01-01-coin-model.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="TinkerPlots sampler to model the null hypothesis that a coin if fair and produces heads with a probability of 0.50.">
@@ -451,7 +451,7 @@ Figure&nbsp;1: TinkerPlots sampler to model the null hypothesis that a coin if f
 <p>We can now use the model to produce the proportion of heads we would expect if we flipped the coin 100 times. To do this, we will run the simulation to obtain the outcomes from our first trial (i.e., 100 flips). After plotting those outcomes and summarizing them with the percentage of heads and tails, we could collect the percentage of heads. Then using the collect function, we could carry out an additional 499 trials (500 total trials).</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-coin-simulate" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="The first trial produced 100 coin flips that we plot and summarize. We then collect the percentage of heads and carry out 499 additional trials.">
+<div id="fig-coin-simulate" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The first trial produced 100 coin flips that we plot and summarize. We then collect the percentage of heads and carry out 499 additional trials." data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-coin-simulate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/03-01-02-coin-simulate.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="The first trial produced 100 coin flips that we plot and summarize. We then collect the percentage of heads and carry out 499 additional trials.">
@@ -470,7 +470,7 @@ Figure&nbsp;2: The first trial produced 100 coin flips that we plot and summariz
 <p>To evaluate the hypotheses, we plot the summary measures from our 500 trials of the siumulation. This allows us to understand the sampling variation we expect if the null hypothesis is true.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-coin-evaluate" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="The plot of summary measures (percentage of heads) for the 500 trials. The divider shows the range where most of the results are.">
+<div id="fig-coin-evaluate" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The plot of summary measures (percentage of heads) for the 500 trials. The divider shows the range where most of the results are." data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-coin-evaluate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="img/03-01-03-coin-evaluate.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="The plot of summary measures (percentage of heads) for the 500 trials. The divider shows the range where most of the results are.">
