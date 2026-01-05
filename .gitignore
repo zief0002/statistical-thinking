@@ -7,3 +7,5 @@
 .key
 
 /.quarto/
+
+**/*.quarto_ipynb

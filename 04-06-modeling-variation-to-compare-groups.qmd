@@ -25,7 +25,7 @@ library(gt)
 data.frame(
   sampling = c("Random selection", "Non-random selection", "Random selection", "Non-random selection"),
   experiment = c("Random assignment", "Random assignment", "Non-random assignment", "Non-random assignment"),
-  variation = c("Sampling variation<br />(from selection from the population)", "Experimental variation<br />(from assignment to groups)", "Sampling variation<br />(from selection from the population)", "Experimental variation<br />(from assignment to groups)")
+  variation = c("Sampling variation<br />(from selection from the population)", "Experimental variation<br />(from assignment to groups)", "Sampling variation<br />(from selection from the population)", "Sampling variation<br />(from selection from the population)")
 ) |>
   gt() |>
   fmt_markdown(columns = everything()) |>
