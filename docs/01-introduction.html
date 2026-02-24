@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c3c2c9e745155556954bc4da23476b10.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-219a36c0df74dffbcf349dcbf93ccb3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-45463575187b7a25ff8fe309cb42e145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -355,7 +356,7 @@ function toggle_visibility(id) {
 <p><br></p>
 <section id="tinkerplots-3-software" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="tinkerplots-3-software">TinkerPlots 3™ Software</h3>
-<p>Much of the material presented in the lab manual requires the use of TinkerPlots 3™. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/]. You will need to do two things to obtain the TinkerPlots 3 software: (1) download the software to your computer and install it, and (2) purchase a license for it.</p>
+<p>Much of the material presented in the lab manual requires the use of TinkerPlots 3™. This software can be downloaded (for Mac or PC), and a license can be purchased from <a href="http://www.tinkerplots.com/" class="uri">http://www.tinkerplots.com/</a>. You will need to do two things to obtain the TinkerPlots 3 software: (1) download the software to your computer and install it, and (2) purchase a license for it.</p>
 <div class="protip">
 <p><strong>FYI</strong></p>
 <p>TinkerPlots can only be installed on a Mac or Windows computer. You cannot install it on a ChromeBook!</p>
@@ -370,21 +371,11 @@ function toggle_visibility(id) {
 </section>
 <section id="lab-manual" class="level3">
 <h3 class="anchored" data-anchor-id="lab-manual">Lab Manual</h3>
-<p>You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: <a href="https://osf.io/download/683741827891878874a4ddc1/" class="uri">https://osf.io/download/683741827891878874a4ddc1/</a>.</p>
-<!-- <iframe src="https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2F683741827891878874a4ddc1%2F%3Fdirect%26mode%3Drender" -->
-<!--     width="50%" -->
-<!--     scrolling="yes" -->
-<!--     height="400px" -->
-<!--     marginheight="0" -->
-<!--     frameborder="0" -->
-<!--     allowfullscreen -->
-<!--     webkitallowfullscreen -->
-<!--     align="middle" -->
-<!-- > -->
+<p>You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. You should be able to download the Lab Manual from your course website (e.g., Canvas).</p>
 </section>
 <section id="tinkerplots-data-sets" class="level3">
 <h3 class="anchored" data-anchor-id="tinkerplots-data-sets">TinkerPlots Data Sets</h3>
-<p>There are several data sets used in the lab manual, as well as in EPsy 3264 individual exams and group quizzes. You can download a ZIP file of these TinkerPlots data sets by clicking this link: <a href="https://osf.io/download/683745fa3b7d1cff5b85b5ac/" class="uri">https://osf.io/download/683745fa3b7d1cff5b85b5ac/</a>.</p>
+<p>There are several data sets used in the lab manual, as well as in EPsy 3264 individual exams and group quizzes. You can download a ZIP file of these TinkerPlots data sets from your course website (e.g., Canvas).</p>
 <p><strong>Extracting a ZIP File:</strong> After you download the ZIP file (which will have the file extension .zip), you will need to extract (i.e., unzip) it. (A ZIP file is simply a file that has been compressed to reduce the size of the file.) How you extract or unzip the file depends on the type of computer you are using:</p>
 <ul>
 <li><strong>Windows:</strong> Right-click the ZIP file, Select <code>Extract All...</code>, Choose a location to extract the files (put it inside your Documents folder, or somewhere where you can easily access it), and click <code>Extract</code>. Once you have extracted the contents, you can delete the .zip file.</li>
@@ -461,13 +452,14 @@ function toggle_visibility(id) {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

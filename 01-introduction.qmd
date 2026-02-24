@@ -25,7 +25,7 @@ Because the textbook includes background reading and information that will help 
 
 ### TinkerPlots 3&trade; Software {-}
 
-Much of the material presented in the lab manual requires the use of TinkerPlots 3&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from [http://www.tinkerplots.com/]. You will need to do two things to obtain the TinkerPlots 3 software: (1) download the software to your computer and install it, and (2) purchase a license for it.
+Much of the material presented in the lab manual requires the use of TinkerPlots 3&trade;. This software can be downloaded (for Mac or PC), and a license can be purchased from <http://www.tinkerplots.com/>. You will need to do two things to obtain the TinkerPlots 3 software: (1) download the software to your computer and install it, and (2) purchase a license for it.
 
 :::protip
 **FYI**
@@ -48,24 +48,13 @@ After you have downloaded the TinkerPlots installer, double-click it to open the
 
 ### Lab Manual
 
-You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. To download a PDF copy of the lab manual, click this link: <https://osf.io/download/683741827891878874a4ddc1/>.
+You will work from the lab manual every day in class. As such, you will need to bring a copy of the lab manual (physical or electronic) with you to class every day. You should be able to download the Lab Manual from your course website (e.g., Canvas).
 
-
-<!-- <iframe src="https://mfr.osf.io/render?url=https%3A%2F%2Fosf.io%2Fdownload%2F683741827891878874a4ddc1%2F%3Fdirect%26mode%3Drender" -->
-<!--     width="50%" -->
-<!--     scrolling="yes" -->
-<!--     height="400px" -->
-<!--     marginheight="0" -->
-<!--     frameborder="0" -->
-<!--     allowfullscreen -->
-<!--     webkitallowfullscreen -->
-<!--     align="middle" -->
-<!-- > -->
 
 
 ### TinkerPlots Data Sets
 
-There are several data sets used in the lab manual, as well as in EPsy 3264 individual exams and group quizzes. You can download a ZIP file of these TinkerPlots data sets by clicking this link: <https://osf.io/download/683745fa3b7d1cff5b85b5ac/>. 
+There are several data sets used in the lab manual, as well as in EPsy 3264 individual exams and group quizzes. You can download a ZIP file of these TinkerPlots data sets from your course website (e.g., Canvas). 
 
 
 
