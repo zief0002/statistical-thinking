@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c3c2c9e745155556954bc4da23476b10.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d6a2ae2cb249da1580f0a11f71b8f854.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-219a36c0df74dffbcf349dcbf93ccb3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-45463575187b7a25ff8fe309cb42e145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -97,7 +98,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -385,23 +386,23 @@ Table&nbsp;1: Response data from college students about whether they read a book
 </figcaption>
 <div aria-describedby="tbl-books-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="lvjrkincjd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lvjrkincjd table {
+<div id="fyrqsbmaqy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fyrqsbmaqy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lvjrkincjd thead, #lvjrkincjd tbody, #lvjrkincjd tfoot, #lvjrkincjd tr, #lvjrkincjd td, #lvjrkincjd th {
+#fyrqsbmaqy thead, #fyrqsbmaqy tbody, #fyrqsbmaqy tfoot, #fyrqsbmaqy tr, #fyrqsbmaqy td, #fyrqsbmaqy th {
   border-style: none;
 }
 
-#lvjrkincjd p {
+#fyrqsbmaqy p {
   margin: 0;
   padding: 0;
 }
 
-#lvjrkincjd .gt_table {
+#fyrqsbmaqy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -427,12 +428,12 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-left-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_caption {
+#fyrqsbmaqy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lvjrkincjd .gt_title {
+#fyrqsbmaqy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -444,7 +445,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-bottom-width: 0;
 }
 
-#lvjrkincjd .gt_subtitle {
+#fyrqsbmaqy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -456,7 +457,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-top-width: 0;
 }
 
-#lvjrkincjd .gt_heading {
+#fyrqsbmaqy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -468,13 +469,13 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-right-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_bottom_border {
+#fyrqsbmaqy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_col_headings {
+#fyrqsbmaqy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -489,7 +490,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-right-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_col_heading {
+#fyrqsbmaqy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -509,7 +510,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   overflow-x: hidden;
 }
 
-#lvjrkincjd .gt_column_spanner_outer {
+#fyrqsbmaqy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -521,15 +522,15 @@ Table&nbsp;1: Response data from college students about whether they read a book
   padding-right: 4px;
 }
 
-#lvjrkincjd .gt_column_spanner_outer:first-child {
+#fyrqsbmaqy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lvjrkincjd .gt_column_spanner_outer:last-child {
+#fyrqsbmaqy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lvjrkincjd .gt_column_spanner {
+#fyrqsbmaqy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -541,11 +542,11 @@ Table&nbsp;1: Response data from college students about whether they read a book
   width: 100%;
 }
 
-#lvjrkincjd .gt_spanner_row {
+#fyrqsbmaqy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lvjrkincjd .gt_group_heading {
+#fyrqsbmaqy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -571,7 +572,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   text-align: left;
 }
 
-#lvjrkincjd .gt_empty_group_heading {
+#fyrqsbmaqy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -586,15 +587,15 @@ Table&nbsp;1: Response data from college students about whether they read a book
   vertical-align: middle;
 }
 
-#lvjrkincjd .gt_from_md > :first-child {
+#fyrqsbmaqy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lvjrkincjd .gt_from_md > :last-child {
+#fyrqsbmaqy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lvjrkincjd .gt_row {
+#fyrqsbmaqy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -613,7 +614,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   overflow-x: hidden;
 }
 
-#lvjrkincjd .gt_stub {
+#fyrqsbmaqy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -626,7 +627,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   padding-right: 5px;
 }
 
-#lvjrkincjd .gt_stub_row_group {
+#fyrqsbmaqy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -640,15 +641,15 @@ Table&nbsp;1: Response data from college students about whether they read a book
   vertical-align: top;
 }
 
-#lvjrkincjd .gt_row_group_first td {
+#fyrqsbmaqy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lvjrkincjd .gt_row_group_first th {
+#fyrqsbmaqy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lvjrkincjd .gt_summary_row {
+#fyrqsbmaqy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -658,16 +659,16 @@ Table&nbsp;1: Response data from college students about whether they read a book
   padding-right: 5px;
 }
 
-#lvjrkincjd .gt_first_summary_row {
+#fyrqsbmaqy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_first_summary_row.thick {
+#fyrqsbmaqy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lvjrkincjd .gt_last_summary_row {
+#fyrqsbmaqy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -677,7 +678,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-bottom-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_grand_summary_row {
+#fyrqsbmaqy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -687,7 +688,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   padding-right: 5px;
 }
 
-#lvjrkincjd .gt_first_grand_summary_row {
+#fyrqsbmaqy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -697,7 +698,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-top-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_last_grand_summary_row_top {
+#fyrqsbmaqy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -707,11 +708,11 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-bottom-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_striped {
+#fyrqsbmaqy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lvjrkincjd .gt_table_body {
+#fyrqsbmaqy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -720,7 +721,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-bottom-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_footnotes {
+#fyrqsbmaqy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -734,7 +735,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-right-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_footnote {
+#fyrqsbmaqy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -743,7 +744,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   padding-right: 5px;
 }
 
-#lvjrkincjd .gt_sourcenotes {
+#fyrqsbmaqy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -757,7 +758,7 @@ Table&nbsp;1: Response data from college students about whether they read a book
   border-right-color: #D3D3D3;
 }
 
-#lvjrkincjd .gt_sourcenote {
+#fyrqsbmaqy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -765,77 +766,77 @@ Table&nbsp;1: Response data from college students about whether they read a book
   padding-right: 5px;
 }
 
-#lvjrkincjd .gt_left {
+#fyrqsbmaqy .gt_left {
   text-align: left;
 }
 
-#lvjrkincjd .gt_center {
+#fyrqsbmaqy .gt_center {
   text-align: center;
 }
 
-#lvjrkincjd .gt_right {
+#fyrqsbmaqy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lvjrkincjd .gt_font_normal {
+#fyrqsbmaqy .gt_font_normal {
   font-weight: normal;
 }
 
-#lvjrkincjd .gt_font_bold {
+#fyrqsbmaqy .gt_font_bold {
   font-weight: bold;
 }
 
-#lvjrkincjd .gt_font_italic {
+#fyrqsbmaqy .gt_font_italic {
   font-style: italic;
 }
 
-#lvjrkincjd .gt_super {
+#fyrqsbmaqy .gt_super {
   font-size: 65%;
 }
 
-#lvjrkincjd .gt_footnote_marks {
+#fyrqsbmaqy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lvjrkincjd .gt_asterisk {
+#fyrqsbmaqy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lvjrkincjd .gt_indent_1 {
+#fyrqsbmaqy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lvjrkincjd .gt_indent_2 {
+#fyrqsbmaqy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lvjrkincjd .gt_indent_3 {
+#fyrqsbmaqy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lvjrkincjd .gt_indent_4 {
+#fyrqsbmaqy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lvjrkincjd .gt_indent_5 {
+#fyrqsbmaqy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lvjrkincjd .katex-display {
+#fyrqsbmaqy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lvjrkincjd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fyrqsbmaqy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="Two" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">2-Year College</th>
@@ -900,12 +901,12 @@ Figure&nbsp;1: Contingency table for the example data.
 </div>
 </div>
 <p>One problem with counts for comparing groups if the group sizes are different is that they can be misleading. Here, if we used counts, we would say that students from 2-year colleges read more than students from 4-year colleges. The problem is that there were more 2-year college students in our sample than there were 4-year college students.</p>
-<p>Instead of counts, when comparing groups, statisticians use proportions. This alleviates the problem of unequal group sizes. In our data the proportion of 2-year college students that read a book in the previous week is 0.50 (4 out of 8), and the proportion of 4-year college students that read a book in the previous week is 0.75 (3 out of 4).</p>
+<p>Instead of counts, when comparing groups, statisticians use proportions. This alleviates the problem of unequal group sizes. In our data the proportion of 2-year college students that read a book in the previous week is 0.50 (4 out of 8), and the proportion of 4-year college students that read a book in the previous week is 0.75 (6 out of 8).</p>
 <p><br></p>
 </section>
 <section id="statistical-hypotheses" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-hypotheses">Statistical Hypotheses</h2>
-<p>The two statistical hypotheses are now about the proportion of responses. In our example, if the researcher hypthesized that a higher proportion of 4-year college students than 2-year college students read a book in the previous week, the statistical hypotheses would be:</p>
+<p>The two statistical hypotheses are now about the proportion of responses. In our example, if the researcher hypothesized that a higher proportion of 4-year college students than 2-year college students read a book in the previous week, the statistical hypotheses would be:</p>
 <p><span class="math display">\[
 \begin{split}
 H_0:~&amp;\text{There is no difference in the proportion of 2-year and and 4-year}\\
@@ -936,23 +937,23 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
 </figcaption>
 <div aria-describedby="tbl-books2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="suhaaaiekz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#suhaaaiekz table {
+<div id="vbfuxmgwxi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vbfuxmgwxi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#suhaaaiekz thead, #suhaaaiekz tbody, #suhaaaiekz tfoot, #suhaaaiekz tr, #suhaaaiekz td, #suhaaaiekz th {
+#vbfuxmgwxi thead, #vbfuxmgwxi tbody, #vbfuxmgwxi tfoot, #vbfuxmgwxi tr, #vbfuxmgwxi td, #vbfuxmgwxi th {
   border-style: none;
 }
 
-#suhaaaiekz p {
+#vbfuxmgwxi p {
   margin: 0;
   padding: 0;
 }
 
-#suhaaaiekz .gt_table {
+#vbfuxmgwxi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -978,12 +979,12 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-left-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_caption {
+#vbfuxmgwxi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#suhaaaiekz .gt_title {
+#vbfuxmgwxi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -995,7 +996,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-bottom-width: 0;
 }
 
-#suhaaaiekz .gt_subtitle {
+#vbfuxmgwxi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1007,7 +1008,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-top-width: 0;
 }
 
-#suhaaaiekz .gt_heading {
+#vbfuxmgwxi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1019,13 +1020,13 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-right-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_bottom_border {
+#vbfuxmgwxi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_col_headings {
+#vbfuxmgwxi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1040,7 +1041,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-right-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_col_heading {
+#vbfuxmgwxi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1060,7 +1061,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   overflow-x: hidden;
 }
 
-#suhaaaiekz .gt_column_spanner_outer {
+#vbfuxmgwxi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1072,15 +1073,15 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   padding-right: 4px;
 }
 
-#suhaaaiekz .gt_column_spanner_outer:first-child {
+#vbfuxmgwxi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#suhaaaiekz .gt_column_spanner_outer:last-child {
+#vbfuxmgwxi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#suhaaaiekz .gt_column_spanner {
+#vbfuxmgwxi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1092,11 +1093,11 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   width: 100%;
 }
 
-#suhaaaiekz .gt_spanner_row {
+#vbfuxmgwxi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#suhaaaiekz .gt_group_heading {
+#vbfuxmgwxi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1122,7 +1123,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   text-align: left;
 }
 
-#suhaaaiekz .gt_empty_group_heading {
+#vbfuxmgwxi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1137,15 +1138,15 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   vertical-align: middle;
 }
 
-#suhaaaiekz .gt_from_md > :first-child {
+#vbfuxmgwxi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#suhaaaiekz .gt_from_md > :last-child {
+#vbfuxmgwxi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#suhaaaiekz .gt_row {
+#vbfuxmgwxi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1164,7 +1165,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   overflow-x: hidden;
 }
 
-#suhaaaiekz .gt_stub {
+#vbfuxmgwxi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1177,7 +1178,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   padding-right: 5px;
 }
 
-#suhaaaiekz .gt_stub_row_group {
+#vbfuxmgwxi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1191,15 +1192,15 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   vertical-align: top;
 }
 
-#suhaaaiekz .gt_row_group_first td {
+#vbfuxmgwxi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#suhaaaiekz .gt_row_group_first th {
+#vbfuxmgwxi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#suhaaaiekz .gt_summary_row {
+#vbfuxmgwxi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1209,16 +1210,16 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   padding-right: 5px;
 }
 
-#suhaaaiekz .gt_first_summary_row {
+#vbfuxmgwxi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_first_summary_row.thick {
+#vbfuxmgwxi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#suhaaaiekz .gt_last_summary_row {
+#vbfuxmgwxi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1228,7 +1229,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-bottom-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_grand_summary_row {
+#vbfuxmgwxi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1238,7 +1239,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   padding-right: 5px;
 }
 
-#suhaaaiekz .gt_first_grand_summary_row {
+#vbfuxmgwxi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1248,7 +1249,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-top-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_last_grand_summary_row_top {
+#vbfuxmgwxi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1258,11 +1259,11 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-bottom-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_striped {
+#vbfuxmgwxi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#suhaaaiekz .gt_table_body {
+#vbfuxmgwxi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1271,7 +1272,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-bottom-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_footnotes {
+#vbfuxmgwxi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1285,7 +1286,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-right-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_footnote {
+#vbfuxmgwxi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1294,7 +1295,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   padding-right: 5px;
 }
 
-#suhaaaiekz .gt_sourcenotes {
+#vbfuxmgwxi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1308,7 +1309,7 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   border-right-color: #D3D3D3;
 }
 
-#suhaaaiekz .gt_sourcenote {
+#vbfuxmgwxi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1316,77 +1317,77 @@ Table&nbsp;2: Response data from 2-year college students about whether they read
   padding-right: 5px;
 }
 
-#suhaaaiekz .gt_left {
+#vbfuxmgwxi .gt_left {
   text-align: left;
 }
 
-#suhaaaiekz .gt_center {
+#vbfuxmgwxi .gt_center {
   text-align: center;
 }
 
-#suhaaaiekz .gt_right {
+#vbfuxmgwxi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#suhaaaiekz .gt_font_normal {
+#vbfuxmgwxi .gt_font_normal {
   font-weight: normal;
 }
 
-#suhaaaiekz .gt_font_bold {
+#vbfuxmgwxi .gt_font_bold {
   font-weight: bold;
 }
 
-#suhaaaiekz .gt_font_italic {
+#vbfuxmgwxi .gt_font_italic {
   font-style: italic;
 }
 
-#suhaaaiekz .gt_super {
+#vbfuxmgwxi .gt_super {
   font-size: 65%;
 }
 
-#suhaaaiekz .gt_footnote_marks {
+#vbfuxmgwxi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#suhaaaiekz .gt_asterisk {
+#vbfuxmgwxi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#suhaaaiekz .gt_indent_1 {
+#vbfuxmgwxi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#suhaaaiekz .gt_indent_2 {
+#vbfuxmgwxi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#suhaaaiekz .gt_indent_3 {
+#vbfuxmgwxi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#suhaaaiekz .gt_indent_4 {
+#vbfuxmgwxi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#suhaaaiekz .gt_indent_5 {
+#vbfuxmgwxi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#suhaaaiekz .katex-display {
+#vbfuxmgwxi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#suhaaaiekz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vbfuxmgwxi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="Two" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">2-Year College</th>
@@ -1470,19 +1471,19 @@ Figure&nbsp;2: A sampler to carry out the randomization test for the example. Th
 <p>This sampler could then be used to generate data from simulated random assignments. The difference in means (i.e., difference in proportions) could be collected and the observed difference in means could be evaluated.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-collected-differences" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.628, +0.628] based on the standard error of 0.314. The observed difference of 0.25 is displayed as a vertical reference line.">
+<div id="fig-collected-differences" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.512, +0.512] based on the standard error of 0.256. The observed difference of 0.25 is displayed as a vertical reference line.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-collected-differences-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="img/04-07-03-collected-differences.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.628, +0.628] based on the standard error of 0.314. The observed difference of 0.25 is displayed as a vertical reference line.">
+<img src="img/04-07-03-collected-differences.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" alt="Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.512, +0.512] based on the standard error of 0.256. The observed difference of 0.25 is displayed as a vertical reference line.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-collected-differences-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.628, +0.628] based on the standard error of 0.314. The observed difference of 0.25 is displayed as a vertical reference line.
+Figure&nbsp;3: Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.512, +0.512] based on the standard error of 0.256. The observed difference of 0.25 is displayed as a vertical reference line.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>If the null hypothesis that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week is true, we would expect to see an observed difference in proportions between <span class="math inline">\(-0.628\)</span> and 0.628. We actually saw an observed difference of 0.25. This is consistent with what we would have expected if the null hypothesis is true. Because of this we fail to reject the null hypotheis; it may be that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week.</p>
+<p>If the null hypothesis that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week is true, we would expect to see an observed difference in proportions between <span class="math inline">\(-0.512\)</span> and 0.512. We actually saw an observed difference of 0.25. This is consistent with what we would have expected if the null hypothesis is true. Because of this we fail to reject the null hypothesis; it may be that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week.</p>
 <p><br></p>
 
 
@@ -1540,13 +1541,14 @@ Figure&nbsp;3: Distribution of differences in proportions for 500 collected diff
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

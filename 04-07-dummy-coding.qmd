@@ -48,7 +48,7 @@ knitr::include_graphics("img/04-07-01-contingency-table.png")
 
 One problem with counts for comparing groups if the group sizes are different is that they can be misleading. Here, if we used counts, we would say that students from 2-year colleges read more than students from 4-year colleges. The problem is that there were more 2-year college students in our sample than there were 4-year college students.
 
-Instead of counts, when comparing groups, statisticians use proportions. This alleviates the problem of unequal group sizes. In our data the proportion of 2-year college students that read a book in the previous week is 0.50 (4 out of 8), and the proportion of 4-year college students that read a book in the previous week is 0.75 (3 out of 4). 
+Instead of counts, when comparing groups, statisticians use proportions. This alleviates the problem of unequal group sizes. In our data the proportion of 2-year college students that read a book in the previous week is 0.50 (4 out of 8), and the proportion of 4-year college students that read a book in the previous week is 0.75 (6 out of 8). 
 
 
 <br />
@@ -56,7 +56,7 @@ Instead of counts, when comparing groups, statisticians use proportions. This al
 
 ## Statistical Hypotheses
 
-The two statistical hypotheses are now about the proportion of responses. In our example, if the researcher hypthesized that a higher proportion of 4-year college students than 2-year college students read a book in the previous week, the statistical hypotheses would be:
+The two statistical hypotheses are now about the proportion of responses. In our example, if the researcher hypothesized that a higher proportion of 4-year college students than 2-year college students read a book in the previous week, the statistical hypotheses would be:
 
 $$
 \begin{split}
@@ -150,14 +150,14 @@ This sampler could then be used to generate data from simulated random assignmen
 ```{r}
 #| label: fig-collected-differences
 #| echo: false
-#| fig-cap: "Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.628, +0.628] based on the standard error of 0.314. The observed difference of 0.25 is displayed as a vertical reference line."
-#| fig-alt: "Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.628, +0.628] based on the standard error of 0.314. The observed difference of 0.25 is displayed as a vertical reference line."
+#| fig-cap: "Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.512, +0.512] based on the standard error of 0.256. The observed difference of 0.25 is displayed as a vertical reference line."
+#| fig-alt: "Distribution of differences in proportions for 500 collected differences. The shaded area represents the range of likely values [-0.512, +0.512] based on the standard error of 0.256. The observed difference of 0.25 is displayed as a vertical reference line."
 #| fig-align: "center"
 #| out-width: "90%"
 knitr::include_graphics("img/04-07-03-collected-differences.png")
 ```
 
-If the null hypothesis that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week is true, we would expect to see an observed difference in proportions between $-0.628$ and 0.628. We actually saw an observed difference of 0.25. This is consistent with what we would have expected if the null hypothesis is true. Because of this we fail to reject the null hypotheis; it may be that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week.
+If the null hypothesis that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week is true, we would expect to see an observed difference in proportions between $-0.512$ and 0.512. We actually saw an observed difference of 0.25. This is consistent with what we would have expected if the null hypothesis is true. Because of this we fail to reject the null hypothesis; it may be that there is no difference in the proportion of 2-year and and 4-year college students who read a book in the previous week.
 
 
 
